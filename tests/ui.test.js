@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {execFileSync} from 'node:child_process';
 import {parseHTML} from 'linkedom';
 const content=JSON.parse(fs.readFileSync(new URL('../dist/content.json',import.meta.url)));
 const tick=()=>new Promise(r=>setTimeout(r,0));
@@ -11,7 +10,7 @@ async function setup(storage=new Map(),standalone=false){
  globalThis.localStorage={getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)};
  let hash='#today';globalThis.location={get hash(){return hash;},set hash(v){hash=v.startsWith('#')?v:'#'+v;window.dispatchEvent(new window.Event('hashchange'));}};
  window.scrollTo=()=>{};globalThis.fetch=async()=>({ok:true,json:async()=>content});
- if(standalone){execFileSync('python3',['build_standalone.py']);const file=fs.readFileSync(new URL('../standalone/finance-remember.html',import.meta.url),'utf8');const code=file.match(/<script type="module">([\s\S]*?)<\/script>/)[1];globalThis.fetch=async()=>{throw Error('Network deliberately unavailable');};await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));}else await import('../dist/app.js?test='+Math.random());
+ if(standalone){const file=fs.readFileSync(new URL('../standalone/finance-remember.html',import.meta.url),'utf8');const code=file.match(/<script type="module">([\s\S]*?)<\/script>/)[1];globalThis.fetch=async()=>{throw Error('Network deliberately unavailable');};await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));}else await import('../dist/app.js?test='+Math.random());
  return {window,storage,doc:window.document,click:sel=>{const e=window.document.querySelector(sel);assert.ok(e,'Missing '+sel);e.click();},go:hash=>{globalThis.location.hash=hash;},text:()=>window.document.querySelector('#app').textContent};
 }
 test('recall session can reveal, fail, retry, persist and resume',async()=>{const u=await setup();assert.ok(u.text().includes('Make finance'));u.click('#start');assert.ok(u.text().includes('what are F and C'));u.click('#reveal');assert.ok(u.text().includes('F is $1,000'));u.click('[data-rating=again]');let state=JSON.parse(u.storage.get('finance-remember-v1'));assert.equal(state.session.queue.length,5);assert.equal(state.session.index,1);assert.equal(state.cards['bonds-face'].interval,1);u.go('#today');assert.ok(u.text().includes('Resume session'));u.click('#start');assert.ok(u.text().includes('how do t and T differ'));u.click('#reveal');u.click('[data-rating=good]');u.click('#reveal');u.click('[data-rating=good]');assert.ok(u.doc.querySelector('#check'));u.doc.querySelector('#attempt').value='9999';u.doc.querySelector('#attempt').dispatchEvent(new u.window.Event('input'));u.click('#check');assert.ok(u.doc.querySelector('[data-rating=good]').disabled);u.click('[data-rating=again]');assert.ok(u.text().includes('Explain face value'));u.click('#reveal');u.click('[data-rating=good]');state=JSON.parse(u.storage.get('finance-remember-v1'));assert.equal(state.cards['bonds-face'].interval,1);assert.equal(state.cards['bonds-face'].rating,'hard');});
