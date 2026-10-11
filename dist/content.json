@@ -1,0 +1,3489 @@
+{
+  "updated": "2026-10-11",
+  "topics": [
+    {
+      "id": "purpose",
+      "title": "01 · Why finance exists",
+      "subtitle": "Risk sharing, incentives & innovation",
+      "lesson": "A financial contract moves purchasing power across time and across possible future states. Equity shares uncertain business results; debt promises payments; insurance covers defined losses. Useful finance connects productive projects with savers and makes risks bearable. Ask three questions of any instrument: who receives which cash flows, in which states, and who bears the downside?\n\nContracts cannot fix every problem. Hidden information creates adverse selection; changed incentives create moral hazard; delegated decisions create agency problems. A contract that is sensible for one participant may still amplify system-wide risk. Shiller’s emphasis on democratization includes broader access to risk protection, not just easier speculation.",
+      "kind": "Course core"
+    },
+    {
+      "id": "risk",
+      "title": "02 · Risk & portfolios",
+      "subtitle": "Probability, correlation, CAPM & tails",
+      "lesson": "Start with outcomes and probabilities. Expected return is a weighted average, not a promise. Variance measures dispersion around that average; covariance measures joint movement. A portfolio’s exposure is a combination of its assets and their relationships. Diversification reduces company-specific risks but cannot guarantee protection from economy-wide shocks.\n\nMean–variance models simplify a richer problem: people have liabilities, labor income, liquidity needs and exposure to rare disasters. Historical estimates are uncertain. CAPM gives a benchmark for the price of market risk; it is not a complete empirical law. A stress scenario asks how the portfolio behaves when usual relationships break.",
+      "kind": "Course core"
+    },
+    {
+      "id": "behavior",
+      "title": "03 · Prices & psychology",
+      "subtitle": "Efficiency, forecasts, bubbles & narratives",
+      "lesson": "Prices reflect expectations about future cash flows and the rates used to discount them. A good company can be a poor purchase at an excessive price. EMH concerns information and returns relative to a risk benchmark; it does not say that every price is unquestionably correct. Testing efficiency also tests the model of expected returns.\n\nShiller’s excess-volatility work challenges simple constant-discount-rate accounts of prices. Behavioral finance adds reference dependence, overconfidence and social feedback. Even a correct valuation view can be difficult to trade: financing, short-sale limits and uncertain timing constrain arbitrage.",
+      "kind": "Course core"
+    },
+    {
+      "id": "bonds",
+      "title": "04 · Money, bonds & yields",
+      "subtitle": "Cash flows first; prices and rates second",
+      "lesson": "A conventional bond promises coupons and principal. Draw the timeline before using a formula. C is the coupon per payment period; F is face value; t indexes a payment; T is the number of remaining periods; y is yield per period. In the final period, pay C + F, not F alone.\n\nYTM is the single discount rate that makes promised cash flows equal the observed price. It is an internal rate of return, not a guaranteed terminal compound return: that interpretation requires coupon reinvestment at the same rate. With a nonflat yield curve, value payments using their own spot discount factors. Credit risk means promised and expected payments differ. Annual, semiannual and continuous conventions must not be mixed.",
+      "kind": "Course core"
+    },
+    {
+      "id": "equity",
+      "title": "05 · Stocks & corporations",
+      "subtitle": "Valuation, ownership & capital structure",
+      "lesson": "Common equity is a residual claim: creditors get paid before shareholders. Value depends on future distributable cash flows and required returns. The Gordon growth model is a useful special case, but small changes in r − g can produce large valuation changes. A mature steady-growth company is very different from a young firm with uncertain reinvestment needs.\n\nKeep enterprise value and equity value separate. Discount cash flow to all capital providers at WACC, then reconcile debt, cash and other claims. Financing and payout policy move claims around; dividends and buybacks do not create free wealth on their own. CAPE adds a long-horizon valuation perspective without supplying a reliable short-term trading signal.",
+      "kind": "Course core"
+    },
+    {
+      "id": "housing",
+      "title": "06 · Housing & mortgages",
+      "subtitle": "Amortization, prepayment & securitization",
+      "lesson": "A home provides housing services as well as uncertain investment returns. Compare total costs: financing, taxes, maintenance, insurance, vacancy, transaction costs and the alternative use of capital. A cap rate uses property-level net operating income before debt service; it is not the investor’s complete return.\n\nA mortgage payment combines interest and principal. Early payments on a level-payment loan are mostly interest because the outstanding balance is larger. Fixed-rate borrowers can often refinance if rates fall, giving them an option at the lender’s expense. Securitization pools loans and reallocates payments and losses; pooling correlated collateral does not make its common risk disappear.",
+      "kind": "Course core"
+    },
+    {
+      "id": "derivatives",
+      "title": "07 · Derivatives & hedging",
+      "subtitle": "Replication, payoff diagrams & no-arbitrage",
+      "lesson": "A derivative’s value comes from its contractual payoff, the underlying exposures and the terms of settlement. Hedging exchanges one pattern of outcomes for another; it does not promise higher profits. A futures hedge may work economically yet demand cash margin before the underlying business receives its offsetting cash.\n\nNo-arbitrage connects portfolios with identical future payoffs. Replication can price a claim without knowing real-world probabilities, if the modeled states and trading opportunities are sufficient. Distinguish payoff from profit, and option rights from exercise obligations. Models assume conditions that real markets only approximate; jumps, costs, uncertain volatility and collateral terms limit hedging.",
+      "kind": "Course core"
+    },
+    {
+      "id": "banking",
+      "title": "08 · Banks & central banks",
+      "subtitle": "Balance sheets, money creation & resilience",
+      "lesson": "A bank’s assets are financed by liabilities and equity. Deposits are liabilities to the bank. Equity absorbs losses; reserves provide settlement liquidity. Neither is interchangeable with the other. Transforming short-term funding into long-lived loans supports enterprise but creates run risk.\n\nBank lending commonly creates a deposit, but lending remains constrained by capital, funding, liquidity, risk and demand. Central banks influence rates and settlement conditions. QE exchanges assets and changes balance sheets; it is not automatically household spending. Regulation combines capital quality, risk-weighted requirements, leverage limits, liquidity rules and supervision. Basel standards require domestic implementation and are not one globally identical rule.",
+      "kind": "Course core"
+    },
+    {
+      "id": "institutions",
+      "title": "09 · Institutions & trading",
+      "subtitle": "Funds, intermediaries & market plumbing",
+      "lesson": "Separate roles: brokers act for clients, dealers trade on their own account, market makers provide quotes, and investment banks arrange issuance and corporate transactions. Some groups perform several roles, making conflicts and governance relevant. A rating is an opinion about credit, not insurance.\n\nFunds make diversified holdings accessible, but fees, underlying exposures and redemption terms still matter. ETFs use a creation/redemption mechanism that usually links trading price and NAV, without guaranteeing identical prices in stressed markets. Execution quality is broader than a zero commission: spreads, slippage, routing and conflicts affect what investors receive.",
+      "kind": "Course core"
+    },
+    {
+      "id": "crises",
+      "title": "10 · Leverage & crises",
+      "subtitle": "Funding runs, contagion & resolution",
+      "lesson": "Leverage magnifies gains and losses relative to the investor’s equity. Margin and collateral requirements can force a sale before an investment recovers. During a boom, stronger collateral supports more borrowing; during a decline, the mechanism reverses. Funding maturity and the ability to absorb losses matter as much as asset labels.\n\nThe 2008 crisis combined housing losses, fragile funding, high leverage and opaque interconnections. The 2023 bank failures showed that low-credit-risk securities can still have large duration losses. System resilience requires looking across banks and nonbanks, shared holdings, derivatives and infrastructure. Regulation, supervision, incentives and credible resolution all contribute.",
+      "kind": "Course core"
+    },
+    {
+      "id": "society",
+      "title": "11 · Finance & society",
+      "subtitle": "Public debt, pensions, ethics & access",
+      "lesson": "Government borrowing can finance productive assets and stabilize emergencies, but sustainability is about future fiscal capacity and financing conditions. Growth relative to interest costs helps; it does not remove the need for taxes, credible institutions and manageable refinancing. Municipal issuers have different revenues and legal constraints from sovereigns.\n\nInsurance, pensions, nonprofits and cooperatives show that finance serves many objectives. Retirement systems allocate longevity, inflation and investment risks differently. Financial advice and governance should consider client obligations, conflicts and access. A useful ethical question is whether the contract helps people manage real risks and undertake worthwhile projects.",
+      "kind": "Course core"
+    },
+    {
+      "id": "modern",
+      "title": "12 · Finance today",
+      "subtitle": "2026 context, digital assets, AI & private credit",
+      "lesson": "Use durable economic questions to evaluate new products: what is the claim, who owes the money, how is it funded, how can it be redeemed, and what happens under stress? Private credit, tokenization and AI do not erase old problems involving valuation, liquidity, incentives or uncertainty.\n\nDated facts below were checked on October 11, 2026. U.S. T+1 settlement dates from May 2024. U.S. agencies released a capital proposal package in March 2026; separately, September 2026 final stress-test rules introduce annual public input and two-year buffer averaging starting in 2028. A final rule’s announcement is not the same as all provisions already taking effect. This app does not automatically refresh regulations.",
+      "kind": "Current context"
+    }
+  ],
+  "cards": [
+    {
+      "id": "purpose-claims",
+      "topic": "purpose",
+      "title": "Contingent claims",
+      "prompts": [
+        "What makes a financial claim contingent?",
+        "Explain contingent claims in your own words, and give an example.",
+        "A friend asks about contingent claims. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Its payoff depends on a future state or event.",
+      "explanation": "A share, a fire policy and an option distribute money differently across future outcomes. Describing those states reveals the economic substance of the contract.",
+      "choices": [
+        "Its payoff depends on a future state or event.",
+        "Its payout is always certain.",
+        "It must trade on an exchange."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Its payoff depends on a future state or event.",
+        "A share, a fire policy and an option distribute money differently across future outcomes. Describing those states reveals the economic substance of the contract."
+      ]
+    },
+    {
+      "id": "purpose-sharing",
+      "topic": "purpose",
+      "title": "Risk sharing",
+      "prompts": [
+        "How can giving up expected income make a farmer better off?",
+        "Explain risk sharing in your own words, and give an example.",
+        "A friend asks about risk sharing. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Certainty can be worth more to a risk-averse farmer than the extra expected income.",
+      "explanation": "Compare utility of wealth, not only the average dollar outcome. Pooling works best when different farmers do not all lose together.",
+      "choices": [
+        "Certainty can be worth more to a risk-averse farmer than the extra expected income.",
+        "Risk sharing must increase expected income.",
+        "Insurance removes all risk from society."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Certainty can be worth more to a risk-averse farmer than the extra expected income.",
+        "Compare utility of wealth, not only the average dollar outcome. Pooling works best when different farmers do not all lose together."
+      ]
+    },
+    {
+      "id": "purpose-liability",
+      "topic": "purpose",
+      "title": "Limited liability",
+      "prompts": [
+        "What does limited liability usually mean for a common shareholder?",
+        "Explain limited liability in your own words, and give an example.",
+        "A friend asks about limited liability. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The shareholder ordinarily risks the amount invested, rather than personal assets beyond it.",
+      "explanation": "The company can still fail and creditors can lose. Personal guarantees, fraud and other legal exceptions are separate issues.",
+      "choices": [
+        "The shareholder ordinarily risks the amount invested, rather than personal assets beyond it.",
+        "The stock cannot lose value.",
+        "The government guarantees the shareholder’s investment."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The shareholder ordinarily risks the amount invested, rather than personal assets beyond it.",
+        "The company can still fail and creditors can lose. Personal guarantees, fraud and other legal exceptions are separate issues."
+      ]
+    },
+    {
+      "id": "purpose-adverse",
+      "topic": "purpose",
+      "title": "Adverse selection",
+      "prompts": [
+        "Why might a voluntarily insured pool contain unusually risky people?",
+        "Explain adverse selection in your own words, and give an example.",
+        "A friend asks about adverse selection. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "People who know they face greater risk have more reason to buy coverage.",
+      "explanation": "This is information hidden before contracting. Underwriting and broad participation can help, with tradeoffs for access.",
+      "choices": [
+        "People who know they face greater risk have more reason to buy coverage.",
+        "Insurance necessarily makes people careless afterward.",
+        "Insurers always know every customer’s risk."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "People who know they face greater risk have more reason to buy coverage.",
+        "This is information hidden before contracting. Underwriting and broad participation can help, with tradeoffs for access."
+      ]
+    },
+    {
+      "id": "purpose-moral",
+      "topic": "purpose",
+      "title": "Moral hazard",
+      "prompts": [
+        "A fully insured owner stops maintaining safety equipment. What problem is this?",
+        "Explain moral hazard in your own words, and give an example.",
+        "A friend asks about moral hazard. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Protection changed behavior after the contract: moral hazard.",
+      "explanation": "Deductibles, monitoring and shared losses can preserve incentives. Moral hazard need not involve deliberate wrongdoing.",
+      "choices": [
+        "Protection changed behavior after the contract: moral hazard.",
+        "Adverse selection before the policy.",
+        "A reduction in aggregate risk."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Protection changed behavior after the contract: moral hazard.",
+        "Deductibles, monitoring and shared losses can preserve incentives. Moral hazard need not involve deliberate wrongdoing."
+      ]
+    },
+    {
+      "id": "purpose-agency",
+      "topic": "purpose",
+      "title": "Principal–agent problems",
+      "prompts": [
+        "Why can a bonus tied to this year’s profits hurt a bank’s owners?",
+        "Explain principal–agent problems in your own words, and give an example.",
+        "A friend asks about principal–agent problems. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The manager may take delayed risks to improve short-term measured performance.",
+      "explanation": "Good governance aligns incentives across time and across stakeholders. Compensation, audits and covenants reduce but do not erase agency costs.",
+      "choices": [
+        "The manager may take delayed risks to improve short-term measured performance.",
+        "Managers always bear all future losses.",
+        "High profits prove there are no hidden risks."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The manager may take delayed risks to improve short-term measured performance.",
+        "Good governance aligns incentives across time and across stakeholders. Compensation, audits and covenants reduce but do not erase agency costs."
+      ]
+    },
+    {
+      "id": "purpose-innovation",
+      "topic": "purpose",
+      "title": "Financial innovation",
+      "prompts": [
+        "What test should a useful financial innovation pass?",
+        "Explain financial innovation in your own words, and give an example.",
+        "A friend asks about financial innovation. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It should improve allocation or risk management after accounting for costs and fragility.",
+      "explanation": "Complexity alone is not progress. A new instrument may improve access while also introducing leverage, opacity or correlated exposure.",
+      "choices": [
+        "It should improve allocation or risk management after accounting for costs and fragility.",
+        "It must make every participant richer.",
+        "It is useful whenever trading volume rises."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It should improve allocation or risk management after accounting for costs and fragility.",
+        "Complexity alone is not progress. A new instrument may improve access while also introducing leverage, opacity or correlated exposure."
+      ]
+    },
+    {
+      "id": "purpose-externality",
+      "topic": "purpose",
+      "title": "Financial externalities",
+      "prompts": [
+        "How can a rational forced asset sale harm other institutions?",
+        "Explain financial externalities in your own words, and give an example.",
+        "A friend asks about financial externalities. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It can depress shared asset prices and trigger more losses and sales.",
+      "explanation": "A lender may protect itself by demanding collateral while contributing to a system-wide spiral. Private incentives can differ from social welfare.",
+      "choices": [
+        "It can depress shared asset prices and trigger more losses and sales.",
+        "The sale automatically destroys all contracts.",
+        "Only irrational decisions can create crises."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It can depress shared asset prices and trigger more losses and sales.",
+        "A lender may protect itself by demanding collateral while contributing to a system-wide spiral. Private incentives can differ from social welfare."
+      ]
+    },
+    {
+      "id": "risk-expected",
+      "topic": "risk",
+      "title": "Expected return",
+      "prompts": [
+        "Is an investment’s expected return a guaranteed outcome?",
+        "Explain expected return in your own words, and give an example.",
+        "A friend asks about expected return. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it is a probability-weighted average of possible returns.",
+      "explanation": "A risky asset can have positive expected return and a substantial probability of loss. Estimates depend on the chosen distribution.",
+      "choices": [
+        "No: it is a probability-weighted average of possible returns.",
+        "Yes, if enough investors buy it.",
+        "Yes, if the arithmetic is correct."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it is a probability-weighted average of possible returns.",
+        "A risky asset can have positive expected return and a substantial probability of loss. Estimates depend on the chosen distribution."
+      ]
+    },
+    {
+      "id": "risk-variance",
+      "topic": "risk",
+      "title": "Variance and volatility",
+      "prompts": [
+        "What does return standard deviation measure?",
+        "Explain variance and volatility in your own words, and give an example.",
+        "A friend asks about variance and volatility. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Dispersion of returns around their mean.",
+      "explanation": "Variance uses squared deviations; standard deviation restores return units. It counts positive surprises as well as negative ones and does not describe the entire tail.",
+      "choices": [
+        "Dispersion of returns around their mean.",
+        "Only permanent losses.",
+        "The average return itself."
+      ],
+      "formula": "Variance = Σ pᵢ(Rᵢ − μ)²; volatility = √variance",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Dispersion of returns around their mean.",
+        "Variance uses squared deviations; standard deviation restores return units. It counts positive surprises as well as negative ones and does not describe the entire tail."
+      ]
+    },
+    {
+      "id": "risk-correlation",
+      "topic": "risk",
+      "title": "Correlation",
+      "prompts": [
+        "Why can two volatile assets form a less volatile portfolio?",
+        "Explain correlation in your own words, and give an example.",
+        "A friend asks about correlation. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Their fluctuations may partially offset when correlation is below one.",
+      "explanation": "The benefit depends on weights, volatility and joint movements. Correlations can change in stress; zero correlation does not imply independence in general.",
+      "choices": [
+        "Their fluctuations may partially offset when correlation is below one.",
+        "Owning two assets guarantees no losses.",
+        "Their individual volatilities must fall."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Their fluctuations may partially offset when correlation is below one.",
+        "The benefit depends on weights, volatility and joint movements. Correlations can change in stress; zero correlation does not imply independence in general."
+      ]
+    },
+    {
+      "id": "risk-systematic",
+      "topic": "risk",
+      "title": "Systematic risk",
+      "prompts": [
+        "Can owning many technology shares eliminate recession risk?",
+        "Explain systematic risk in your own words, and give an example.",
+        "A friend asks about systematic risk. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: diversification leaves common economic and sector exposures.",
+      "explanation": "Idiosyncratic risk is company-specific; systematic risk is shared. Many names can still represent the same underlying bet.",
+      "choices": [
+        "No: diversification leaves common economic and sector exposures.",
+        "Yes, once you own 100 shares.",
+        "Yes, provided every company is profitable."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: diversification leaves common economic and sector exposures.",
+        "Idiosyncratic risk is company-specific; systematic risk is shared. Many names can still represent the same underlying bet."
+      ]
+    },
+    {
+      "id": "risk-beta",
+      "topic": "risk",
+      "title": "Beta",
+      "prompts": [
+        "Does beta measure all of a stock’s risk?",
+        "Explain beta in your own words, and give an example.",
+        "A friend asks about beta. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it measures covariance with market returns relative to market variance.",
+      "explanation": "A low-beta stock can have large idiosyncratic or tail risk. Estimated beta depends on the benchmark and measurement period.",
+      "choices": [
+        "No: it measures covariance with market returns relative to market variance.",
+        "Yes, beta equals total volatility.",
+        "No, beta measures only the dividend yield."
+      ],
+      "formula": "βᵢ = Cov(Rᵢ,Rₘ) / Var(Rₘ)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it measures covariance with market returns relative to market variance.",
+        "A low-beta stock can have large idiosyncratic or tail risk. Estimated beta depends on the benchmark and measurement period."
+      ]
+    },
+    {
+      "id": "risk-capm",
+      "topic": "risk",
+      "title": "CAPM",
+      "prompts": [
+        "Which risk does the basic CAPM reward with higher expected returns?",
+        "Explain capm in your own words, and give an example.",
+        "A friend asks about capm. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Nondiversifiable market risk, measured by beta.",
+      "explanation": "Its assumptions include mean–variance choice and a common market portfolio. Size, value and other empirical factors complicate the one-beta account.",
+      "choices": [
+        "Nondiversifiable market risk, measured by beta.",
+        "All company-specific risk equally.",
+        "Only the chance of a positive return."
+      ],
+      "formula": "E[Rᵢ] = Rf + βᵢ(E[Rₘ] − Rf)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Nondiversifiable market risk, measured by beta.",
+        "Its assumptions include mean–variance choice and a common market portfolio. Size, value and other empirical factors complicate the one-beta account."
+      ]
+    },
+    {
+      "id": "risk-frontier",
+      "topic": "risk",
+      "title": "Efficient frontier",
+      "prompts": [
+        "What makes a portfolio efficient in mean–variance theory?",
+        "Explain efficient frontier in your own words, and give an example.",
+        "A friend asks about efficient frontier. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No available portfolio improves expected return without increasing risk, or reduces risk at that return.",
+      "explanation": "Efficiency is conditional on inputs and constraints. Estimation error can make the theoretically optimal allocation unstable.",
+      "choices": [
+        "No available portfolio improves expected return without increasing risk, or reduces risk at that return.",
+        "It always earns the most in every outcome.",
+        "It contains only safe assets."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No available portfolio improves expected return without increasing risk, or reduces risk at that return.",
+        "Efficiency is conditional on inputs and constraints. Estimation error can make the theoretically optimal allocation unstable."
+      ]
+    },
+    {
+      "id": "risk-cml",
+      "topic": "risk",
+      "title": "Capital market line",
+      "prompts": [
+        "How does the capital market line differ from the security market line?",
+        "Explain capital market line in your own words, and give an example.",
+        "A friend asks about capital market line. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.",
+      "explanation": "The CML mixes a risk-free asset with the tangency portfolio. Under CAPM, the risky tangency portfolio is the market portfolio.",
+      "choices": [
+        "The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.",
+        "Both use total volatility for every individual stock.",
+        "The CML prices only options."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.",
+        "The CML mixes a risk-free asset with the tangency portfolio. Under CAPM, the risky tangency portfolio is the market portfolio."
+      ]
+    },
+    {
+      "id": "risk-lln",
+      "topic": "risk",
+      "title": "Law of large numbers",
+      "prompts": [
+        "When is insurance pooling most effective?",
+        "Explain law of large numbers in your own words, and give an example.",
+        "A friend asks about law of large numbers. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "When many sufficiently independent, measurable losses are pooled.",
+      "explanation": "Common catastrophes remain even in a huge pool. Reinsurance and reserves help handle concentrated losses; they do not make losses disappear.",
+      "choices": [
+        "When many sufficiently independent, measurable losses are pooled.",
+        "When every claim happens at once.",
+        "When risks are perfectly positively correlated."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "When many sufficiently independent, measurable losses are pooled.",
+        "Common catastrophes remain even in a huge pool. Reinsurance and reserves help handle concentrated losses; they do not make losses disappear."
+      ]
+    },
+    {
+      "id": "risk-var",
+      "topic": "risk",
+      "title": "Value at Risk",
+      "prompts": [
+        "Does a 99% one-day VaR of $1 million cap losses at $1 million?",
+        "Explain value at risk in your own words, and give an example.",
+        "A friend asks about value at risk. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it is a loss threshold exceeded about 1% of days under the model.",
+      "explanation": "VaR says little about loss severity beyond the threshold. Expected shortfall examines average tail loss; stress tests examine selected scenarios.",
+      "choices": [
+        "No: it is a loss threshold exceeded about 1% of days under the model.",
+        "Yes, it is the worst possible loss.",
+        "Yes, except for transaction fees."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it is a loss threshold exceeded about 1% of days under the model.",
+        "VaR says little about loss severity beyond the threshold. Expected shortfall examines average tail loss; stress tests examine selected scenarios."
+      ]
+    },
+    {
+      "id": "risk-tails",
+      "topic": "risk",
+      "title": "Fat tails and stress tests",
+      "prompts": [
+        "Why can a normal-distribution risk model underestimate danger?",
+        "Explain fat tails and stress tests in your own words, and give an example.",
+        "A friend asks about fat tails and stress tests. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Extreme outcomes can be more frequent and dependence can worsen in crises.",
+      "explanation": "Historical samples may miss rare events. Stress tests complement statistical models but are scenarios, not forecasts with certain probabilities.",
+      "choices": [
+        "Extreme outcomes can be more frequent and dependence can worsen in crises.",
+        "Markets never experience unusual events.",
+        "Normal models always overstate losses."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Extreme outcomes can be more frequent and dependence can worsen in crises.",
+        "Historical samples may miss rare events. Stress tests complement statistical models but are scenarios, not forecasts with certain probabilities."
+      ]
+    },
+    {
+      "id": "risk-utility",
+      "topic": "risk",
+      "title": "Expected utility",
+      "prompts": [
+        "Why might investors reject a positive expected-value gamble?",
+        "Explain expected utility in your own words, and give an example.",
+        "A friend asks about expected utility. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "With diminishing marginal utility, losses can hurt more than equal gains help.",
+      "explanation": "Risk preferences concern wealth and obligations. Expected utility is a model; behavioral reference dependence is a distinct explanation.",
+      "choices": [
+        "With diminishing marginal utility, losses can hurt more than equal gains help.",
+        "A positive expected value guarantees a loss.",
+        "A positive expected value implies equal utility for everyone."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "With diminishing marginal utility, losses can hurt more than equal gains help.",
+        "Risk preferences concern wealth and obligations. Expected utility is a model; behavioral reference dependence is a distinct explanation."
+      ]
+    },
+    {
+      "id": "behavior-news",
+      "topic": "behavior",
+      "title": "Expectations versus news",
+      "prompts": [
+        "Why might a stock fall after announcing record earnings?",
+        "Explain expectations versus news in your own words, and give an example.",
+        "A friend asks about expectations versus news. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The news may be worse than investors already expected.",
+      "explanation": "Price reactions depend on the surprise and changes to future expectations, not whether the headline sounds positive.",
+      "choices": [
+        "The news may be worse than investors already expected.",
+        "Record earnings always imply a rising price.",
+        "The market must have ignored the announcement."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The news may be worse than investors already expected.",
+        "Price reactions depend on the surprise and changes to future expectations, not whether the headline sounds positive."
+      ]
+    },
+    {
+      "id": "behavior-emh",
+      "topic": "behavior",
+      "title": "Forms of efficiency",
+      "prompts": [
+        "What information does semi-strong market efficiency cover?",
+        "Explain forms of efficiency in your own words, and give an example.",
+        "A friend asks about forms of efficiency. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "All publicly available information.",
+      "explanation": "Weak form covers past trading data; strong form includes private information and is not a realistic general description. Efficiency is relative to an information set.",
+      "choices": [
+        "All publicly available information.",
+        "Only historical prices.",
+        "Every private secret without exception."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "All publicly available information.",
+        "Weak form covers past trading data; strong form includes private information and is not a realistic general description. Efficiency is relative to an information set."
+      ]
+    },
+    {
+      "id": "behavior-walk",
+      "topic": "behavior",
+      "title": "Random walks",
+      "prompts": [
+        "Does efficient pricing require constant expected returns?",
+        "Explain random walks in your own words, and give an example.",
+        "A friend asks about random walks. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: expected risk premiums can change even if unexpected news is unpredictable.",
+      "explanation": "A strict random walk is stronger than many efficient-market models. Predictability associated with risk does not alone establish free profits.",
+      "choices": [
+        "No: expected risk premiums can change even if unexpected news is unpredictable.",
+        "Yes, all assets must have identical expected returns.",
+        "Yes, yesterday’s price must equal tomorrow’s."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: expected risk premiums can change even if unexpected news is unpredictable.",
+        "A strict random walk is stronger than many efficient-market models. Predictability associated with risk does not alone establish free profits."
+      ]
+    },
+    {
+      "id": "behavior-joint",
+      "topic": "behavior",
+      "title": "Joint-hypothesis problem",
+      "prompts": [
+        "Why is poor model performance not a clean test of market inefficiency?",
+        "Explain joint-hypothesis problem in your own words, and give an example.",
+        "A friend asks about joint-hypothesis problem. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A test of abnormal returns also relies on an asset-pricing model.",
+      "explanation": "Apparent alpha can reflect a missing risk factor or a mispriced asset. Neither interpretation follows automatically.",
+      "choices": [
+        "A test of abnormal returns also relies on an asset-pricing model.",
+        "Because prices cannot be measured.",
+        "Because all asset-pricing models are exact laws."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A test of abnormal returns also relies on an asset-pricing model.",
+        "Apparent alpha can reflect a missing risk factor or a mispriced asset. Neither interpretation follows automatically."
+      ]
+    },
+    {
+      "id": "behavior-excess",
+      "topic": "behavior",
+      "title": "Excess volatility",
+      "prompts": [
+        "What does Shiller’s excess-volatility argument challenge?",
+        "Explain excess volatility in your own words, and give an example.",
+        "A friend asks about excess volatility. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Simple valuations with constant discount rates that struggle to explain price swings.",
+      "explanation": "Changing discount rates and risk premiums matter. The argument does not prove that every large movement is irrational.",
+      "choices": [
+        "Simple valuations with constant discount rates that struggle to explain price swings.",
+        "The existence of dividend payments.",
+        "Every theory permitting changing expected returns."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Simple valuations with constant discount rates that struggle to explain price swings.",
+        "Changing discount rates and risk premiums matter. The argument does not prove that every large movement is irrational."
+      ]
+    },
+    {
+      "id": "behavior-prospect",
+      "topic": "behavior",
+      "title": "Prospect theory",
+      "prompts": [
+        "How do reference points affect decisions in prospect theory?",
+        "Explain prospect theory in your own words, and give an example.",
+        "A friend asks about prospect theory. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "People evaluate gains and losses relative to a reference point and weight them asymmetrically.",
+      "explanation": "Loss aversion, diminishing sensitivity and nonlinear probability weighting can explain choices beyond standard expected utility. Loss aversion is not identical to ordinary risk aversion.",
+      "choices": [
+        "People evaluate gains and losses relative to a reference point and weight them asymmetrically.",
+        "Only final wealth matters, regardless of framing.",
+        "People always take less risk after losses."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "People evaluate gains and losses relative to a reference point and weight them asymmetrically.",
+        "Loss aversion, diminishing sensitivity and nonlinear probability weighting can explain choices beyond standard expected utility. Loss aversion is not identical to ordinary risk aversion."
+      ]
+    },
+    {
+      "id": "behavior-anchoring",
+      "topic": "behavior",
+      "title": "Anchoring",
+      "prompts": [
+        "Why is your purchase price a poor reason by itself to keep a stock?",
+        "Explain anchoring in your own words, and give an example.",
+        "A friend asks about anchoring. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It can anchor the decision even when future prospects have changed.",
+      "explanation": "The relevant choice compares future outcomes and alternatives from today. Tax consequences can matter, but the past price does not determine economic value.",
+      "choices": [
+        "It can anchor the decision even when future prospects have changed.",
+        "The purchase price determines future earnings.",
+        "Selling below your purchase price is always irrational."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It can anchor the decision even when future prospects have changed.",
+        "The relevant choice compares future outcomes and alternatives from today. Tax consequences can matter, but the past price does not determine economic value."
+      ]
+    },
+    {
+      "id": "behavior-disposition",
+      "topic": "behavior",
+      "title": "Disposition effect",
+      "prompts": [
+        "What is the disposition effect?",
+        "Explain disposition effect in your own words, and give an example.",
+        "A friend asks about disposition effect. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A tendency to sell winners and hold losers too long.",
+      "explanation": "It can reflect reluctance to realize losses. A useful check is whether you would buy the same holding today given its prospects.",
+      "choices": [
+        "A tendency to sell winners and hold losers too long.",
+        "A proven strategy to maximize return.",
+        "Selling losing assets immediately in every case."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A tendency to sell winners and hold losers too long.",
+        "It can reflect reluctance to realize losses. A useful check is whether you would buy the same holding today given its prospects."
+      ]
+    },
+    {
+      "id": "behavior-confidence",
+      "topic": "behavior",
+      "title": "Overconfidence",
+      "prompts": [
+        "How can overconfidence reduce investment performance?",
+        "Explain overconfidence in your own words, and give an example.",
+        "A friend asks about overconfidence. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It can lead to excessive trading, concentration and underestimated uncertainty.",
+      "explanation": "Distinguish a persuasive story from calibrated evidence. Costs and taxes can erode returns even when gross predictions have some skill.",
+      "choices": [
+        "It can lead to excessive trading, concentration and underestimated uncertainty.",
+        "It eliminates estimation error.",
+        "More trades always create more information."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It can lead to excessive trading, concentration and underestimated uncertainty.",
+        "Distinguish a persuasive story from calibrated evidence. Costs and taxes can erode returns even when gross predictions have some skill."
+      ]
+    },
+    {
+      "id": "behavior-bubbles",
+      "topic": "behavior",
+      "title": "Feedback and bubbles",
+      "prompts": [
+        "How can price increases help sustain a speculative boom?",
+        "Explain feedback and bubbles in your own words, and give an example.",
+        "A friend asks about feedback and bubbles. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Rising prices attract attention, reinforce stories and loosen borrowing constraints.",
+      "explanation": "Feedback need not follow a universal sequence. Fundamentals may improve too; a compelling technology does not justify every price.",
+      "choices": [
+        "Rising prices attract attention, reinforce stories and loosen borrowing constraints.",
+        "A bubble has a mechanically known end date.",
+        "Price increases prove future cash flows rose proportionately."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Rising prices attract attention, reinforce stories and loosen borrowing constraints.",
+        "Feedback need not follow a universal sequence. Fundamentals may improve too; a compelling technology does not justify every price."
+      ]
+    },
+    {
+      "id": "behavior-arbitrage",
+      "topic": "behavior",
+      "title": "Limits to arbitrage",
+      "prompts": [
+        "Why can an apparently overpriced asset stay expensive?",
+        "Explain limits to arbitrage in your own words, and give an example.",
+        "A friend asks about limits to arbitrage. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Trading against it can involve funding risk, borrow costs and uncertain timing.",
+      "explanation": "Being right about value is different from surviving the trade. A short seller can face losses, recalls and margin demands before prices adjust.",
+      "choices": [
+        "Trading against it can involve funding risk, borrow costs and uncertain timing.",
+        "Every mispricing disappears instantly.",
+        "No one can ever identify valuation risks."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Trading against it can involve funding risk, borrow costs and uncertain timing.",
+        "Being right about value is different from surviving the trade. A short seller can face losses, recalls and margin demands before prices adjust."
+      ]
+    },
+    {
+      "id": "behavior-narratives",
+      "topic": "behavior",
+      "title": "Narrative economics",
+      "prompts": [
+        "Why does Shiller care about stories spreading socially?",
+        "Explain narrative economics in your own words, and give an example.",
+        "A friend asks about narrative economics. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Shared narratives can change spending, investment and risk-taking.",
+      "explanation": "This is a mechanism for expectations and feedback, not permission to replace evidence with anecdotes. Narratives can spread faster than fundamentals change.",
+      "choices": [
+        "Shared narratives can change spending, investment and risk-taking.",
+        "Stories mechanically determine every market price.",
+        "Narratives matter only after a crisis ends."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Shared narratives can change spending, investment and risk-taking.",
+        "This is a mechanism for expectations and feedback, not permission to replace evidence with anecdotes. Narratives can spread faster than fundamentals change."
+      ]
+    },
+    {
+      "id": "bonds-face",
+      "topic": "bonds",
+      "title": "Face value and coupon",
+      "prompts": [
+        "For a $1,000 bond with a 5% annual coupon, what are F and C?",
+        "Explain face value and coupon in your own words, and give an example.",
+        "A friend asks about face value and coupon. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "F is $1,000 repaid at maturity; C is $50 each year.",
+      "explanation": "Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal.",
+      "choices": [
+        "F is $1,000 repaid at maturity; C is $50 each year.",
+        "F is today’s market price and C is market yield.",
+        "F is the total of all coupons."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "F is $1,000 repaid at maturity; C is $50 each year.",
+        "Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal."
+      ]
+    },
+    {
+      "id": "bonds-time",
+      "topic": "bonds",
+      "title": "Payment indices",
+      "prompts": [
+        "In a three-year annual-coupon bond formula, how do t and T differ?",
+        "Explain payment indices in your own words, and give an example.",
+        "A friend asks about payment indices. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "t runs through 1, 2 and 3; T stays fixed at 3.",
+      "explanation": "For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods.",
+      "choices": [
+        "t runs through 1, 2 and 3; T stays fixed at 3.",
+        "t is the coupon rate and T is price.",
+        "Both symbols always mean calendar years."
+      ],
+      "formula": "P = Σₜ₌₁ᵀ C/(1+y)ᵗ + F/(1+y)ᵀ",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "t runs through 1, 2 and 3; T stays fixed at 3.",
+        "For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods."
+      ]
+    },
+    {
+      "id": "bonds-market",
+      "topic": "bonds",
+      "title": "Who sets market yield?",
+      "prompts": [
+        "Does an issuer centrally dictate the yield accepted by investors?",
+        "Explain who sets market yield? in your own words, and give an example.",
+        "A friend asks about who sets market yield?. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: offered terms meet investor demand, and traded prices imply yields.",
+      "explanation": "An issuer and underwriters can propose a coupon and issue price. Bookbuilding tests demand; secondary transactions occur between investors. Comparable bond yields are observations, not a universal imposed rate.",
+      "choices": [
+        "No: offered terms meet investor demand, and traded prices imply yields.",
+        "Yes, investors must accept the announced yield.",
+        "Yes, a fixed coupon prevents price changes."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: offered terms meet investor demand, and traded prices imply yields.",
+        "An issuer and underwriters can propose a coupon and issue price. Bookbuilding tests demand; secondary transactions occur between investors. Comparable bond yields are observations, not a universal imposed rate."
+      ]
+    },
+    {
+      "id": "bonds-ytminverse",
+      "topic": "bonds",
+      "title": "YTM as an implied rate",
+      "prompts": [
+        "How do you find YTM for a traded bond?",
+        "Explain ytm as an implied rate in your own words, and give an example.",
+        "A friend asks about ytm as an implied rate. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Solve for the rate that discounts its promised cash flows to its current price.",
+      "explanation": "Use the observed price as input; valuation exercises can reverse the calculation and use a required yield to find a price. A complex bond can require yield-to-call or other measures.",
+      "choices": [
+        "Solve for the rate that discounts its promised cash flows to its current price.",
+        "Divide its face value by its price.",
+        "Use the coupon rate regardless of price."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Solve for the rate that discounts its promised cash flows to its current price.",
+        "Use the observed price as input; valuation exercises can reverse the calculation and use a required yield to find a price. A complex bond can require yield-to-call or other measures."
+      ]
+    },
+    {
+      "id": "bonds-current",
+      "topic": "bonds",
+      "title": "Current yield versus YTM",
+      "prompts": [
+        "How is current yield different from YTM?",
+        "Explain current yield versus ytm in your own words, and give an example.",
+        "A friend asks about current yield versus ytm. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Current yield is annual coupon divided by price; YTM also incorporates repayment timing and price-to-par change.",
+      "explanation": "Neither is automatically an expected return after default losses. A discount bond can have current yield below YTM.",
+      "choices": [
+        "Current yield is annual coupon divided by price; YTM also incorporates repayment timing and price-to-par change.",
+        "They are always equal.",
+        "Current yield includes every possible future capital gain."
+      ],
+      "formula": "Current yield = annual coupon / market price",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Current yield is annual coupon divided by price; YTM also incorporates repayment timing and price-to-par change.",
+        "Neither is automatically an expected return after default losses. A discount bond can have current yield below YTM."
+      ]
+    },
+    {
+      "id": "bonds-reinvest",
+      "topic": "bonds",
+      "title": "Reinvestment risk",
+      "prompts": [
+        "Does holding a coupon bond to maturity guarantee terminal wealth compounding at YTM?",
+        "Explain reinvestment risk in your own words, and give an example.",
+        "A friend asks about reinvestment risk. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: that terminal-wealth interpretation requires reinvesting coupons at YTM.",
+      "explanation": "The cash-flow IRR remains YTM if promised payments arrive. What coupons earn after receipt is a separate decision and risk. Zero-coupon bonds have no interim coupon reinvestment.",
+      "choices": [
+        "No: that terminal-wealth interpretation requires reinvesting coupons at YTM.",
+        "Yes, regardless of what you do with coupons.",
+        "No, because the face value changes daily."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: that terminal-wealth interpretation requires reinvesting coupons at YTM.",
+        "The cash-flow IRR remains YTM if promised payments arrive. What coupons earn after receipt is a separate decision and risk. Zero-coupon bonds have no interim coupon reinvestment."
+      ]
+    },
+    {
+      "id": "bonds-price",
+      "topic": "bonds",
+      "title": "Bond prices and yields",
+      "prompts": [
+        "What usually happens to a fixed-rate bond price when its required yield rises?",
+        "Explain bond prices and yields in your own words, and give an example.",
+        "A friend asks about bond prices and yields. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Its price falls.",
+      "explanation": "The contract pays the same amounts but those amounts are discounted more heavily. This relationship assumes unchanged contractual cash flows.",
+      "choices": [
+        "Its price falls.",
+        "Its coupon automatically rises.",
+        "Its price must remain at face value."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Its price falls.",
+        "The contract pays the same amounts but those amounts are discounted more heavily. This relationship assumes unchanged contractual cash flows."
+      ]
+    },
+    {
+      "id": "bonds-spot",
+      "topic": "bonds",
+      "title": "Spot rates versus YTM",
+      "prompts": [
+        "Why might each bond payment need a different discount rate?",
+        "Explain spot rates versus ytm in your own words, and give an example.",
+        "A friend asks about spot rates versus ytm. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Different maturities can have different spot rates.",
+      "explanation": "YTM compresses a whole cash-flow schedule into one rate. Arbitrage-consistent pricing uses maturity-specific discount factors, then can report the implied YTM.",
+      "choices": [
+        "Different maturities can have different spot rates.",
+        "All payments always face one identical market spot rate.",
+        "Coupons are not discounted."
+      ],
+      "formula": "P = Σ CFₜ × DF(t)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Different maturities can have different spot rates.",
+        "YTM compresses a whole cash-flow schedule into one rate. Arbitrage-consistent pricing uses maturity-specific discount factors, then can report the implied YTM."
+      ]
+    },
+    {
+      "id": "bonds-forward",
+      "topic": "bonds",
+      "title": "Forward interest rates",
+      "prompts": [
+        "Is an interest rate implied by today’s yield curve a certain future spot rate?",
+        "Explain forward interest rates in your own words, and give an example.",
+        "A friend asks about forward interest rates. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it is a no-arbitrage forward rate and may include risk-premium effects.",
+      "explanation": "The expectations hypothesis adds assumptions about premiums. With annual compounding, a two-year investment and a rolled one-year investment define the one-year forward rate.",
+      "choices": [
+        "No: it is a no-arbitrage forward rate and may include risk-premium effects.",
+        "Yes, it is a perfect forecast.",
+        "Yes, it is fixed by the issuer for everyone."
+      ],
+      "formula": "(1+s₂)² = (1+s₁)(1+f₁,₂)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it is a no-arbitrage forward rate and may include risk-premium effects.",
+        "The expectations hypothesis adds assumptions about premiums. With annual compounding, a two-year investment and a rolled one-year investment define the one-year forward rate."
+      ]
+    },
+    {
+      "id": "bonds-duration",
+      "topic": "bonds",
+      "title": "Modified duration",
+      "prompts": [
+        "What does modified duration of 8 imply for a 1 percentage-point yield rise?",
+        "Explain modified duration in your own words, and give an example.",
+        "A friend asks about modified duration. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Approximately an 8% price decline for a small parallel yield change.",
+      "explanation": "Use Δy = 0.01. Macaulay duration is a cash-flow-weighted time measure; modified duration converts that to sensitivity. Convexity improves the approximation.",
+      "choices": [
+        "Approximately an 8% price decline for a small parallel yield change.",
+        "Approximately an 8% price increase.",
+        "Approximately a 0.08% price decline."
+      ],
+      "formula": "ΔP/P ≈ −Dmod Δy; Dmod = DMac/(1+y) for annual compounding",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Approximately an 8% price decline for a small parallel yield change.",
+        "Use Δy = 0.01. Macaulay duration is a cash-flow-weighted time measure; modified duration converts that to sensitivity. Convexity improves the approximation."
+      ]
+    },
+    {
+      "id": "bonds-convexity",
+      "topic": "bonds",
+      "title": "Convexity and embedded options",
+      "prompts": [
+        "Why can duration alone be inaccurate for large yield moves?",
+        "Explain convexity and embedded options in your own words, and give an example.",
+        "A friend asks about convexity and embedded options. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The price–yield relation is curved, and options can change expected cash flows.",
+      "explanation": "A standard option-free bond has positive convexity. Callable bonds and mortgage securities can show negative convexity as borrowers refinance when rates fall.",
+      "choices": [
+        "The price–yield relation is curved, and options can change expected cash flows.",
+        "All bond prices are linear in yields.",
+        "Duration measures default probability exactly."
+      ],
+      "formula": "ΔP/P ≈ −Dmod Δy + ½ convexity (Δy)²",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The price–yield relation is curved, and options can change expected cash flows.",
+        "A standard option-free bond has positive convexity. Callable bonds and mortgage securities can show negative convexity as borrowers refinance when rates fall."
+      ]
+    },
+    {
+      "id": "bonds-curve",
+      "topic": "bonds",
+      "title": "Yield curves",
+      "prompts": [
+        "Does an inverted yield curve guarantee a recession?",
+        "Explain yield curves in your own words, and give an example.",
+        "A friend asks about yield curves. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it is a historical warning indicator, not a deterministic rule.",
+      "explanation": "Expected policy rates, term premiums, liquidity and demand can shape the curve. Compare comparable debt, currencies and yield conventions.",
+      "choices": [
+        "No: it is a historical warning indicator, not a deterministic rule.",
+        "Yes, on a known date.",
+        "No, inversions never contain information."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it is a historical warning indicator, not a deterministic rule.",
+        "Expected policy rates, term premiums, liquidity and demand can shape the curve. Compare comparable debt, currencies and yield conventions."
+      ]
+    },
+    {
+      "id": "bonds-credit",
+      "topic": "bonds",
+      "title": "Credit spreads",
+      "prompts": [
+        "Is a corporate bond’s spread pure expected default loss?",
+        "Explain credit spreads in your own words, and give an example.",
+        "A friend asks about credit spreads. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it can include default compensation, risk premiums and liquidity effects.",
+      "explanation": "Compare similar duration, currency and optionality. A high promised yield can coexist with a modest or negative expected return.",
+      "choices": [
+        "No: it can include default compensation, risk premiums and liquidity effects.",
+        "Yes, with no risk premium.",
+        "No, the spread is simply its coupon."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it can include default compensation, risk premiums and liquidity effects.",
+        "Compare similar duration, currency and optionality. A high promised yield can coexist with a modest or negative expected return."
+      ]
+    },
+    {
+      "id": "bonds-clean",
+      "topic": "bonds",
+      "title": "Clean and dirty prices",
+      "prompts": [
+        "Why can the cash paid for a bond exceed its quoted clean price?",
+        "Explain clean and dirty prices in your own words, and give an example.",
+        "A friend asks about clean and dirty prices. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The settlement amount adds accrued coupon interest.",
+      "explanation": "The dirty price includes accrued interest since the last coupon. Accrual conventions and dates matter; do not confuse it with a hidden return.",
+      "choices": [
+        "The settlement amount adds accrued coupon interest.",
+        "The broker changes its face value.",
+        "The coupon has become a stock dividend."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The settlement amount adds accrued coupon interest.",
+        "The dirty price includes accrued interest since the last coupon. Accrual conventions and dates matter; do not confuse it with a hidden return."
+      ]
+    },
+    {
+      "id": "bonds-real",
+      "topic": "bonds",
+      "title": "Nominal versus real returns",
+      "prompts": [
+        "What does inflation do to a nominal investment return?",
+        "Explain nominal versus real returns in your own words, and give an example.",
+        "A friend asks about nominal versus real returns. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It reduces the purchasing-power return.",
+      "explanation": "Match nominal cash flows with nominal discount rates, and real cash flows with real rates. Inflation-indexed bonds address specified index risk, not every household’s exact costs.",
+      "choices": [
+        "It reduces the purchasing-power return.",
+        "It always raises the real return.",
+        "It changes nothing if principal is repaid."
+      ],
+      "formula": "1 + real return = (1 + nominal return)/(1 + inflation)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It reduces the purchasing-power return.",
+        "Match nominal cash flows with nominal discount rates, and real cash flows with real rates. Inflation-indexed bonds address specified index risk, not every household’s exact costs."
+      ]
+    },
+    {
+      "id": "bonds-annuity",
+      "topic": "bonds",
+      "title": "Annuities and perpetuities",
+      "prompts": [
+        "How does a level annuity differ from a perpetuity?",
+        "Explain annuities and perpetuities in your own words, and give an example.",
+        "A friend asks about annuities and perpetuities. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "An annuity pays for a finite number of periods; a perpetuity continues indefinitely.",
+      "explanation": "A consol is a perpetual bond. These formulas assume level end-of-period payments and a positive constant discount rate.",
+      "choices": [
+        "An annuity pays for a finite number of periods; a perpetuity continues indefinitely.",
+        "Both stop at the same known date.",
+        "A perpetuity has no present value."
+      ],
+      "formula": "PVannuity = C[1 − (1+r)^−T]/r; PVperpetuity = C/r",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "An annuity pays for a finite number of periods; a perpetuity continues indefinitely.",
+        "A consol is a perpetual bond. These formulas assume level end-of-period payments and a positive constant discount rate."
+      ]
+    },
+    {
+      "id": "equity-residual",
+      "topic": "equity",
+      "title": "Residual ownership",
+      "prompts": [
+        "Who normally has priority over common shareholders in liquidation?",
+        "Explain residual ownership in your own words, and give an example.",
+        "A friend asks about residual ownership. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Creditors and other senior claims.",
+      "explanation": "A stockholder owns a residual interest, not a guaranteed claim to return of the original purchase price. Limited liability does not prevent a total equity loss.",
+      "choices": [
+        "Creditors and other senior claims.",
+        "Common shareholders always get paid first.",
+        "Every stakeholder receives the same amount."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Creditors and other senior claims.",
+        "A stockholder owns a residual interest, not a guaranteed claim to return of the original purchase price. Limited liability does not prevent a total equity loss."
+      ]
+    },
+    {
+      "id": "equity-preferred",
+      "topic": "equity",
+      "title": "Common and preferred shares",
+      "prompts": [
+        "What usually distinguishes preferred shares from common shares?",
+        "Explain common and preferred shares in your own words, and give an example.",
+        "A friend asks about common and preferred shares. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Preferred shares usually have specified dividend and liquidation priority, with different voting rights.",
+      "explanation": "Terms vary. Preferred dividends may be suspendable and sometimes cumulative; preferred equity is not automatically a safe bond.",
+      "choices": [
+        "Preferred shares usually have specified dividend and liquidation priority, with different voting rights.",
+        "Preferred shares guarantee unlimited voting power.",
+        "Common shares have priority over every preferred share."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Preferred shares usually have specified dividend and liquidation priority, with different voting rights.",
+        "Terms vary. Preferred dividends may be suspendable and sometimes cumulative; preferred equity is not automatically a safe bond."
+      ]
+    },
+    {
+      "id": "equity-gordon",
+      "topic": "equity",
+      "title": "Gordon growth valuation",
+      "prompts": [
+        "When is P = D₁/(r − g) meaningful?",
+        "Explain gordon growth valuation in your own words, and give an example.",
+        "A friend asks about gordon growth valuation. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "When dividends grow perpetually at a constant rate below the required return.",
+      "explanation": "D₁ is next period’s dividend, r is the required equity return, g is perpetual growth. A growth rate at or above r makes this infinite-horizon formula invalid.",
+      "choices": [
+        "When dividends grow perpetually at a constant rate below the required return.",
+        "When g is greater than r forever.",
+        "When D₁ means the stock’s market price."
+      ],
+      "formula": "P₀ = D₁/(r − g), with r > g",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "When dividends grow perpetually at a constant rate below the required return.",
+        "D₁ is next period’s dividend, r is the required equity return, g is perpetual growth. A growth rate at or above r makes this infinite-horizon formula invalid."
+      ]
+    },
+    {
+      "id": "equity-wacc",
+      "topic": "equity",
+      "title": "Enterprise and equity value",
+      "prompts": [
+        "If you discount free cash flow to the firm at WACC, which value do you estimate?",
+        "Explain enterprise and equity value in your own words, and give an example.",
+        "A friend asks about enterprise and equity value. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Enterprise value, before reconciling debt and other claims to get equity value.",
+      "explanation": "Subtract debt and senior claims, add nonoperating cash where appropriate. Equity cash flows instead use the cost of equity. Consistent treatment avoids double counting.",
+      "choices": [
+        "Enterprise value, before reconciling debt and other claims to get equity value.",
+        "Only the value of the ordinary shares.",
+        "Only the company’s bank deposits."
+      ],
+      "formula": "WACC = E/(D+E) × Re + D/(D+E) × Rd × (1−tax rate)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Enterprise value, before reconciling debt and other claims to get equity value.",
+        "Subtract debt and senior claims, add nonoperating cash where appropriate. Equity cash flows instead use the cost of equity. Consistent treatment avoids double counting."
+      ]
+    },
+    {
+      "id": "equity-terminal",
+      "topic": "equity",
+      "title": "Terminal value",
+      "prompts": [
+        "Why do small terminal-growth changes have large DCF effects?",
+        "Explain terminal value in your own words, and give an example.",
+        "A friend asks about terminal value. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Much of estimated value may lie in the distant cash flows, and r − g can be small.",
+      "explanation": "A perpetually growing terminal value must fit a sustainable long-run economy and a mature cash-flow base. Sensitivity analysis is more honest than a single precise number.",
+      "choices": [
+        "Much of estimated value may lie in the distant cash flows, and r − g can be small.",
+        "Terminal value is independent of discount rates.",
+        "Terminal value means current cash in the bank."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Much of estimated value may lie in the distant cash flows, and r − g can be small.",
+        "A perpetually growing terminal value must fit a sustainable long-run economy and a mature cash-flow base. Sensitivity analysis is more honest than a single precise number."
+      ]
+    },
+    {
+      "id": "equity-pe",
+      "topic": "equity",
+      "title": "Price-to-earnings ratios",
+      "prompts": [
+        "Does a low P/E automatically mean a bargain?",
+        "Explain price-to-earnings ratios in your own words, and give an example.",
+        "A friend asks about price-to-earnings ratios. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it can reflect weak growth, unusual earnings or high risk.",
+      "explanation": "Use comparable accounting and earnings periods. Negative or temporarily inflated earnings make the ratio unhelpful. Valuation requires a story about future cash flows and uncertainty.",
+      "choices": [
+        "No: it can reflect weak growth, unusual earnings or high risk.",
+        "Yes, low P/E guarantees excess returns.",
+        "Yes, P/E is a contractual payout."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it can reflect weak growth, unusual earnings or high risk.",
+        "Use comparable accounting and earnings periods. Negative or temporarily inflated earnings make the ratio unhelpful. Valuation requires a story about future cash flows and uncertainty."
+      ]
+    },
+    {
+      "id": "equity-cape",
+      "topic": "equity",
+      "title": "CAPE",
+      "prompts": [
+        "What does CAPE smooth, and what is its main use?",
+        "Explain cape in your own words, and give an example.",
+        "A friend asks about cape. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Ten years of real earnings, to inform long-horizon valuation comparisons.",
+      "explanation": "It can help frame expected returns, but cannot reliably time next month’s market. Accounting, sector composition, payout policy and discount rates affect comparisons.",
+      "choices": [
+        "Ten years of real earnings, to inform long-horizon valuation comparisons.",
+        "It predicts the exact date of a crash.",
+        "It uses only next quarter’s nominal earnings."
+      ],
+      "formula": "CAPE = price index / average inflation-adjusted earnings over 10 years",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Ten years of real earnings, to inform long-horizon valuation comparisons.",
+        "It can help frame expected returns, but cannot reliably time next month’s market. Accounting, sector composition, payout policy and discount rates affect comparisons."
+      ]
+    },
+    {
+      "id": "equity-marketcap",
+      "topic": "equity",
+      "title": "Market capitalization",
+      "prompts": [
+        "How do you compute a company’s market capitalization?",
+        "Explain market capitalization in your own words, and give an example.",
+        "A friend asks about market capitalization. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Share price times shares outstanding.",
+      "explanation": "This is an equity value, not enterprise value or the amount the company raised. Price changes can alter market cap without cash entering the firm.",
+      "choices": [
+        "Share price times shares outstanding.",
+        "Total revenue plus dividends.",
+        "Share price times total debt."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Share price times shares outstanding.",
+        "This is an equity value, not enterprise value or the amount the company raised. Price changes can alter market cap without cash entering the firm."
+      ]
+    },
+    {
+      "id": "equity-dilution",
+      "topic": "equity",
+      "title": "Dilution",
+      "prompts": [
+        "Does issuing more shares necessarily destroy existing shareholders’ value?",
+        "Explain dilution in your own words, and give an example.",
+        "A friend asks about dilution. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: ownership percentage falls, but new capital or acquired value may offset it.",
+      "explanation": "If shares are issued cheaply relative to value, existing owners may lose. Distinguish percentage dilution from economic dilution and earnings-per-share effects.",
+      "choices": [
+        "No: ownership percentage falls, but new capital or acquired value may offset it.",
+        "Yes, new investment never adds value.",
+        "No, issuance cannot change existing owners’ wealth."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: ownership percentage falls, but new capital or acquired value may offset it.",
+        "If shares are issued cheaply relative to value, existing owners may lose. Distinguish percentage dilution from economic dilution and earnings-per-share effects."
+      ]
+    },
+    {
+      "id": "equity-buyback",
+      "topic": "equity",
+      "title": "Dividends and buybacks",
+      "prompts": [
+        "Is a share repurchase automatically a wealth-creating event?",
+        "Explain dividends and buybacks in your own words, and give an example.",
+        "A friend asks about dividends and buybacks. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it distributes cash and changes shares outstanding; price and financing matter.",
+      "explanation": "An ex-dividend price tends to adjust for the payout, all else equal. Buybacks can raise EPS mechanically without improving business profits.",
+      "choices": [
+        "No: it distributes cash and changes shares outstanding; price and financing matter.",
+        "Yes, EPS rises so total economic value must rise.",
+        "Yes, shareholders get free money with no asset reduction."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it distributes cash and changes shares outstanding; price and financing matter.",
+        "An ex-dividend price tends to adjust for the payout, all else equal. Buybacks can raise EPS mechanically without improving business profits."
+      ]
+    },
+    {
+      "id": "equity-npv",
+      "topic": "equity",
+      "title": "Net present value",
+      "prompts": [
+        "When does a project add value under an NPV rule?",
+        "Explain net present value in your own words, and give an example.",
+        "A friend asks about net present value. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "When discounted incremental cash flows exceed the required initial investment.",
+      "explanation": "Use opportunity costs and an appropriate risk-adjusted rate. Exclude sunk costs, include working capital and relevant taxes. A positive accounting profit is not sufficient.",
+      "choices": [
+        "When discounted incremental cash flows exceed the required initial investment.",
+        "Whenever gross revenue is positive.",
+        "Whenever management likes the narrative."
+      ],
+      "formula": "NPV = −initial investment + Σ incremental CFₜ/(1+r)ᵗ",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "When discounted incremental cash flows exceed the required initial investment.",
+        "Use opportunity costs and an appropriate risk-adjusted rate. Exclude sunk costs, include working capital and relevant taxes. A positive accounting profit is not sufficient."
+      ]
+    },
+    {
+      "id": "equity-capitalstructure",
+      "topic": "equity",
+      "title": "Capital structure",
+      "prompts": [
+        "Why doesn’t leverage create value for free?",
+        "Explain capital structure in your own words, and give an example.",
+        "A friend asks about capital structure. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It reallocates risk and can introduce taxes, distress costs and incentive effects.",
+      "explanation": "Modigliani–Miller irrelevance is a benchmark under restrictive assumptions. Real funding choices matter because those assumptions fail.",
+      "choices": [
+        "It reallocates risk and can introduce taxes, distress costs and incentive effects.",
+        "Debt has no repayment obligation.",
+        "Borrowing eliminates operating risk."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It reallocates risk and can introduce taxes, distress costs and incentive effects.",
+        "Modigliani–Miller irrelevance is a benchmark under restrictive assumptions. Real funding choices matter because those assumptions fail."
+      ]
+    },
+    {
+      "id": "housing-caprate",
+      "topic": "housing",
+      "title": "Capitalization rate",
+      "prompts": [
+        "Does a property’s cap rate equal its leveraged total return?",
+        "Explain capitalization rate in your own words, and give an example.",
+        "A friend asks about capitalization rate. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: cap rate is NOI divided by property value, before financing and appreciation.",
+      "explanation": "NOI normally subtracts operating expenses but excludes debt service and income taxes; treatment of reserves and major capital expenses needs checking. Vacancy and costs can change it.",
+      "choices": [
+        "No: cap rate is NOI divided by property value, before financing and appreciation.",
+        "Yes, regardless of debt and expenses.",
+        "Yes, cap rate includes all future appreciation."
+      ],
+      "formula": "Cap rate = net operating income / property value",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: cap rate is NOI divided by property value, before financing and appreciation.",
+        "NOI normally subtracts operating expenses but excludes debt service and income taxes; treatment of reserves and major capital expenses needs checking. Vacancy and costs can change it."
+      ]
+    },
+    {
+      "id": "housing-rentbuy",
+      "topic": "housing",
+      "title": "Rent versus buy",
+      "prompts": [
+        "Why is comparing rent only with a mortgage payment incomplete?",
+        "Explain rent versus buy in your own words, and give an example.",
+        "A friend asks about rent versus buy. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Ownership also has maintenance, taxes, insurance, transaction costs and capital opportunity costs.",
+      "explanation": "Principal repayment builds equity but ties up cash. Consider housing services, flexibility, horizon and uncertain resale value; price appreciation is not guaranteed.",
+      "choices": [
+        "Ownership also has maintenance, taxes, insurance, transaction costs and capital opportunity costs.",
+        "Because rent always builds equity.",
+        "Because homes never require maintenance."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Ownership also has maintenance, taxes, insurance, transaction costs and capital opportunity costs.",
+        "Principal repayment builds equity but ties up cash. Consider housing services, flexibility, horizon and uncertain resale value; price appreciation is not guaranteed."
+      ]
+    },
+    {
+      "id": "housing-amortization",
+      "topic": "housing",
+      "title": "Mortgage amortization",
+      "prompts": [
+        "Why does the principal portion of a fixed monthly payment rise over time?",
+        "Explain mortgage amortization in your own words, and give an example.",
+        "A friend asks about mortgage amortization. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Interest is charged on a shrinking outstanding balance, leaving more of the payment for principal.",
+      "explanation": "The payment may be constant while its composition changes. Taxes and insurance may be separate. With zero interest, payment is simply principal divided by periods.",
+      "choices": [
+        "Interest is charged on a shrinking outstanding balance, leaving more of the payment for principal.",
+        "The contractual interest rate must fall each month.",
+        "Principal is never repaid before maturity."
+      ],
+      "formula": "Payment = L × i/[1 − (1+i)^−n]; i = monthly rate, n = payments",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Interest is charged on a shrinking outstanding balance, leaving more of the payment for principal.",
+        "The payment may be constant while its composition changes. Taxes and insurance may be separate. With zero interest, payment is simply principal divided by periods."
+      ]
+    },
+    {
+      "id": "housing-ltv",
+      "topic": "housing",
+      "title": "Loan-to-value",
+      "prompts": [
+        "Why does a high LTV leave little protection against falling home prices?",
+        "Explain loan-to-value in your own words, and give an example.",
+        "A friend asks about loan-to-value. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A small equity cushion can be wiped out by a modest asset decline.",
+      "explanation": "LTV is loan balance divided by property value. Negative equity and inability to refinance can interact, though legal recourse and borrower incentives differ across markets.",
+      "choices": [
+        "A small equity cushion can be wiped out by a modest asset decline.",
+        "A higher LTV means more homeowner equity.",
+        "Home prices cannot fall below loan balances."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A small equity cushion can be wiped out by a modest asset decline.",
+        "LTV is loan balance divided by property value. Negative equity and inability to refinance can interact, though legal recourse and borrower incentives differ across markets."
+      ]
+    },
+    {
+      "id": "housing-refinance",
+      "topic": "housing",
+      "title": "Prepayment and refinancing",
+      "prompts": [
+        "Who benefits from a borrower’s right to refinance a fixed-rate mortgage when rates fall?",
+        "Explain prepayment and refinancing in your own words, and give an example.",
+        "A friend asks about prepayment and refinancing. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The borrower; the lender may receive principal back when reinvestment yields are lower.",
+      "explanation": "Prepayment also reflects moves and other events. Mortgage-backed investors face prepayment and extension risk, not merely credit risk.",
+      "choices": [
+        "The borrower; the lender may receive principal back when reinvestment yields are lower.",
+        "Only the lender, who keeps the old coupons forever.",
+        "Nobody, because fixed rates cannot be replaced."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The borrower; the lender may receive principal back when reinvestment yields are lower.",
+        "Prepayment also reflects moves and other events. Mortgage-backed investors face prepayment and extension risk, not merely credit risk."
+      ]
+    },
+    {
+      "id": "housing-arm",
+      "topic": "housing",
+      "title": "Adjustable-rate mortgages",
+      "prompts": [
+        "What risk does an adjustable-rate borrower retain?",
+        "Explain adjustable-rate mortgages in your own words, and give an example.",
+        "A friend asks about adjustable-rate mortgages. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Future payments can rise when the reset reference rate rises.",
+      "explanation": "Margins, caps, reset dates and amortization terms matter. A low initial rate does not describe all future payments; a fixed rate shifts more rate risk to the lender.",
+      "choices": [
+        "Future payments can rise when the reset reference rate rises.",
+        "Payments must fall every year.",
+        "The interest rate can never change after issuance."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Future payments can rise when the reset reference rate rises.",
+        "Margins, caps, reset dates and amortization terms matter. A low initial rate does not describe all future payments; a fixed rate shifts more rate risk to the lender."
+      ]
+    },
+    {
+      "id": "housing-mbs",
+      "topic": "housing",
+      "title": "Mortgage-backed securities",
+      "prompts": [
+        "What generates the cash flows of a mortgage-backed security?",
+        "Explain mortgage-backed securities in your own words, and give an example.",
+        "A friend asks about mortgage-backed securities. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Payments from a pool of underlying mortgage loans.",
+      "explanation": "Pool structure, servicing, guarantees and prepayment determine the allocation. A guarantee against credit loss does not eliminate interest-rate or prepayment exposure.",
+      "choices": [
+        "Payments from a pool of underlying mortgage loans.",
+        "Unrelated stock dividends.",
+        "A risk-free government payout in every MBS."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Payments from a pool of underlying mortgage loans.",
+        "Pool structure, servicing, guarantees and prepayment determine the allocation. A guarantee against credit loss does not eliminate interest-rate or prepayment exposure."
+      ]
+    },
+    {
+      "id": "housing-tranches",
+      "topic": "housing",
+      "title": "Tranches and correlation",
+      "prompts": [
+        "Why can a senior tranche lose money even if it has first payment priority?",
+        "Explain tranches and correlation in your own words, and give an example.",
+        "A friend asks about tranches and correlation. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Underlying losses can become large enough to exhaust subordinated protection.",
+      "explanation": "Priority changes who loses first. Highly correlated defaults can overwhelm a design that looked safe using independent-loss assumptions.",
+      "choices": [
+        "Underlying losses can become large enough to exhaust subordinated protection.",
+        "Senior status rules out every loss.",
+        "Tranching eliminates underlying defaults."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Underlying losses can become large enough to exhaust subordinated protection.",
+        "Priority changes who loses first. Highly correlated defaults can overwhelm a design that looked safe using independent-loss assumptions."
+      ]
+    },
+    {
+      "id": "housing-cds",
+      "topic": "housing",
+      "title": "Credit default swaps",
+      "prompts": [
+        "What does a CDS generally transfer?",
+        "Explain credit default swaps in your own words, and give an example.",
+        "A friend asks about credit default swaps. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Defined credit-event risk through premium and protection payments.",
+      "explanation": "It is not identical to owning a bond or receiving fire insurance. Reference obligations, settlement rules, counterparty risk and basis risk matter.",
+      "choices": [
+        "Defined credit-event risk through premium and protection payments.",
+        "All interest-rate risk automatically.",
+        "A guaranteed ownership share in the borrower."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Defined credit-event risk through premium and protection payments.",
+        "It is not identical to owning a bond or receiving fire insurance. Reference obligations, settlement rules, counterparty risk and basis risk matter."
+      ]
+    },
+    {
+      "id": "housing-reits",
+      "topic": "housing",
+      "title": "REITs and property exposure",
+      "prompts": [
+        "Does a listed REIT trade like direct property ownership?",
+        "Explain reits and property exposure in your own words, and give an example.",
+        "A friend asks about reits and property exposure. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it is a tradable equity claim on a real-estate business with its own leverage and costs.",
+      "explanation": "REITs can improve access and liquidity, but still carry property, financing and market risks. Tax and distribution rules depend on jurisdiction.",
+      "choices": [
+        "No: it is a tradable equity claim on a real-estate business with its own leverage and costs.",
+        "Yes, with identical liquidity and taxes everywhere.",
+        "No, a REIT contains no real-estate exposure."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it is a tradable equity claim on a real-estate business with its own leverage and costs.",
+        "REITs can improve access and liquidity, but still carry property, financing and market risks. Tax and distribution rules depend on jurisdiction."
+      ]
+    },
+    {
+      "id": "derivatives-forward",
+      "topic": "derivatives",
+      "title": "Forward contracts",
+      "prompts": [
+        "What is a long forward’s expiration payoff?",
+        "Explain forward contracts in your own words, and give an example.",
+        "A friend asks about forward contracts. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The underlying settlement price minus the agreed delivery price.",
+      "explanation": "An at-market forward usually starts with approximately zero value; its delivery price differs from its later market value. The buyer is obligated, unlike an option holder.",
+      "choices": [
+        "The underlying settlement price minus the agreed delivery price.",
+        "The maximum of the price difference and zero.",
+        "Always the full underlying price."
+      ],
+      "formula": "Long forward payoff = S_T − K",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The underlying settlement price minus the agreed delivery price.",
+        "An at-market forward usually starts with approximately zero value; its delivery price differs from its later market value. The buyer is obligated, unlike an option holder."
+      ]
+    },
+    {
+      "id": "derivatives-futures",
+      "topic": "derivatives",
+      "title": "Futures and forwards",
+      "prompts": [
+        "What operational feature distinguishes standard futures from typical forwards?",
+        "Explain futures and forwards in your own words, and give an example.",
+        "A friend asks about futures and forwards. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Exchange standardization and daily marking to market through clearing.",
+      "explanation": "OTC forwards can also have collateral agreements. Clearing concentrates and manages counterparty risk; it does not remove margin, liquidity or clearinghouse risk.",
+      "choices": [
+        "Exchange standardization and daily marking to market through clearing.",
+        "Futures never need collateral.",
+        "Forwards always give a right without obligation."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Exchange standardization and daily marking to market through clearing.",
+        "OTC forwards can also have collateral agreements. Clearing concentrates and manages counterparty risk; it does not remove margin, liquidity or clearinghouse risk."
+      ]
+    },
+    {
+      "id": "derivatives-carry",
+      "topic": "derivatives",
+      "title": "Cost-of-carry pricing",
+      "prompts": [
+        "When is F₀ = S₀e^(rT) an appropriate benchmark?",
+        "Explain cost-of-carry pricing in your own words, and give an example.",
+        "A friend asks about cost-of-carry pricing. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "For a non-income-producing asset with financing at r and no other carry benefits or costs.",
+      "explanation": "Dividend yield changes equity forwards to S₀e^((r−q)T). Commodities may add storage costs and convenience yield; FX involves both currencies’ interest rates.",
+      "choices": [
+        "For a non-income-producing asset with financing at r and no other carry benefits or costs.",
+        "For every commodity regardless of storage.",
+        "Only when future prices are certain."
+      ],
+      "formula": "F₀ = S₀e^(rT); with dividend yield q: S₀e^((r−q)T)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "For a non-income-producing asset with financing at r and no other carry benefits or costs.",
+        "Dividend yield changes equity forwards to S₀e^((r−q)T). Commodities may add storage costs and convenience yield; FX involves both currencies’ interest rates."
+      ]
+    },
+    {
+      "id": "derivatives-basis",
+      "topic": "derivatives",
+      "title": "Basis risk",
+      "prompts": [
+        "Why might a hedge fail to offset the business exposure exactly?",
+        "Explain basis risk in your own words, and give an example.",
+        "A friend asks about basis risk. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The hedge instrument and actual exposure can move differently.",
+      "explanation": "Different commodities, locations, timing or grades create basis risk. A hedge can reduce overall risk without being perfect.",
+      "choices": [
+        "The hedge instrument and actual exposure can move differently.",
+        "Every hedge guarantees exact cancellation.",
+        "Because hedge prices never change."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The hedge instrument and actual exposure can move differently.",
+        "Different commodities, locations, timing or grades create basis risk. A hedge can reduce overall risk without being perfect."
+      ]
+    },
+    {
+      "id": "derivatives-call",
+      "topic": "derivatives",
+      "title": "Call payoff and profit",
+      "prompts": [
+        "A call finishes in the money. Is it necessarily profitable for its buyer?",
+        "Explain call payoff and profit in your own words, and give an example.",
+        "A friend asks about call payoff and profit. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: the payoff may be smaller than the premium and costs.",
+      "explanation": "At expiration payoff is max(S_T−K,0); simple profit subtracts premium. An unexercised worthless option costs the buyer its premium.",
+      "choices": [
+        "No: the payoff may be smaller than the premium and costs.",
+        "Yes, in the money means positive net profit.",
+        "No, a call can never have positive payoff."
+      ],
+      "formula": "Call payoff = max(S_T − K,0); simple profit = payoff − premium",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: the payoff may be smaller than the premium and costs.",
+        "At expiration payoff is max(S_T−K,0); simple profit subtracts premium. An unexercised worthless option costs the buyer its premium."
+      ]
+    },
+    {
+      "id": "derivatives-put",
+      "topic": "derivatives",
+      "title": "Buying a put",
+      "prompts": [
+        "Must you own a stock to buy a put and profit from its decline?",
+        "Explain buying a put in your own words, and give an example.",
+        "A friend asks about buying a put. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: the option can be bought independently.",
+      "explanation": "You can normally sell the option to realize value. Exercise and physical settlement can create other positions or requirements; owning a put alone does not automatically make you short.",
+      "choices": [
+        "No: the option can be bought independently.",
+        "Yes, ownership is always required.",
+        "Buying a put immediately sells the stock short."
+      ],
+      "formula": "Put payoff = max(K − S_T,0)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: the option can be bought independently.",
+        "You can normally sell the option to realize value. Exercise and physical settlement can create other positions or requirements; owning a put alone does not automatically make you short."
+      ]
+    },
+    {
+      "id": "derivatives-exercise",
+      "topic": "derivatives",
+      "title": "European and American options",
+      "prompts": [
+        "How does an American-style option differ from a European-style option?",
+        "Explain european and american options in your own words, and give an example.",
+        "A friend asks about european and american options. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It permits exercise before expiration under its terms.",
+      "explanation": "The names describe exercise rights, not trading geography. Early exercise can matter for dividends, deep in-the-money puts and interest; selling can preserve time value.",
+      "choices": [
+        "It permits exercise before expiration under its terms.",
+        "It trades only in America.",
+        "It never expires."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It permits exercise before expiration under its terms.",
+        "The names describe exercise rights, not trading geography. Early exercise can matter for dividends, deep in-the-money puts and interest; selling can preserve time value."
+      ]
+    },
+    {
+      "id": "derivatives-parity",
+      "topic": "derivatives",
+      "title": "Put–call parity",
+      "prompts": [
+        "What is the intuition behind European put–call parity?",
+        "Explain put–call parity in your own words, and give an example.",
+        "A friend asks about put–call parity. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Two portfolios with identical terminal payoffs must have the same value absent arbitrage.",
+      "explanation": "For no dividends and matching strike and maturity: call plus discounted strike cash matches stock plus put. Dividends, early exercise and financing constraints alter the relation.",
+      "choices": [
+        "Two portfolios with identical terminal payoffs must have the same value absent arbitrage.",
+        "Calls and puts must always have equal prices.",
+        "Any option is worth the underlying price."
+      ],
+      "formula": "C + K e^(−rT) = P + S₀",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Two portfolios with identical terminal payoffs must have the same value absent arbitrage.",
+        "For no dividends and matching strike and maturity: call plus discounted strike cash matches stock plus put. Dividends, early exercise and financing constraints alter the relation."
+      ]
+    },
+    {
+      "id": "derivatives-binomial",
+      "topic": "derivatives",
+      "title": "Binomial replication",
+      "prompts": [
+        "Why can a two-state option be priced without real-world up/down probabilities?",
+        "Explain binomial replication in your own words, and give an example.",
+        "A friend asks about binomial replication. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A stock-and-cash portfolio can replicate its payoffs in both states.",
+      "explanation": "The hedge ratio is the change in option payoff divided by the change in stock price. The risk-free gross return must lie between the up and down multipliers for no arbitrage.",
+      "choices": [
+        "A stock-and-cash portfolio can replicate its payoffs in both states.",
+        "Because every up move has probability one-half.",
+        "Because option sellers can choose future stock prices."
+      ],
+      "formula": "Δ = (Cᵤ − C_d)/(Sᵤ − S_d)",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A stock-and-cash portfolio can replicate its payoffs in both states.",
+        "The hedge ratio is the change in option payoff divided by the change in stock price. The risk-free gross return must lie between the up and down multipliers for no arbitrage."
+      ]
+    },
+    {
+      "id": "derivatives-riskneutral",
+      "topic": "derivatives",
+      "title": "Risk-neutral probabilities",
+      "prompts": [
+        "Are risk-neutral probabilities investors’ actual forecasts?",
+        "Explain risk-neutral probabilities in your own words, and give an example.",
+        "A friend asks about risk-neutral probabilities. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: they are pricing weights consistent with no-arbitrage and discounting at the risk-free rate.",
+      "explanation": "In a binomial model, q = [(1+r)−d]/(u−d). Real-world expected returns include risk compensation; pricing weights serve a different purpose.",
+      "choices": [
+        "No: they are pricing weights consistent with no-arbitrage and discounting at the risk-free rate.",
+        "Yes, they are measured survey probabilities.",
+        "Yes, risk-neutral investors guarantee no losses."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: they are pricing weights consistent with no-arbitrage and discounting at the risk-free rate.",
+        "In a binomial model, q = [(1+r)−d]/(u−d). Real-world expected returns include risk compensation; pricing weights serve a different purpose."
+      ]
+    },
+    {
+      "id": "derivatives-bs",
+      "topic": "derivatives",
+      "title": "Black–Scholes–Merton",
+      "prompts": [
+        "Why do observed volatility smiles challenge basic Black–Scholes assumptions?",
+        "Explain black–scholes–merton in your own words, and give an example.",
+        "A friend asks about black–scholes–merton. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A single constant volatility does not fit option prices across strikes and maturities.",
+      "explanation": "The model assumes a particular continuous price process and frictionless dynamic hedging. Implied volatility is the model input matching a price, not a certain future realized volatility.",
+      "choices": [
+        "A single constant volatility does not fit option prices across strikes and maturities.",
+        "The model includes every possible jump exactly.",
+        "The model requires options to be free."
+      ],
+      "formula": "C = S₀N(d₁) − K e^(−rT)N(d₂); d₁ = [ln(S₀/K)+(r+σ²/2)T]/(σ√T); d₂ = d₁−σ√T",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A single constant volatility does not fit option prices across strikes and maturities.",
+        "The model assumes a particular continuous price process and frictionless dynamic hedging. Implied volatility is the model input matching a price, not a certain future realized volatility."
+      ]
+    },
+    {
+      "id": "derivatives-vol",
+      "topic": "derivatives",
+      "title": "Implied and realized volatility",
+      "prompts": [
+        "What is implied volatility?",
+        "Explain implied and realized volatility in your own words, and give an example.",
+        "A friend asks about implied and realized volatility. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The volatility input that makes an option-pricing model match the observed option price.",
+      "explanation": "It can include risk premiums and supply-demand effects. Realized volatility measures actual price dispersion over a chosen period; they need not agree.",
+      "choices": [
+        "The volatility input that makes an option-pricing model match the observed option price.",
+        "A guaranteed forecast of future volatility.",
+        "The strike price divided by spot price."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The volatility input that makes an option-pricing model match the observed option price.",
+        "It can include risk premiums and supply-demand effects. Realized volatility measures actual price dispersion over a chosen period; they need not agree."
+      ]
+    },
+    {
+      "id": "derivatives-greeks",
+      "topic": "derivatives",
+      "title": "Option Greeks",
+      "prompts": [
+        "What risks do delta, gamma, theta, vega and rho describe?",
+        "Explain option greeks in your own words, and give an example.",
+        "A friend asks about option greeks. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Sensitivity to price, delta changes, time, volatility and interest rates respectively.",
+      "explanation": "Units and conventions matter. Gamma measures curvature; theta usually measures change as calendar time passes; vega is often quoted per volatility point.",
+      "choices": [
+        "Sensitivity to price, delta changes, time, volatility and interest rates respectively.",
+        "Five different default probabilities.",
+        "Only the chance the option expires worthless."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Sensitivity to price, delta changes, time, volatility and interest rates respectively.",
+        "Units and conventions matter. Gamma measures curvature; theta usually measures change as calendar time passes; vega is often quoted per volatility point."
+      ]
+    },
+    {
+      "id": "derivatives-deltahedge",
+      "topic": "derivatives",
+      "title": "Delta hedging",
+      "prompts": [
+        "What does delta hedging aim to offset?",
+        "Explain delta hedging in your own words, and give an example.",
+        "A friend asks about delta hedging. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "First-order exposure to changes in the underlying price.",
+      "explanation": "Delta changes, so hedging must be rebalanced. Gamma, jumps, volatility changes, funding and discrete trading leave risks. A short call often requires buying underlying shares.",
+      "choices": [
+        "First-order exposure to changes in the underlying price.",
+        "Every conceivable risk.",
+        "A guaranteed positive profit."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "First-order exposure to changes in the underlying price.",
+        "Delta changes, so hedging must be rebalanced. Gamma, jumps, volatility changes, funding and discrete trading leave risks. A short call often requires buying underlying shares."
+      ]
+    },
+    {
+      "id": "derivatives-short",
+      "topic": "derivatives",
+      "title": "Short selling",
+      "prompts": [
+        "How do short-stock losses differ from long-put losses?",
+        "Explain short selling in your own words, and give an example.",
+        "A friend asks about short selling. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Short-stock losses can be unlimited; a long put generally risks its premium.",
+      "explanation": "Stock borrowing also has fees, recalls and margin demands. A put has expiry and time value, so timing matters even if the long-term direction is right.",
+      "choices": [
+        "Short-stock losses can be unlimited; a long put generally risks its premium.",
+        "Both always lose only a fixed premium.",
+        "A short stock has a fixed expiration date in all cases."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Short-stock losses can be unlimited; a long put generally risks its premium.",
+        "Stock borrowing also has fees, recalls and margin demands. A put has expiry and time value, so timing matters even if the long-term direction is right."
+      ]
+    },
+    {
+      "id": "derivatives-embedded",
+      "topic": "derivatives",
+      "title": "Embedded options",
+      "prompts": [
+        "Where can an option appear outside exchange-traded contracts?",
+        "Explain embedded options in your own words, and give an example.",
+        "A friend asks about embedded options. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "In refinancing rights, callable debt, guarantees and investment decisions.",
+      "explanation": "A firm’s ability to delay or abandon a project resembles a real option. Recognizing optionality improves cash-flow and risk analysis.",
+      "choices": [
+        "In refinancing rights, callable debt, guarantees and investment decisions.",
+        "Only in listed equity calls.",
+        "Only in contracts labeled option."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "In refinancing rights, callable debt, guarantees and investment decisions.",
+        "A firm’s ability to delay or abandon a project resembles a real option. Recognizing optionality improves cash-flow and risk analysis."
+      ]
+    },
+    {
+      "id": "banking-balance",
+      "topic": "banking",
+      "title": "Bank balance sheets",
+      "prompts": [
+        "On a bank’s balance sheet, are customer deposits assets or liabilities?",
+        "Explain bank balance sheets in your own words, and give an example.",
+        "A friend asks about bank balance sheets. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Liabilities: money the bank owes its customers.",
+      "explanation": "Loans and securities are assets. Equity is assets minus liabilities and absorbs losses. Depositor withdrawals reduce both deposits and the assets used to pay them.",
+      "choices": [
+        "Liabilities: money the bank owes its customers.",
+        "Assets because customers own them.",
+        "Equity because deposits absorb every loss first."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Liabilities: money the bank owes its customers.",
+        "Loans and securities are assets. Equity is assets minus liabilities and absorbs losses. Depositor withdrawals reduce both deposits and the assets used to pay them."
+      ]
+    },
+    {
+      "id": "banking-capital",
+      "topic": "banking",
+      "title": "Capital versus cash",
+      "prompts": [
+        "Is regulatory capital a pot of cash kept in a vault?",
+        "Explain capital versus cash in your own words, and give an example.",
+        "A friend asks about capital versus cash. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it consists of qualifying loss-absorbing funding claims, especially equity.",
+      "explanation": "Cash and reserves are assets used for payments. A bank can have high capital and little immediate liquidity, or plenty of cash and inadequate solvency.",
+      "choices": [
+        "No: it consists of qualifying loss-absorbing funding claims, especially equity.",
+        "Yes, capital and reserves are identical.",
+        "Yes, capital is the interest rate charged on loans."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it consists of qualifying loss-absorbing funding claims, especially equity.",
+        "Cash and reserves are assets used for payments. A bank can have high capital and little immediate liquidity, or plenty of cash and inadequate solvency."
+      ]
+    },
+    {
+      "id": "banking-liquid",
+      "topic": "banking",
+      "title": "Liquidity versus solvency",
+      "prompts": [
+        "How can a solvent bank fail during a run?",
+        "Explain liquidity versus solvency in your own words, and give an example.",
+        "A friend asks about liquidity versus solvency. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It may be unable to raise cash fast enough without destructive asset sales.",
+      "explanation": "Solvency concerns economic asset value versus liabilities. Liquidity concerns meeting payments now. Forced sales can turn a liquidity problem into a solvency problem.",
+      "choices": [
+        "It may be unable to raise cash fast enough without destructive asset sales.",
+        "Its loans vanish automatically.",
+        "A solvent bank always has all deposits in cash."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It may be unable to raise cash fast enough without destructive asset sales.",
+        "Solvency concerns economic asset value versus liabilities. Liquidity concerns meeting payments now. Forced sales can turn a liquidity problem into a solvency problem."
+      ]
+    },
+    {
+      "id": "banking-creation",
+      "topic": "banking",
+      "title": "Loan-created deposits",
+      "prompts": [
+        "What often happens when a commercial bank makes a new loan?",
+        "Explain loan-created deposits in your own words, and give an example.",
+        "A friend asks about loan-created deposits. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It records a loan asset and a corresponding customer deposit liability.",
+      "explanation": "This expands deposits, not the bank’s equity. Lending and payments still require funding, capital and liquidity management. Loan principal repayment generally reverses the creation.",
+      "choices": [
+        "It records a loan asset and a corresponding customer deposit liability.",
+        "It must first find an identical existing deposit to lend.",
+        "It creates new equity with no liability."
+      ],
+      "formula": "",
+      "source": "money",
+      "kind": "Course core",
+      "checklist": [
+        "It records a loan asset and a corresponding customer deposit liability.",
+        "This expands deposits, not the bank’s equity. Lending and payments still require funding, capital and liquidity management. Loan principal repayment generally reverses the creation."
+      ]
+    },
+    {
+      "id": "banking-reserves",
+      "topic": "banking",
+      "title": "Reserves and the multiplier",
+      "prompts": [
+        "Why is a fixed textbook money multiplier an incomplete banking model?",
+        "Explain reserves and the multiplier in your own words, and give an example.",
+        "A friend asks about reserves and the multiplier. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Banks’ lending decisions face many constraints beyond reserve ratios.",
+      "explanation": "Reserves settle payments among banks; households hold deposits, not central-bank reserves. More reserves do not mechanically force banks to grant more credit.",
+      "choices": [
+        "Banks’ lending decisions face many constraints beyond reserve ratios.",
+        "Because banks face no constraints.",
+        "Because deposits and reserves are the same claim."
+      ],
+      "formula": "",
+      "source": "money",
+      "kind": "Course core",
+      "checklist": [
+        "Banks’ lending decisions face many constraints beyond reserve ratios.",
+        "Reserves settle payments among banks; households hold deposits, not central-bank reserves. More reserves do not mechanically force banks to grant more credit."
+      ]
+    },
+    {
+      "id": "banking-policy",
+      "topic": "banking",
+      "title": "Monetary-policy transmission",
+      "prompts": [
+        "How can a higher policy rate slow demand?",
+        "Explain monetary-policy transmission in your own words, and give an example.",
+        "A friend asks about monetary-policy transmission. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It influences financing costs, asset prices, exchange rates and expectations.",
+      "explanation": "Transmission has delays and differs by borrower, debt maturity and financial system. Central banks influence conditions but do not directly set every bond yield.",
+      "choices": [
+        "It influences financing costs, asset prices, exchange rates and expectations.",
+        "It instantly fixes every consumer price.",
+        "It mandates the same interest rate on every loan."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It influences financing costs, asset prices, exchange rates and expectations.",
+        "Transmission has delays and differs by borrower, debt maturity and financial system. Central banks influence conditions but do not directly set every bond yield."
+      ]
+    },
+    {
+      "id": "banking-qe",
+      "topic": "banking",
+      "title": "Quantitative easing",
+      "prompts": [
+        "Does QE necessarily mean handing new cash directly to households?",
+        "Explain quantitative easing in your own words, and give an example.",
+        "A friend asks about quantitative easing. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it involves central-bank asset purchases and corresponding balance-sheet changes.",
+      "explanation": "Reserve balances rise. Effects depend on who sells, portfolio responses and credit conditions; reserve creation alone does not imply a proportional spending increase.",
+      "choices": [
+        "No: it involves central-bank asset purchases and corresponding balance-sheet changes.",
+        "Yes, it is always a household grant.",
+        "Yes, it eliminates all public debt."
+      ],
+      "formula": "",
+      "source": "money",
+      "kind": "Course core",
+      "checklist": [
+        "No: it involves central-bank asset purchases and corresponding balance-sheet changes.",
+        "Reserve balances rise. Effects depend on who sells, portfolio responses and credit conditions; reserve creation alone does not imply a proportional spending increase."
+      ]
+    },
+    {
+      "id": "banking-qt",
+      "topic": "banking",
+      "title": "Quantitative tightening",
+      "prompts": [
+        "How can QT shrink a central bank’s securities portfolio?",
+        "Explain quantitative tightening in your own words, and give an example.",
+        "A friend asks about quantitative tightening. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "By letting assets mature without full reinvestment or selling assets.",
+      "explanation": "Its effects depend on implementation, liquidity conditions and other balance-sheet movements. QT is different from raising the policy rate, though both can tighten conditions.",
+      "choices": [
+        "By letting assets mature without full reinvestment or selling assets.",
+        "By increasing every bond’s coupon.",
+        "By deleting borrowers’ contractual debts."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "By letting assets mature without full reinvestment or selling assets.",
+        "Its effects depend on implementation, liquidity conditions and other balance-sheet movements. QT is different from raising the policy rate, though both can tighten conditions."
+      ]
+    },
+    {
+      "id": "banking-lender",
+      "topic": "banking",
+      "title": "Lender of last resort",
+      "prompts": [
+        "What problem is emergency central-bank lending designed to address?",
+        "Explain lender of last resort in your own words, and give an example.",
+        "A friend asks about lender of last resort. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Acute funding and liquidity stress, subject to the facility’s terms.",
+      "explanation": "Collateral, eligibility and pricing matter. Lending cannot by itself restore an institution whose economic losses exceed its equity; fiscal and resolution choices may be needed.",
+      "choices": [
+        "Acute funding and liquidity stress, subject to the facility’s terms.",
+        "It guarantees every institution is solvent.",
+        "It replaces all supervision permanently."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Acute funding and liquidity stress, subject to the facility’s terms.",
+        "Collateral, eligibility and pricing matter. Lending cannot by itself restore an institution whose economic losses exceed its equity; fiscal and resolution choices may be needed."
+      ]
+    },
+    {
+      "id": "banking-rwa",
+      "topic": "banking",
+      "title": "Risk-weighted capital",
+      "prompts": [
+        "How do RWA differ from total assets?",
+        "Explain risk-weighted capital in your own words, and give an example.",
+        "A friend asks about risk-weighted capital. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Exposures are adjusted by regulatory risk weights rather than simply added at face value.",
+      "explanation": "A leverage ratio adds a differently defined non-risk-weighted backstop. Buffers, capital quality and off-balance-sheet exposures matter; an 8% example is not every bank’s complete requirement.",
+      "choices": [
+        "Exposures are adjusted by regulatory risk weights rather than simply added at face value.",
+        "RWA are the total interest paid by borrowers.",
+        "RWA are cash held by depositors."
+      ],
+      "formula": "Capital ratio = qualifying regulatory capital / RWA",
+      "source": "basel",
+      "kind": "Course core",
+      "checklist": [
+        "Exposures are adjusted by regulatory risk weights rather than simply added at face value.",
+        "A leverage ratio adds a differently defined non-risk-weighted backstop. Buffers, capital quality and off-balance-sheet exposures matter; an 8% example is not every bank’s complete requirement."
+      ]
+    },
+    {
+      "id": "banking-liquidityrules",
+      "topic": "banking",
+      "title": "Liquidity regulation",
+      "prompts": [
+        "What do the LCR and NSFR broadly address?",
+        "Explain liquidity regulation in your own words, and give an example.",
+        "A friend asks about liquidity regulation. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Short-term liquidity under stress and stability of funding over a longer horizon.",
+      "explanation": "The liquidity coverage ratio uses high-quality liquid assets and stressed outflows; the net stable funding ratio addresses funding structure. They complement capital requirements.",
+      "choices": [
+        "Short-term liquidity under stress and stability of funding over a longer horizon.",
+        "The same thing as stock-market beta.",
+        "Only the tax rate on deposits."
+      ],
+      "formula": "",
+      "source": "basel",
+      "kind": "Course core",
+      "checklist": [
+        "Short-term liquidity under stress and stability of funding over a longer horizon.",
+        "The liquidity coverage ratio uses high-quality liquid assets and stressed outflows; the net stable funding ratio addresses funding structure. They complement capital requirements."
+      ]
+    },
+    {
+      "id": "banking-insurance",
+      "topic": "banking",
+      "title": "Deposit insurance",
+      "prompts": [
+        "Why can deposit insurance reduce bank runs but create incentives to take risk?",
+        "Explain deposit insurance in your own words, and give an example.",
+        "A friend asks about deposit insurance. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It reassures covered depositors while potentially weakening their monitoring.",
+      "explanation": "Coverage depends on jurisdiction, institution, ownership category and limits. Supervision and loss-absorbing capital help contain moral hazard; not every account or product is covered.",
+      "choices": [
+        "It reassures covered depositors while potentially weakening their monitoring.",
+        "It insures every financial asset worldwide.",
+        "It eliminates the need for capital."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It reassures covered depositors while potentially weakening their monitoring.",
+        "Coverage depends on jurisdiction, institution, ownership category and limits. Supervision and loss-absorbing capital help contain moral hazard; not every account or product is covered."
+      ]
+    },
+    {
+      "id": "institutions-investmentbank",
+      "topic": "institutions",
+      "title": "Commercial and investment banking",
+      "prompts": [
+        "What is a typical investment-banking function?",
+        "Explain commercial and investment banking in your own words, and give an example.",
+        "A friend asks about commercial and investment banking. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Underwriting securities, advising on M&A and facilitating capital-market transactions.",
+      "explanation": "Commercial banks focus on deposits, payments and credit. Large groups can combine businesses through different legal entities and regulation.",
+      "choices": [
+        "Underwriting securities, advising on M&A and facilitating capital-market transactions.",
+        "Only accepting household cash deposits.",
+        "Guaranteeing stock-market returns."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Underwriting securities, advising on M&A and facilitating capital-market transactions.",
+        "Commercial banks focus on deposits, payments and credit. Large groups can combine businesses through different legal entities and regulation."
+      ]
+    },
+    {
+      "id": "institutions-underwriting",
+      "topic": "institutions",
+      "title": "Underwriting and IPOs",
+      "prompts": [
+        "What risk does firm-commitment underwriting put on the underwriter?",
+        "Explain underwriting and ipos in your own words, and give an example.",
+        "A friend asks about underwriting and ipos. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The distribution risk of buying securities from the issuer and reselling them under the agreement.",
+      "explanation": "Best-efforts arrangements differ. Bookbuilding gathers investor demand; a first-day price jump does not mean pricing was obvious beforehand.",
+      "choices": [
+        "The distribution risk of buying securities from the issuer and reselling them under the agreement.",
+        "No risk because every IPO must rise.",
+        "All long-term business risk forever."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The distribution risk of buying securities from the issuer and reselling them under the agreement.",
+        "Best-efforts arrangements differ. Bookbuilding gathers investor demand; a first-day price jump does not mean pricing was obvious beforehand."
+      ]
+    },
+    {
+      "id": "institutions-ratings",
+      "topic": "institutions",
+      "title": "Credit ratings",
+      "prompts": [
+        "Does an investment-grade rating guarantee repayment?",
+        "Explain credit ratings in your own words, and give an example.",
+        "A friend asks about credit ratings. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: it is a credit opinion that can change or be wrong.",
+      "explanation": "Ratings are not a full liquidity or interest-rate-risk measure. Issuer-paid models and concentration can create conflicts; investors still need analysis.",
+      "choices": [
+        "No: it is a credit opinion that can change or be wrong.",
+        "Yes, ratings agencies reimburse losses.",
+        "Yes, a rating fixes the bond price at par."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: it is a credit opinion that can change or be wrong.",
+        "Ratings are not a full liquidity or interest-rate-risk measure. Issuer-paid models and concentration can create conflicts; investors still need analysis."
+      ]
+    },
+    {
+      "id": "institutions-roles",
+      "topic": "institutions",
+      "title": "Broker, dealer and market maker",
+      "prompts": [
+        "What is the difference between a broker and a dealer?",
+        "Explain broker, dealer and market maker in your own words, and give an example.",
+        "A friend asks about broker, dealer and market maker. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A broker acts for clients; a dealer trades for its own account.",
+      "explanation": "A market maker offers buying and selling quotes and manages inventory. A firm can have multiple roles, making disclosure and conflict management important.",
+      "choices": [
+        "A broker acts for clients; a dealer trades for its own account.",
+        "A broker must own every security it sells.",
+        "A dealer never holds inventory."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A broker acts for clients; a dealer trades for its own account.",
+        "A market maker offers buying and selling quotes and manages inventory. A firm can have multiple roles, making disclosure and conflict management important."
+      ]
+    },
+    {
+      "id": "institutions-spread",
+      "topic": "institutions",
+      "title": "Bid–ask spreads",
+      "prompts": [
+        "What is the bid–ask spread?",
+        "Explain bid–ask spreads in your own words, and give an example.",
+        "A friend asks about bid–ask spreads. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The quoted ask price minus the quoted bid price.",
+      "explanation": "A buyer commonly pays ask and a seller receives bid. Inventory risk, adverse selection and processing costs help explain the spread.",
+      "choices": [
+        "The quoted ask price minus the quoted bid price.",
+        "The dividend divided by price.",
+        "The difference between face value and coupon."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The quoted ask price minus the quoted bid price.",
+        "A buyer commonly pays ask and a seller receives bid. Inventory risk, adverse selection and processing costs help explain the spread."
+      ]
+    },
+    {
+      "id": "institutions-orders",
+      "topic": "institutions",
+      "title": "Market and limit orders",
+      "prompts": [
+        "Which order prioritizes a price constraint over certainty of immediate execution?",
+        "Explain market and limit orders in your own words, and give an example.",
+        "A friend asks about market and limit orders. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A limit order.",
+      "explanation": "A market order prioritizes execution but its price can move, particularly in thin markets. A limit order may never execute. Stop orders have separate trigger and execution risks.",
+      "choices": [
+        "A limit order.",
+        "A market order always guarantees a chosen price.",
+        "A limit order guarantees immediate execution."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A limit order.",
+        "A market order prioritizes execution but its price can move, particularly in thin markets. A limit order may never execute. Stop orders have separate trigger and execution risks."
+      ]
+    },
+    {
+      "id": "institutions-pfof",
+      "topic": "institutions",
+      "title": "Payment for order flow",
+      "prompts": [
+        "What conflict can payment for order flow create?",
+        "Explain payment for order flow in your own words, and give an example.",
+        "A friend asks about payment for order flow. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A broker’s routing payments may conflict with obtaining the best execution for customers.",
+      "explanation": "Zero stated commission does not prove zero trading cost. Assess execution prices, spreads and routing quality; rules differ across jurisdictions.",
+      "choices": [
+        "A broker’s routing payments may conflict with obtaining the best execution for customers.",
+        "It guarantees the best available price in every trade.",
+        "It means the broker buys the stock for free."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A broker’s routing payments may conflict with obtaining the best execution for customers.",
+        "Zero stated commission does not prove zero trading cost. Assess execution prices, spreads and routing quality; rules differ across jurisdictions."
+      ]
+    },
+    {
+      "id": "institutions-hft",
+      "topic": "institutions",
+      "title": "High-frequency trading",
+      "prompts": [
+        "Can fast algorithmic trading both improve and weaken liquidity?",
+        "Explain high-frequency trading in your own words, and give an example.",
+        "A friend asks about high-frequency trading. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Yes: it can tighten spreads in normal conditions yet liquidity may retreat under stress.",
+      "explanation": "Strategies differ. Speed itself is not a single business model; adverse selection, infrastructure concentration and order behavior affect outcomes.",
+      "choices": [
+        "Yes: it can tighten spreads in normal conditions yet liquidity may retreat under stress.",
+        "No, speed always guarantees stability.",
+        "No, all fast traders use identical strategies."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Yes: it can tighten spreads in normal conditions yet liquidity may retreat under stress.",
+        "Strategies differ. Speed itself is not a single business model; adverse selection, infrastructure concentration and order behavior affect outcomes."
+      ]
+    },
+    {
+      "id": "institutions-funds",
+      "topic": "institutions",
+      "title": "Mutual funds and ETFs",
+      "prompts": [
+        "Does ETF mean passive index fund?",
+        "Explain mutual funds and etfs in your own words, and give an example.",
+        "A friend asks about mutual funds and etfs. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: an ETF can be active or passive.",
+      "explanation": "ETF describes a wrapper with intraday exchange trading. Open-end mutual fund transactions typically occur at a calculated NAV. Strategies and costs vary.",
+      "choices": [
+        "No: an ETF can be active or passive.",
+        "Yes, every ETF tracks a broad stock index.",
+        "Yes, ETFs cannot hold bonds."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: an ETF can be active or passive.",
+        "ETF describes a wrapper with intraday exchange trading. Open-end mutual fund transactions typically occur at a calculated NAV. Strategies and costs vary."
+      ]
+    },
+    {
+      "id": "institutions-nav",
+      "topic": "institutions",
+      "title": "ETF price versus NAV",
+      "prompts": [
+        "Why is an ETF’s exchange price usually close to its net asset value?",
+        "Explain etf price versus nav in your own words, and give an example.",
+        "A friend asks about etf price versus nav. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Authorized participants can create or redeem units, supporting arbitrage.",
+      "explanation": "Underlying liquidity and transaction costs can limit the mechanism. A discount during stress can also reflect stale underlying marks, not necessarily free profit.",
+      "choices": [
+        "Authorized participants can create or redeem units, supporting arbitrage.",
+        "The issuer legally fixes every exchange trade price.",
+        "ETF shares cannot trade below NAV."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Authorized participants can create or redeem units, supporting arbitrage.",
+        "Underlying liquidity and transaction costs can limit the mechanism. A discount during stress can also reflect stale underlying marks, not necessarily free profit."
+      ]
+    },
+    {
+      "id": "institutions-fees",
+      "topic": "institutions",
+      "title": "Fees and compounding",
+      "prompts": [
+        "Why do small annual fees matter over decades?",
+        "Explain fees and compounding in your own words, and give an example.",
+        "A friend asks about fees and compounding. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "They reduce the return that compounds each year.",
+      "explanation": "Compare total costs, taxes and tracking difference rather than headline fees alone. An inexpensive concentrated fund is still concentrated.",
+      "choices": [
+        "They reduce the return that compounds each year.",
+        "Because fees compound positively for the investor.",
+        "Because fees affect only the first year."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "They reduce the return that compounds each year.",
+        "Compare total costs, taxes and tracking difference rather than headline fees alone. An inexpensive concentrated fund is still concentrated."
+      ]
+    },
+    {
+      "id": "institutions-endowment",
+      "topic": "institutions",
+      "title": "Endowment investing",
+      "prompts": [
+        "Why can’t an individual simply copy a major endowment’s allocation?",
+        "Explain endowment investing in your own words, and give an example.",
+        "A friend asks about endowment investing. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Access, governance, liquidity needs and ability to manage illiquid investments differ.",
+      "explanation": "Swensen’s broader lessons include diversification, long horizons, costs and matching a strategy to obligations. Manager selection is difficult and not all alternatives improve returns.",
+      "choices": [
+        "Access, governance, liquidity needs and ability to manage illiquid investments differ.",
+        "Endowments face no risk.",
+        "Illiquid investments always deliver superior returns."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Access, governance, liquidity needs and ability to manage illiquid investments differ.",
+        "Swensen’s broader lessons include diversification, long horizons, costs and matching a strategy to obligations. Manager selection is difficult and not all alternatives improve returns."
+      ]
+    },
+    {
+      "id": "crises-leverage",
+      "topic": "crises",
+      "title": "Leverage",
+      "prompts": [
+        "Why does a 10% asset decline cause a 50% equity loss when leverage is five times?",
+        "Explain leverage in your own words, and give an example.",
+        "A friend asks about leverage. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Losses are borne by an equity cushion equal to one-fifth of the assets.",
+      "explanation": "For fixed debt and ignoring financing costs, equity return equals asset return times assets/equity. A sufficiently large decline can wipe out the cushion.",
+      "choices": [
+        "Losses are borne by an equity cushion equal to one-fifth of the assets.",
+        "Borrowed money absorbs all losses first.",
+        "Leverage changes only gains."
+      ],
+      "formula": "Leverage = assets/equity; equity = assets − debt",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Losses are borne by an equity cushion equal to one-fifth of the assets.",
+        "For fixed debt and ignoring financing costs, equity return equals asset return times assets/equity. A sufficiently large decline can wipe out the cushion."
+      ]
+    },
+    {
+      "id": "crises-margin",
+      "topic": "crises",
+      "title": "Margin calls",
+      "prompts": [
+        "Why can a profitable long-run idea still fail for a leveraged investor?",
+        "Explain margin calls in your own words, and give an example.",
+        "A friend asks about margin calls. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Collateral demands may force liquidation before the expected recovery.",
+      "explanation": "Funding liquidity and market liquidity interact. Initial margin and variation margin are different; price moves can cause cash needs without implying an equivalent final economic loss.",
+      "choices": [
+        "Collateral demands may force liquidation before the expected recovery.",
+        "Lenders must wait indefinitely.",
+        "Margin calls occur only after maturity."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Collateral demands may force liquidation before the expected recovery.",
+        "Funding liquidity and market liquidity interact. Initial margin and variation margin are different; price moves can cause cash needs without implying an equivalent final economic loss."
+      ]
+    },
+    {
+      "id": "crises-cycle",
+      "topic": "crises",
+      "title": "Leverage cycles",
+      "prompts": [
+        "How can falling collateral values deepen a downturn?",
+        "Explain leverage cycles in your own words, and give an example.",
+        "A friend asks about leverage cycles. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "They tighten borrowing capacity, triggering sales that depress prices further.",
+      "explanation": "Haircuts can rise at the same time prices fall. A feedback loop can turn modest shocks into large dislocations even without new fundamental news.",
+      "choices": [
+        "They tighten borrowing capacity, triggering sales that depress prices further.",
+        "Lower collateral values always increase borrowing limits.",
+        "Every forced sale raises asset prices."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "They tighten borrowing capacity, triggering sales that depress prices further.",
+        "Haircuts can rise at the same time prices fall. A feedback loop can turn modest shocks into large dislocations even without new fundamental news."
+      ]
+    },
+    {
+      "id": "crises-2008",
+      "topic": "crises",
+      "title": "The 2008 crisis",
+      "prompts": [
+        "Why is blaming only one failed bank an incomplete explanation of 2008?",
+        "Explain the 2008 crisis in your own words, and give an example.",
+        "A friend asks about the 2008 crisis. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Housing losses interacted with leverage, weak underwriting, securitization and fragile funding across institutions.",
+      "explanation": "Lehman’s failure intensified stress, but vulnerabilities preceded it. Complexity, ratings and correlated mortgage exposures amplified losses and uncertainty.",
+      "choices": [
+        "Housing losses interacted with leverage, weak underwriting, securitization and fragile funding across institutions.",
+        "One isolated event created every preceding mortgage loss.",
+        "All government bonds defaulted simultaneously."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Housing losses interacted with leverage, weak underwriting, securitization and fragile funding across institutions.",
+        "Lehman’s failure intensified stress, but vulnerabilities preceded it. Complexity, ratings and correlated mortgage exposures amplified losses and uncertainty."
+      ]
+    },
+    {
+      "id": "crises-svb",
+      "topic": "crises",
+      "title": "SVB and duration risk",
+      "prompts": [
+        "What did SVB demonstrate about government-backed securities held by a bank?",
+        "Explain svb and duration risk in your own words, and give an example.",
+        "A friend asks about svb and duration risk. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Low credit risk does not eliminate duration losses or funding-run vulnerability.",
+      "explanation": "Long-duration asset losses combined with concentrated uninsured deposits and weak risk management. Supervisory shortcomings also mattered.",
+      "choices": [
+        "Low credit risk does not eliminate duration losses or funding-run vulnerability.",
+        "Government backing guarantees a stable market price.",
+        "A bank cannot fail if its assets include Treasuries."
+      ],
+      "formula": "",
+      "source": "svb",
+      "kind": "Course core",
+      "checklist": [
+        "Low credit risk does not eliminate duration losses or funding-run vulnerability.",
+        "Long-duration asset losses combined with concentrated uninsured deposits and weak risk management. Supervisory shortcomings also mattered."
+      ]
+    },
+    {
+      "id": "crises-contagion",
+      "topic": "crises",
+      "title": "Contagion channels",
+      "prompts": [
+        "How can distress spread without a direct loan between two banks?",
+        "Explain contagion channels in your own words, and give an example.",
+        "A friend asks about contagion channels. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Shared asset holdings, funding markets and confidence can transmit shocks.",
+      "explanation": "Direct exposures are only one channel. Fire sales can mark down others’ assets; common lenders may withdraw funding from several institutions.",
+      "choices": [
+        "Shared asset holdings, funding markets and confidence can transmit shocks.",
+        "It cannot spread without a direct loan.",
+        "Only depositors with identical account numbers transmit stress."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Shared asset holdings, funding markets and confidence can transmit shocks.",
+        "Direct exposures are only one channel. Fire sales can mark down others’ assets; common lenders may withdraw funding from several institutions."
+      ]
+    },
+    {
+      "id": "crises-shadow",
+      "topic": "crises",
+      "title": "Nonbank intermediation",
+      "prompts": [
+        "Why does moving lending outside banks not eliminate systemic risk?",
+        "Explain nonbank intermediation in your own words, and give an example.",
+        "A friend asks about nonbank intermediation. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Leverage, liquidity mismatch and interconnectedness can persist in different structures.",
+      "explanation": "Funds and other intermediaries can support credit while creating vulnerabilities in redemption, collateral and funding. Different rules can shift where risk accumulates.",
+      "choices": [
+        "Leverage, liquidity mismatch and interconnectedness can persist in different structures.",
+        "Only regulated banks can experience runs.",
+        "Nonbank loans have no default risk."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Leverage, liquidity mismatch and interconnectedness can persist in different structures.",
+        "Funds and other intermediaries can support credit while creating vulnerabilities in redemption, collateral and funding. Different rules can shift where risk accumulates."
+      ]
+    },
+    {
+      "id": "crises-resolution",
+      "topic": "crises",
+      "title": "Resolution and bail-ins",
+      "prompts": [
+        "Why have credible failure-resolution plans?",
+        "Explain resolution and bail-ins in your own words, and give an example.",
+        "A friend asks about resolution and bail-ins. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "To manage a failing institution while limiting disruption and allocating losses under legal rules.",
+      "explanation": "Shareholder and creditor losses, continuity of critical functions and funding support require preparation. Bail-in and bail-out mean different loss allocations; legal tools vary.",
+      "choices": [
+        "To manage a failing institution while limiting disruption and allocating losses under legal rules.",
+        "To ensure no investor can ever lose.",
+        "To eliminate the need to identify liabilities."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "To manage a failing institution while limiting disruption and allocating losses under legal rules.",
+        "Shareholder and creditor losses, continuity of critical functions and funding support require preparation. Bail-in and bail-out mean different loss allocations; legal tools vary."
+      ]
+    },
+    {
+      "id": "crises-micro_macro",
+      "topic": "crises",
+      "title": "Microprudential and macroprudential policy",
+      "prompts": [
+        "How do macroprudential goals differ from institution-by-institution supervision?",
+        "Explain microprudential and macroprudential policy in your own words, and give an example.",
+        "A friend asks about microprudential and macroprudential policy. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "They focus on system-wide feedback, shared exposures and resilience.",
+      "explanation": "Making every firm individually cautious can still cause correlated selling. Buffers, leverage constraints and systemic oversight address interactions.",
+      "choices": [
+        "They focus on system-wide feedback, shared exposures and resilience.",
+        "They only regulate the smallest local lender.",
+        "They disregard financial stability entirely."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "They focus on system-wide feedback, shared exposures and resilience.",
+        "Making every firm individually cautious can still cause correlated selling. Buffers, leverage constraints and systemic oversight address interactions."
+      ]
+    },
+    {
+      "id": "society-debtdynamics",
+      "topic": "society",
+      "title": "Public debt dynamics",
+      "prompts": [
+        "What broad forces move a government’s debt-to-GDP ratio?",
+        "Explain public debt dynamics in your own words, and give an example.",
+        "A friend asks about public debt dynamics. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Interest relative to GDP growth, the primary balance and valuation or other adjustments.",
+      "explanation": "Use both r and g in consistent nominal or real terms. With a primary deficit p, an approximate formula is Δd ≈ (r−g)d + p; the exact simple ratio uses (r−g)/(1+g) times prior debt.",
+      "choices": [
+        "Interest relative to GDP growth, the primary balance and valuation or other adjustments.",
+        "Only the size of this year’s tax revenue.",
+        "Only whether the government prints banknotes."
+      ],
+      "formula": "Δd ≈ (r−g)d + p; exact simple form: dₜ = [(1+r)/(1+g)]dₜ₋₁ + pₜ",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Interest relative to GDP growth, the primary balance and valuation or other adjustments.",
+        "Use both r and g in consistent nominal or real terms. With a primary deficit p, an approximate formula is Δd ≈ (r−g)d + p; the exact simple ratio uses (r−g)/(1+g) times prior debt."
+      ]
+    },
+    {
+      "id": "society-currency",
+      "topic": "society",
+      "title": "Sovereign debt and currency",
+      "prompts": [
+        "Does borrowing in its own currency make a government risk-free in every sense?",
+        "Explain sovereign debt and currency in your own words, and give an example.",
+        "A friend asks about sovereign debt and currency. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: inflation, currency depreciation, institutions and political constraints still matter.",
+      "explanation": "Monetary sovereignty differs from borrowing in foreign currency or sharing a currency. Capacity to create nominal money is not a guarantee of real purchasing power.",
+      "choices": [
+        "No: inflation, currency depreciation, institutions and political constraints still matter.",
+        "Yes, real returns are guaranteed.",
+        "Yes, growth and taxation no longer matter."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "No: inflation, currency depreciation, institutions and political constraints still matter.",
+        "Monetary sovereignty differs from borrowing in foreign currency or sharing a currency. Capacity to create nominal money is not a guarantee of real purchasing power."
+      ]
+    },
+    {
+      "id": "society-municipal",
+      "topic": "society",
+      "title": "Municipal finance",
+      "prompts": [
+        "How do general-obligation and revenue bonds differ?",
+        "Explain municipal finance in your own words, and give an example.",
+        "A friend asks about municipal finance. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "They rely on different repayment sources: broader issuer backing versus specified revenues.",
+      "explanation": "Legal pledges and tax treatment vary. A project revenue bond depends on its defined revenue stream; neither label alone assures safety.",
+      "choices": [
+        "They rely on different repayment sources: broader issuer backing versus specified revenues.",
+        "Both are claims on the same corporate stock.",
+        "Revenue bonds always have a national government guarantee."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "They rely on different repayment sources: broader issuer backing versus specified revenues.",
+        "Legal pledges and tax treatment vary. A project revenue bond depends on its defined revenue stream; neither label alone assures safety."
+      ]
+    },
+    {
+      "id": "society-social",
+      "topic": "society",
+      "title": "Social insurance",
+      "prompts": [
+        "Why might governments supply unemployment or old-age insurance?",
+        "Explain social insurance in your own words, and give an example.",
+        "A friend asks about social insurance. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Broad coverage and redistribution can address risks private markets struggle to pool affordably.",
+      "explanation": "Public systems still face incentive, funding and demographic tradeoffs. Social insurance is not identical to private actuarially priced coverage.",
+      "choices": [
+        "Broad coverage and redistribution can address risks private markets struggle to pool affordably.",
+        "Governments can eliminate all risk at no cost.",
+        "Private insurance is impossible for every risk."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Broad coverage and redistribution can address risks private markets struggle to pool affordably.",
+        "Public systems still face incentive, funding and demographic tradeoffs. Social insurance is not identical to private actuarially priced coverage."
+      ]
+    },
+    {
+      "id": "society-pensions",
+      "topic": "society",
+      "title": "Defined benefit and defined contribution pensions",
+      "prompts": [
+        "Who primarily bears investment risk in a defined contribution plan?",
+        "Explain defined benefit and defined contribution pensions in your own words, and give an example.",
+        "A friend asks about defined benefit and defined contribution pensions. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The participant, whose retirement resources depend on contributions and investment results.",
+      "explanation": "Defined benefit plans promise a benefit formula and put more funding risk on the sponsor, subject to solvency and legal protections. Longevity and inflation risk also matter.",
+      "choices": [
+        "The participant, whose retirement resources depend on contributions and investment results.",
+        "The employer guarantees the same payout in all outcomes.",
+        "The exchange guarantees all returns."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The participant, whose retirement resources depend on contributions and investment results.",
+        "Defined benefit plans promise a benefit formula and put more funding risk on the sponsor, subject to solvency and legal protections. Longevity and inflation risk also matter."
+      ]
+    },
+    {
+      "id": "society-longevity",
+      "topic": "society",
+      "title": "Annuities and longevity risk",
+      "prompts": [
+        "What risk can a lifetime annuity pool?",
+        "Explain annuities and longevity risk in your own words, and give an example.",
+        "A friend asks about annuities and longevity risk. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "The risk of outliving one’s assets.",
+      "explanation": "The insurer pools uncertain lifetimes. Inflation, insurer solvency, liquidity loss and contract terms remain relevant. A fixed nominal annuity is not a real spending guarantee.",
+      "choices": [
+        "The risk of outliving one’s assets.",
+        "The risk that every stock rises too fast.",
+        "Every household’s exact future living expenses."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "The risk of outliving one’s assets.",
+        "The insurer pools uncertain lifetimes. Inflation, insurer solvency, liquidity loss and contract terms remain relevant. A fixed nominal annuity is not a real spending guarantee."
+      ]
+    },
+    {
+      "id": "society-nonprofit",
+      "topic": "society",
+      "title": "Nonprofits and cooperatives",
+      "prompts": [
+        "What distinguishes a nonprofit from a cooperative?",
+        "Explain nonprofits and cooperatives in your own words, and give an example.",
+        "A friend asks about nonprofits and cooperatives. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A nonprofit restricts profit distribution; a cooperative is owned and governed by members.",
+      "explanation": "Both can earn operating surpluses. Ownership and mission change governance, but neither form automatically solves agency problems.",
+      "choices": [
+        "A nonprofit restricts profit distribution; a cooperative is owned and governed by members.",
+        "Neither can receive revenue.",
+        "Both must distribute profits to outside shareholders."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "A nonprofit restricts profit distribution; a cooperative is owned and governed by members.",
+        "Both can earn operating surpluses. Ownership and mission change governance, but neither form automatically solves agency problems."
+      ]
+    },
+    {
+      "id": "society-advice",
+      "topic": "society",
+      "title": "Advice and conflicts",
+      "prompts": [
+        "Why ask how an adviser is compensated?",
+        "Explain advice and conflicts in your own words, and give an example.",
+        "A friend asks about advice and conflicts. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Compensation can influence product recommendations and create conflicts.",
+      "explanation": "Professional standards, disclosures and client obligations matter. A prudent decision fits risk capacity, liabilities and horizon; legal duties differ across arrangements and jurisdictions.",
+      "choices": [
+        "Compensation can influence product recommendations and create conflicts.",
+        "Compensation never affects incentives.",
+        "High fees guarantee better advice."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "Compensation can influence product recommendations and create conflicts.",
+        "Professional standards, disclosures and client obligations matter. A prudent decision fits risk capacity, liabilities and horizon; legal duties differ across arrangements and jurisdictions."
+      ]
+    },
+    {
+      "id": "society-democratization",
+      "topic": "society",
+      "title": "Democratization of finance",
+      "prompts": [
+        "What does broader financial access ideally accomplish?",
+        "Explain democratization of finance in your own words, and give an example.",
+        "A friend asks about democratization of finance. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "It helps more people finance productive activity and protect important risks.",
+      "explanation": "Access is valuable with understandable terms and suitable protection. Easy access to leveraged speculation alone does not establish improved welfare.",
+      "choices": [
+        "It helps more people finance productive activity and protect important risks.",
+        "It guarantees equal returns for everyone.",
+        "It means every citizen should become a day trader."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Course core",
+      "checklist": [
+        "It helps more people finance productive activity and protect important risks.",
+        "Access is valuable with understandable terms and suitable protection. Easy access to leveraged speculation alone does not establish improved welfare."
+      ]
+    },
+    {
+      "id": "modern-tplus",
+      "topic": "modern",
+      "title": "T+1 settlement",
+      "prompts": [
+        "What does T+1 mean for most covered U.S. securities trades?",
+        "Explain t+1 settlement in your own words, and give an example.",
+        "A friend asks about t+1 settlement. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Standard settlement one business day after the trade date.",
+      "explanation": "The U.S. transition took effect May 28, 2024. Settlement transfers securities and cash; weekends and holidays are not business days. Trade execution is a separate event.",
+      "choices": [
+        "Standard settlement one business day after the trade date.",
+        "Settlement exactly 24 hours after every trade.",
+        "Settlement one calendar month later."
+      ],
+      "formula": "",
+      "source": "settlement",
+      "kind": "Current context",
+      "checklist": [
+        "Standard settlement one business day after the trade date.",
+        "The U.S. transition took effect May 28, 2024. Settlement transfers securities and cash; weekends and holidays are not business days. Trade execution is a separate event."
+      ]
+    },
+    {
+      "id": "modern-capital26",
+      "topic": "modern",
+      "title": "Capital proposals in 2026",
+      "prompts": [
+        "What was the status of the U.S. March 19, 2026 capital package when released?",
+        "Explain capital proposals in 2026 in your own words, and give an example.",
+        "A friend asks about capital proposals in 2026. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Proposals for public comment, not automatically effective final rules.",
+      "explanation": "The package addressed final Basel components, standardized capital and the GSIB surcharge. Keep proposals separate from later adopted rules and domestic implementation dates.",
+      "choices": [
+        "Proposals for public comment, not automatically effective final rules.",
+        "All Basel rules became globally identical that day.",
+        "Every requirement disappeared immediately."
+      ],
+      "formula": "",
+      "source": "capital26",
+      "kind": "Current context",
+      "checklist": [
+        "Proposals for public comment, not automatically effective final rules.",
+        "The package addressed final Basel components, standardized capital and the GSIB surcharge. Keep proposals separate from later adopted rules and domestic implementation dates."
+      ]
+    },
+    {
+      "id": "modern-stress26",
+      "topic": "modern",
+      "title": "September 2026 stress-test update",
+      "prompts": [
+        "Did September’s final stress-test rules finalize the entire March capital package?",
+        "Explain september 2026 stress-test update in your own words, and give an example.",
+        "A friend asks about september 2026 stress-test update. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: they were separate final rules with their own implementation timing.",
+      "explanation": "The Fed finalized annual public input on scenarios and material model changes. Two-year stress-capital-buffer averaging begins in 2028. This is distinct from broader Basel capital proposals.",
+      "choices": [
+        "No: they were separate final rules with their own implementation timing.",
+        "Yes, every March proposal took effect in September.",
+        "Yes, all stress testing ended."
+      ],
+      "formula": "",
+      "source": "stress26",
+      "kind": "Current context",
+      "checklist": [
+        "No: they were separate final rules with their own implementation timing.",
+        "The Fed finalized annual public input on scenarios and material model changes. Two-year stress-capital-buffer averaging begins in 2028. This is distinct from broader Basel capital proposals."
+      ]
+    },
+    {
+      "id": "modern-private",
+      "topic": "modern",
+      "title": "Private credit",
+      "prompts": [
+        "Why can infrequently marked private loans look less volatile than public debt?",
+        "Explain private credit in your own words, and give an example.",
+        "A friend asks about private credit. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Infrequent valuation can smooth reported returns without removing economic risk.",
+      "explanation": "Borrower leverage, concentration, covenants, refinancing and illiquidity still matter. Compare cash flows and valuation methods before treating low reported volatility as safety.",
+      "choices": [
+        "Infrequent valuation can smooth reported returns without removing economic risk.",
+        "Their prices cannot fall.",
+        "Private loans cannot default."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "Infrequent valuation can smooth reported returns without removing economic risk.",
+        "Borrower leverage, concentration, covenants, refinancing and illiquidity still matter. Compare cash flows and valuation methods before treating low reported volatility as safety."
+      ]
+    },
+    {
+      "id": "modern-liquidity",
+      "topic": "modern",
+      "title": "Redemption versus asset liquidity",
+      "prompts": [
+        "Why can a fund promising frequent redemptions while holding illiquid loans be fragile?",
+        "Explain redemption versus asset liquidity in your own words, and give an example.",
+        "A friend asks about redemption versus asset liquidity. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Investor cash demands can arrive faster than assets can be sold at fair value.",
+      "explanation": "Gates, notice periods and liquidity buffers change the allocation of risk. Understand the actual redemption contract, not only the marketing label.",
+      "choices": [
+        "Investor cash demands can arrive faster than assets can be sold at fair value.",
+        "Illiquid assets can always be sold instantly at book value.",
+        "Redemption promises create extra asset value."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "Investor cash demands can arrive faster than assets can be sold at fair value.",
+        "Gates, notice periods and liquidity buffers change the allocation of risk. Understand the actual redemption contract, not only the marketing label."
+      ]
+    },
+    {
+      "id": "modern-stable",
+      "topic": "modern",
+      "title": "Stablecoins",
+      "prompts": [
+        "What should you examine before treating a stablecoin as dependable money?",
+        "Explain stablecoins in your own words, and give an example.",
+        "A friend asks about stablecoins. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Reserve quality, redemption rights, custody, governance and legal protections.",
+      "explanation": "A target peg is not a guarantee. Mechanisms differ; asset-backed and algorithmic structures face different risks. Rules change and should be checked in the relevant jurisdiction.",
+      "choices": [
+        "Reserve quality, redemption rights, custody, governance and legal protections.",
+        "Only whether the name includes stable.",
+        "Only the coin’s maximum supply."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "Reserve quality, redemption rights, custody, governance and legal protections.",
+        "A target peg is not a guarantee. Mechanisms differ; asset-backed and algorithmic structures face different risks. Rules change and should be checked in the relevant jurisdiction."
+      ]
+    },
+    {
+      "id": "modern-token",
+      "topic": "modern",
+      "title": "Tokenization",
+      "prompts": [
+        "Does tokenizing a bond eliminate its issuer’s credit risk?",
+        "Explain tokenization in your own words, and give an example.",
+        "A friend asks about tokenization. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: the recording or transfer mechanism can change while the underlying obligation stays risky.",
+      "explanation": "Rights, enforceability, custody and settlement design matter. A ledger entry is not automatically legal ownership of a redeemable asset.",
+      "choices": [
+        "No: the recording or transfer mechanism can change while the underlying obligation stays risky.",
+        "Yes, all blockchain claims are risk-free.",
+        "Yes, it guarantees a constant market price."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "No: the recording or transfer mechanism can change while the underlying obligation stays risky.",
+        "Rights, enforceability, custody and settlement design matter. A ledger entry is not automatically legal ownership of a redeemable asset."
+      ]
+    },
+    {
+      "id": "modern-crypto",
+      "topic": "modern",
+      "title": "Crypto custody",
+      "prompts": [
+        "What special risk arises from self-custody of cryptoassets?",
+        "Explain crypto custody in your own words, and give an example.",
+        "A friend asks about crypto custody. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Loss or compromise of signing keys can make assets inaccessible or transferable by an attacker.",
+      "explanation": "Exchange custody adds intermediary risk. Smart-contract bugs, governance and manipulation are other distinct hazards; a price history is not a security audit.",
+      "choices": [
+        "Loss or compromise of signing keys can make assets inaccessible or transferable by an attacker.",
+        "The issuer must restore every lost key.",
+        "Self-custody removes all operational risk."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "Loss or compromise of signing keys can make assets inaccessible or transferable by an attacker.",
+        "Exchange custody adds intermediary risk. Smart-contract bugs, governance and manipulation are other distinct hazards; a price history is not a security audit."
+      ]
+    },
+    {
+      "id": "modern-ai",
+      "topic": "modern",
+      "title": "Backtesting and AI",
+      "prompts": [
+        "Why can an impressive financial backtest fail in live use?",
+        "Explain backtesting and ai in your own words, and give an example.",
+        "A friend asks about backtesting and ai. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "Overfitting, data leakage, costs and changing market relationships can undermine it.",
+      "explanation": "Use genuinely out-of-sample data, realistic execution and careful validation. AI is a tool; adaptation by other traders can change the pattern it learned.",
+      "choices": [
+        "Overfitting, data leakage, costs and changing market relationships can undermine it.",
+        "Past accuracy guarantees future returns.",
+        "A complex model cannot leak future information."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "Overfitting, data leakage, costs and changing market relationships can undermine it.",
+        "Use genuinely out-of-sample data, realistic execution and careful validation. AI is a tool; adaptation by other traders can change the pattern it learned."
+      ]
+    },
+    {
+      "id": "modern-concentration",
+      "topic": "modern",
+      "title": "Index concentration",
+      "prompts": [
+        "Does owning a capitalization-weighted index guarantee balanced economic exposures?",
+        "Explain index concentration in your own words, and give an example.",
+        "A friend asks about index concentration. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "No: a few large firms or sectors can dominate its weights.",
+      "explanation": "Count underlying exposures across sectors, countries, factors and liabilities. Many holdings do not imply equal weights or independence.",
+      "choices": [
+        "No: a few large firms or sectors can dominate its weights.",
+        "Yes, every index is equally weighted.",
+        "Yes, passive funds cannot be concentrated."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "No: a few large firms or sectors can dominate its weights.",
+        "Count underlying exposures across sectors, countries, factors and liabilities. Many holdings do not imply equal weights or independence."
+      ]
+    },
+    {
+      "id": "modern-climate",
+      "topic": "modern",
+      "title": "Climate and insurance",
+      "prompts": [
+        "Why can physical climate risks complicate insurance pooling?",
+        "Explain climate and insurance in your own words, and give an example.",
+        "A friend asks about climate and insurance. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "They can change loss distributions and produce geographically correlated damage.",
+      "explanation": "Insurance pricing, exposure growth, reinsurance capacity and adaptation affect coverage. Historical averages may understate future risks when conditions shift.",
+      "choices": [
+        "They can change loss distributions and produce geographically correlated damage.",
+        "Climate risks are perfectly independent across neighboring houses.",
+        "More policies always eliminate catastrophe exposure."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "They can change loss distributions and produce geographically correlated damage.",
+        "Insurance pricing, exposure growth, reinsurance capacity and adaptation affect coverage. Historical averages may understate future risks when conditions shift."
+      ]
+    },
+    {
+      "id": "modern-cyber",
+      "topic": "modern",
+      "title": "Cyber and infrastructure concentration",
+      "prompts": [
+        "Why can reliance on a shared critical service create systemic risk?",
+        "Explain cyber and infrastructure concentration in your own words, and give an example.",
+        "A friend asks about cyber and infrastructure concentration. Explain the main idea and one limitation without using your notes."
+      ],
+      "answer": "A common operational failure can disrupt many otherwise separate firms.",
+      "explanation": "Payment systems, custody, cloud services and data feeds create dependencies. Redundancy, recovery plans and testing reduce but do not eliminate risk.",
+      "choices": [
+        "A common operational failure can disrupt many otherwise separate firms.",
+        "Each firm’s separate balance sheet prevents every shared outage.",
+        "Operational risk cannot affect financial markets."
+      ],
+      "formula": "",
+      "source": "coursera",
+      "kind": "Current context",
+      "checklist": [
+        "A common operational failure can disrupt many otherwise separate firms.",
+        "Payment systems, custody, cloud services and data feeds create dependencies. Redundancy, recovery plans and testing reduce but do not eliminate risk."
+      ]
+    }
+  ],
+  "sources": {
+    "course": [
+      "Yale · Financial Markets (2011)",
+      "https://oyc.yale.edu/economics/econ-252"
+    ],
+    "coursera": [
+      "Yale · Coursera syllabus",
+      "https://www.coursera.org/learn/financial-markets-global/"
+    ],
+    "basel": [
+      "BIS · Basel Framework",
+      "https://www.bis.org/committees/bcbs/basel-framework"
+    ],
+    "capital26": [
+      "Federal Reserve · March 19, 2026 proposals",
+      "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260319a.htm"
+    ],
+    "stress26": [
+      "Federal Reserve · September 30, 2026 final rules",
+      "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm"
+    ],
+    "money": [
+      "Bank of England · Money creation",
+      "https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy"
+    ],
+    "svb": [
+      "Federal Reserve · SVB review",
+      "https://www.federalreserve.gov/publications/2023-April-SVB-Key-Takeaways.htm"
+    ],
+    "settlement": [
+      "SEC · T+1 settlement",
+      "https://www.sec.gov/newsroom/press-releases/2024-62"
+    ],
+    "learning": [
+      "Dunlosky et al. · Learning techniques",
+      "https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html"
+    ]
+  }
+}

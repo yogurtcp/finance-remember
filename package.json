@@ -1,0 +1,12 @@
+{
+  "name": "finance-remember",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8765 --directory dist"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.12"
+  }
+}

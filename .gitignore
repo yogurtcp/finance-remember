@@ -1,0 +1,7 @@
+node_modules/
+__pycache__/
+*.tar.gz
+*.zip
+.openai/workflow-state.json
+node_modules
+standalone/
