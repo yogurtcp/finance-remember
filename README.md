@@ -34,7 +34,7 @@ Primary-source links accompany dated updates, including [U.S. T+1 settlement](ht
 
 Progress and notes are stored in this browser’s local storage. There is **no cloud sync**. Export a JSON backup in Settings; importing requires a validated file and an explicit replace action. Finance and Remember Languages use separate storage keys and backup identities. Changing domain, browser or device creates separate progress; use export/import to transfer it. Clearing site data can delete progress.
 
-After a successful online load and service-worker installation, the app works offline. System fonts work without external font downloads. On Android Chrome, use ⋮ → Add to Home screen; on iPhone Safari use Share → Add to Home Screen. Owner-private Sites access may require signing in online first. No analytics or AI answer-scoring service is included.
+After a successful online load and service-worker installation, the app works offline. Use **Install app** in the header for the browser install prompt or device-specific instructions. On Android Chrome, choose ⋮ → Install app or Add to Home screen; on iPhone Safari, choose Share → Add to Home Screen. Installed copies keep progress local to that browser and device. No analytics or AI answer-scoring service is included.
 
 ## Standalone version
 

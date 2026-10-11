@@ -13,6 +13,24 @@ function load(){try{const raw=localStorage.getItem(KEY);if(!raw)return fresh();c
  if(v.session&&Array.isArray(v.session.queue)&&v.session.queue.every(x=>byId[x])&&Number.isInteger(v.session.index)&&v.session.index>=0&&v.session.index<=v.session.queue.length&&Number.isFinite(v.session.seed)&&v.session.results&&v.session.retries)checked.session=v.session;
  return checked;}catch{recoveryBlocked=true;storageError='Saved progress could not be read. Your stored data has not been overwritten. Settings lets you download the original data.';return fresh();}}
 function banner(){return storageError?`<p class="errorbanner" role="alert">${esc(storageError)}</p>`:'';}
+function isInstalled(){return window.matchMedia?.('(display-mode: standalone)').matches||navigator.standalone===true;}
+async function installApp(){
+ if(isInstalled()){toast('Remember Finance is already installed on this device.');return;}
+ if(deferredInstall){
+  const prompt=deferredInstall;deferredInstall=null;
+  await prompt.prompt();
+  const choice=await prompt.userChoice;
+  if(choice?.outcome==='accepted')toast('Remember Finance is ready on your device.');
+  return;
+ }
+ const ua=navigator.userAgent||'',ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),android=/Android/i.test(ua),safari=/Safari/i.test(ua)&&!/Chrome|CriOS|Edg|OPR|Firefox/i.test(ua);
+ const instructions=ios?(safari?'In Safari, tap Share, then choose “Add to Home Screen.” Tap Add to finish.':'Open this page in Safari, tap Share, then choose “Add to Home Screen.” Tap Add to finish.'):
+  android?'In Chrome, tap ⋮, then “Install app” or “Add to Home screen.” Confirm the prompt to add it to your device.':
+  'In your browser, open its menu and choose “Install Remember Finance” or “Install app.” If that option is unavailable, open this link in Chrome or Edge and try again.';
+ document.querySelector('#installInstructions').textContent=instructions;
+ const dialog=document.querySelector('#installDialog');
+ if(dialog?.showModal)dialog.showModal();else toast(instructions);
+}
 function topicOptions(value='all'){return `<option value="all" ${value==='all'?'selected':''}>All topics</option>`+data.topics.map(t=>`<option value="${t.id}" ${value===t.id?'selected':''}>${esc(t.title)}</option>`).join('');}
 function counts(topic='all'){const a=cards.filter(c=>topic==='all'||c.topic===topic),now=Date.now();return {total:a.length,due:a.filter(c=>state.cards[c.id]?.due<=now).length,seen:a.filter(c=>state.cards[c.id]).length,stable:a.filter(c=>state.cards[c.id]?.stage>=3&&state.cards[c.id].rating!=='again').length};}
 function navigate(){question=null;revealed=false;draft='';render();}
@@ -77,8 +95,8 @@ function settings(){app.innerHTML=banner()+`<span class="eyebrow">MAKE IT A SUST
  document.querySelector('#export').onclick=()=>download(JSON.stringify({app:'finance-remember',version:1,exported:new Date().toISOString(),state},null,2),'finance-progress-'+dayKey()+'.json');
  document.querySelector('#rawbackup').onclick=()=>{try{download(localStorage.getItem(KEY)||'{}','finance-original-data.json');}catch{toast('This browser is blocking storage access.');}};
  document.querySelector('#import').onclick=()=>document.querySelector('#importfile').click();document.querySelector('#importfile').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>5000000)throw Error('Backup is too large.');const imported=validateBackup(JSON.parse(await file.text()),new Set(cards.map(c=>c.id)));const preview=document.querySelector('#importpreview');preview.innerHTML=`<p class="small">Valid backup: ${imported.imported} review records. Importing replaces this browser’s finance progress and ends its current session.</p><button id="confirmimport">Replace progress with this backup</button><button id="cancelimport">Cancel</button>`;document.querySelector('#cancelimport').onclick=()=>preview.innerHTML='';document.querySelector('#confirmimport').onclick=()=>{state=imported.state;recoveryBlocked=false;save();settings();toast('Progress imported.');};}catch(err){toast(err.message||'Could not read backup.');}};
- document.querySelector('#install').onclick=async()=>{if(deferredInstall){await deferredInstall.prompt();deferredInstall=null;}else toast('Android Chrome: ⋮ → Add to Home screen. iPhone Safari: Share → Add to Home Screen.');};
+ document.querySelector('#install').onclick=installApp;
 }
 function download(text,name){const url=URL.createObjectURL(new Blob([text],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-window.addEventListener('hashchange',navigate);window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;});
+window.addEventListener('hashchange',navigate);document.querySelector('#installApp').addEventListener('click',installApp);document.querySelector('#closeInstall').addEventListener('click',()=>document.querySelector('#installDialog').close());window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;});window.addEventListener('appinstalled',()=>{deferredInstall=null;document.querySelector('#installApp').hidden=true;toast('Remember Finance is installed.');});if(isInstalled())document.querySelector('#installApp').hidden=true;
 try{const res=await fetch('content.json');if(!res.ok)throw Error('Content could not load.');data=await res.json();cards=curriculum(data.cards,calculationCards());byId=Object.fromEntries(cards.map(c=>[c.id,c]));state=load();render();if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});}catch(err){app.innerHTML=`<p class="errorbanner">${esc(err.message)} Reload when you have a connection.</p>`;}
