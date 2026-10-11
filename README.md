@@ -7,7 +7,7 @@ A daily learning app for Robert Shiller’s introductory **Financial Markets** c
 ## Daily use
 
 1. Start the daily session: due reviews first, then up to four new concepts.
-2. Try to explain the answer aloud or write it before revealing it.
+2. Use the displayed formula and symbol definitions when relevant. Explain the concept or work the calculation before revealing the answer; formula memorization is not the goal.
 3. Compare the key idea, explanation and limitation. Rate your **original** attempt.
 4. Again means a major error or no recall; Hard means partial recall, assistance or a guess; Good means a correct explanation; Easy means clear and confident recall.
 5. Work the numeric problems using a calculator if needed, but choose and understand the method yourself.

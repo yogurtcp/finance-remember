@@ -322,6 +322,7 @@
       "formula": "Variance = Σ pᵢ(Rᵢ − μ)²; volatility = √variance",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "Σ means sum over outcomes; pᵢ = probability of outcome i; Rᵢ = return in that outcome; μ = expected (mean) return. Volatility is the square root of variance.",
       "checklist": [
         "Dispersion of returns around their mean.",
         "Variance uses squared deviations; standard deviation restores return units. It counts positive surprises as well as negative ones and does not describe the entire tail."
@@ -394,6 +395,7 @@
       "formula": "βᵢ = Cov(Rᵢ,Rₘ) / Var(Rₘ)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "βᵢ = asset i’s beta; Rᵢ = asset return; Rₘ = market return; Cov = covariance (joint movement); Var = variance (dispersion).",
       "checklist": [
         "No: it measures covariance with market returns relative to market variance.",
         "A low-beta stock can have large idiosyncratic or tail risk. Estimated beta depends on the benchmark and measurement period."
@@ -418,6 +420,7 @@
       "formula": "E[Rᵢ] = Rf + βᵢ(E[Rₘ] − Rf)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "E[Rᵢ] = expected return on asset i; Rf = risk-free rate; βᵢ = beta of asset i; E[Rₘ] = expected market return; E[Rₘ] − Rf = market risk premium. E[ ] means expected value.",
       "checklist": [
         "Nondiversifiable market risk, measured by beta.",
         "Its assumptions include mean–variance choice and a common market portfolio. Size, value and other empirical factors complicate the one-beta account."
@@ -456,10 +459,10 @@
         "Explain capital market line in your own words, and give an example.",
         "A friend asks about capital market line. Explain the main idea and one limitation without using your notes."
       ],
-      "answer": "The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.",
+      "answer": "The capital market line (CML) relates efficient portfolios to total volatility; the security market line (SML) relates expected return to beta.",
       "explanation": "The CML mixes a risk-free asset with the tangency portfolio. Under CAPM, the risky tangency portfolio is the market portfolio.",
       "choices": [
-        "The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.",
+        "The capital market line (CML) relates efficient portfolios to total volatility; the security market line (SML) relates expected return to beta.",
         "Both use total volatility for every individual stock.",
         "The CML prices only options."
       ],
@@ -467,7 +470,7 @@
       "source": "coursera",
       "kind": "Course core",
       "checklist": [
-        "The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.",
+        "The capital market line (CML) relates efficient portfolios to total volatility; the security market line (SML) relates expected return to beta.",
         "The CML mixes a risk-free asset with the tangency portfolio. Under CAPM, the risky tangency portfolio is the market portfolio."
       ]
     },
@@ -860,46 +863,48 @@
       "topic": "bonds",
       "title": "Face value and coupon",
       "prompts": [
-        "For a $1,000 bond with a 5% annual coupon, what are F and C?",
+        "A bond has a face value of $1,000 and a 5% annual coupon rate, paid once a year. What is its annual coupon payment, and how much principal is repaid at maturity?",
         "Explain face value and coupon in your own words, and give an example.",
         "A friend asks about face value and coupon. Explain the main idea and one limitation without using your notes."
       ],
-      "answer": "F is $1,000 repaid at maturity; C is $50 each year.",
+      "answer": "The annual coupon payment (C) is $50; the face value (F), or principal repaid at maturity, is $1,000.",
       "explanation": "Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal.",
       "choices": [
-        "F is $1,000 repaid at maturity; C is $50 each year.",
-        "F is today’s market price and C is market yield.",
-        "F is the total of all coupons."
+        "The annual coupon payment (C) is $50; the face value (F), or principal repaid at maturity, is $1,000.",
+        "The annual coupon payment is $1,000; the principal repaid is $50.",
+        "The annual coupon payment is $5; the principal repaid is $1,000."
       ],
-      "formula": "",
+      "formula": "C = F × c / m",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "C = coupon payment per payment period; F = face value (principal repaid at maturity); c = annual coupon rate as a decimal; m = coupon payments per year. This is a coupon-payment formula, not a bond-price formula.",
       "checklist": [
-        "F is $1,000 repaid at maturity; C is $50 each year.",
+        "The annual coupon payment (C) is $50; the face value (F), or principal repaid at maturity, is $1,000.",
         "Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal."
       ]
     },
     {
       "id": "bonds-time",
       "topic": "bonds",
-      "title": "Payment indices",
+      "title": "Payment periods and maturity",
       "prompts": [
-        "In a three-year annual-coupon bond formula, how do t and T differ?",
-        "Explain payment indices in your own words, and give an example.",
-        "A friend asks about payment indices. Explain the main idea and one limitation without using your notes."
+        "In the bond-pricing formula shown below, why does the payment-period index change while the total number of payment periods stays fixed? Use a three-year bond with annual coupons as an example.",
+        "Explain payment periods and maturity in your own words, and give an example.",
+        "A friend asks about payment periods and maturity. Explain the main idea and one limitation without using your notes."
       ],
-      "answer": "t runs through 1, 2 and 3; T stays fixed at 3.",
+      "answer": "The payment-period index (t) runs through 1, 2 and 3; the total number of payment periods until maturity (T) stays fixed at 3.",
       "explanation": "For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods.",
       "choices": [
-        "t runs through 1, 2 and 3; T stays fixed at 3.",
-        "t is the coupon rate and T is price.",
+        "The payment-period index (t) runs through 1, 2 and 3; the total number of payment periods until maturity (T) stays fixed at 3.",
+        "The payment-period index is the coupon rate; total periods means market price.",
         "Both symbols always mean calendar years."
       ],
       "formula": "P = Σₜ₌₁ᵀ C/(1+y)ᵗ + F/(1+y)ᵀ",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "P = current bond price; C = coupon payment per period; F = face value (principal repaid at maturity); y = yield to maturity per payment period; t = payment-period index; T = total remaining payment periods. Σ means add the discounted coupon payments. The last payment includes both C and F.",
       "checklist": [
-        "t runs through 1, 2 and 3; T stays fixed at 3.",
+        "The payment-period index (t) runs through 1, 2 and 3; the total number of payment periods until maturity (T) stays fixed at 3.",
         "For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods."
       ]
     },
@@ -932,7 +937,7 @@
       "topic": "bonds",
       "title": "YTM as an implied rate",
       "prompts": [
-        "How do you find YTM for a traded bond?",
+        "How do you find the yield to maturity (YTM) for a traded bond?",
         "Explain ytm as an implied rate in your own words, and give an example.",
         "A friend asks about ytm as an implied rate. Explain the main idea and one limitation without using your notes."
       ],
@@ -970,6 +975,7 @@
       "formula": "Current yield = annual coupon / market price",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "Annual coupon = all coupon payments received in one year; market price = the price paid for the bond. Use the same currency units for both.",
       "checklist": [
         "Current yield is annual coupon divided by price; YTM also incorporates repayment timing and price-to-par change.",
         "Neither is automatically an expected return after default losses. A discount bond can have current yield below YTM."
@@ -1042,6 +1048,7 @@
       "formula": "P = Σ CFₜ × DF(t)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "P = bond price; CFₜ = cash flow paid at time t; DF(t) = discount factor for that maturity; t = payment time; Σ means sum over payments.",
       "checklist": [
         "Different maturities can have different spot rates.",
         "YTM compresses a whole cash-flow schedule into one rate. Arbitrage-consistent pricing uses maturity-specific discount factors, then can report the implied YTM."
@@ -1066,6 +1073,7 @@
       "formula": "(1+s₂)² = (1+s₁)(1+f₁,₂)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "s₁ = effective annual one-year spot rate; s₂ = effective annual two-year spot rate; f₁,₂ = implied one-year forward rate for the interval from year 1 to year 2.",
       "checklist": [
         "No: it is a no-arbitrage forward rate and may include risk-premium effects.",
         "The expectations hypothesis adds assumptions about premiums. With annual compounding, a two-year investment and a rolled one-year investment define the one-year forward rate."
@@ -1090,6 +1098,7 @@
       "formula": "ΔP/P ≈ −Dmod Δy; Dmod = DMac/(1+y) for annual compounding",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "P = current bond price; ΔP = change in price; Δy = change in yield as a decimal; Dmod = modified duration; DMac = Macaulay duration; y = yield per annual payment period. Δ means change and ≈ means approximately equal.",
       "checklist": [
         "Approximately an 8% price decline for a small parallel yield change.",
         "Use Δy = 0.01. Macaulay duration is a cash-flow-weighted time measure; modified duration converts that to sensitivity. Convexity improves the approximation."
@@ -1114,6 +1123,7 @@
       "formula": "ΔP/P ≈ −Dmod Δy + ½ convexity (Δy)²",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "P = current bond price; ΔP = change in price; Δy = yield change as a decimal; Dmod = modified duration; convexity = the second-order price sensitivity measure. Δ means change; ≈ means an approximation.",
       "checklist": [
         "The price–yield relation is curved, and options can change expected cash flows.",
         "A standard option-free bond has positive convexity. Callable bonds and mortgage securities can show negative convexity as borrowers refinance when rates fall."
@@ -1210,6 +1220,7 @@
       "formula": "1 + real return = (1 + nominal return)/(1 + inflation)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "Nominal return = money return before inflation; real return = purchasing-power return; inflation = rate of increase in the price level. Enter all rates as decimals, using the same time period.",
       "checklist": [
         "It reduces the purchasing-power return.",
         "Match nominal cash flows with nominal discount rates, and real cash flows with real rates. Inflation-indexed bonds address specified index risk, not every household’s exact costs."
@@ -1234,6 +1245,7 @@
       "formula": "PVannuity = C[1 − (1+r)^−T]/r; PVperpetuity = C/r",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "PV = present value; C = constant payment each period; r = discount rate per payment period; T = total number of payments. Annuity payments end after T periods; perpetuity payments continue indefinitely.",
       "checklist": [
         "An annuity pays for a finite number of periods; a perpetuity continues indefinitely.",
         "A consol is a perpetual bond. These formulas assume level end-of-period payments and a positive constant discount rate."
@@ -1292,7 +1304,7 @@
       "topic": "equity",
       "title": "Gordon growth valuation",
       "prompts": [
-        "When is P = D₁/(r − g) meaningful?",
+        "Under what assumptions is the Gordon growth valuation formula shown below meaningful?",
         "Explain gordon growth valuation in your own words, and give an example.",
         "A friend asks about gordon growth valuation. Explain the main idea and one limitation without using your notes."
       ],
@@ -1306,6 +1318,7 @@
       "formula": "P₀ = D₁/(r − g), with r > g",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "P₀ = stock value today; D₁ = next period’s dividend per share; r = required return on equity; g = constant perpetual dividend growth rate. Both rates use the same period and decimal units.",
       "checklist": [
         "When dividends grow perpetually at a constant rate below the required return.",
         "D₁ is next period’s dividend, r is the required equity return, g is perpetual growth. A growth rate at or above r makes this infinite-horizon formula invalid."
@@ -1316,7 +1329,7 @@
       "topic": "equity",
       "title": "Enterprise and equity value",
       "prompts": [
-        "If you discount free cash flow to the firm at WACC, which value do you estimate?",
+        "If you discount free cash flow to the firm at the weighted average cost of capital (WACC), which value do you estimate?",
         "Explain enterprise and equity value in your own words, and give an example.",
         "A friend asks about enterprise and equity value. Explain the main idea and one limitation without using your notes."
       ],
@@ -1330,6 +1343,7 @@
       "formula": "WACC = E/(D+E) × Re + D/(D+E) × Rd × (1−tax rate)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "WACC = weighted average cost of capital; E = market value of equity; D = market value of debt; Re = required return on equity; Rd = cost of debt; tax rate = relevant corporate tax rate. E here means equity value, not an expected-value operator.",
       "checklist": [
         "Enterprise value, before reconciling debt and other claims to get equity value.",
         "Subtract debt and senior claims, add nonoperating cash where appropriate. Equity cash flows instead use the cost of equity. Consistent treatment avoids double counting."
@@ -1402,6 +1416,7 @@
       "formula": "CAPE = price index / average inflation-adjusted earnings over 10 years",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "CAPE = cyclically adjusted price-to-earnings ratio. The numerator is a stock-price index; the denominator is average earnings for that index over ten years, adjusted to a common purchasing-power basis.",
       "checklist": [
         "Ten years of real earnings, to inform long-horizon valuation comparisons.",
         "It can help frame expected returns, but cannot reliably time next month’s market. Accounting, sector composition, payout policy and discount rates affect comparisons."
@@ -1498,6 +1513,7 @@
       "formula": "NPV = −initial investment + Σ incremental CFₜ/(1+r)ᵗ",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "NPV = net present value; CFₜ = incremental project cash flow in period t; r = risk-appropriate discount rate per period; t = payment-period index; Σ means sum over future cash flows.",
       "checklist": [
         "When discounted incremental cash flows exceed the required initial investment.",
         "Use opportunity costs and an appropriate risk-adjusted rate. Exclude sunk costs, include working capital and relevant taxes. A positive accounting profit is not sufficient."
@@ -1546,6 +1562,7 @@
       "formula": "Cap rate = net operating income / property value",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "NOI = net operating income, before debt service; property value = the value of the property being assessed. Cap rate means capitalization rate.",
       "checklist": [
         "No: cap rate is NOI divided by property value, before financing and appreciation.",
         "NOI normally subtracts operating expenses but excludes debt service and income taxes; treatment of reserves and major capital expenses needs checking. Vacancy and costs can change it."
@@ -1594,6 +1611,7 @@
       "formula": "Payment = L × i/[1 − (1+i)^−n]; i = monthly rate, n = payments",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "L = starting loan principal; i = interest rate per payment period (monthly here); n = total number of payments; Payment = the level principal-and-interest payment. The rate and payment periods must match.",
       "checklist": [
         "Interest is charged on a shrinking outstanding balance, leaving more of the payment for principal.",
         "The payment may be constant while its composition changes. Taxes and insurance may be separate. With zero interest, payment is simply principal divided by periods."
@@ -1786,6 +1804,7 @@
       "formula": "Long forward payoff = S_T − K",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "S_T = underlying asset price at expiration time T; K = agreed delivery price in this forward contract; T = time of expiration. A long forward is the buyer’s side of the contract.",
       "checklist": [
         "The underlying settlement price minus the agreed delivery price.",
         "An at-market forward usually starts with approximately zero value; its delivery price differs from its later market value. The buyer is obligated, unlike an option holder."
@@ -1820,7 +1839,7 @@
       "topic": "derivatives",
       "title": "Cost-of-carry pricing",
       "prompts": [
-        "When is F₀ = S₀e^(rT) an appropriate benchmark?",
+        "When is the forward-pricing formula shown below an appropriate no-arbitrage benchmark?",
         "Explain cost-of-carry pricing in your own words, and give an example.",
         "A friend asks about cost-of-carry pricing. Explain the main idea and one limitation without using your notes."
       ],
@@ -1834,6 +1853,7 @@
       "formula": "F₀ = S₀e^(rT); with dividend yield q: S₀e^((r−q)T)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "F₀ = forward delivery price agreed today; S₀ = underlying asset’s spot price today; r = continuously compounded risk-free annual rate; T = time to delivery in years; q = continuous dividend yield; e = the exponential constant. F₀ here is a forward price, not a bond’s face value.",
       "checklist": [
         "For a non-income-producing asset with financing at r and no other carry benefits or costs.",
         "Dividend yield changes equity forwards to S₀e^((r−q)T). Commodities may add storage costs and convenience yield; FX involves both currencies’ interest rates."
@@ -1882,6 +1902,7 @@
       "formula": "Call payoff = max(S_T − K,0); simple profit = payoff − premium",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "S_T = stock price at expiration; K = strike (exercise) price; max(a,0) means use a if positive, otherwise zero. Payoff and premium are per share here.",
       "checklist": [
         "No: the payoff may be smaller than the premium and costs.",
         "At expiration payoff is max(S_T−K,0); simple profit subtracts premium. An unexercised worthless option costs the buyer its premium."
@@ -1906,6 +1927,7 @@
       "formula": "Put payoff = max(K − S_T,0)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "K = strike (exercise) price; S_T = stock price at expiration; max(a,0) means use a if positive, otherwise zero. Payoff is per share before subtracting the premium.",
       "checklist": [
         "No: the option can be bought independently.",
         "You can normally sell the option to realize value. Exercise and physical settlement can create other positions or requirements; owning a put alone does not automatically make you short."
@@ -1954,6 +1976,7 @@
       "formula": "C + K e^(−rT) = P + S₀",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "C = call option price today; P = put option price today; S₀ = stock price today; K = strike price; r = continuously compounded risk-free annual rate; T = years to expiration; e = exponential constant. C here is a call price, not a coupon; P is a put price, not a bond price.",
       "checklist": [
         "Two portfolios with identical terminal payoffs must have the same value absent arbitrage.",
         "For no dividends and matching strike and maturity: call plus discounted strike cash matches stock plus put. Dividends, early exercise and financing constraints alter the relation."
@@ -1978,6 +2001,7 @@
       "formula": "Δ = (Cᵤ − C_d)/(Sᵤ − S_d)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "Δ = replicating hedge ratio (shares per option); Cᵤ and C_d = call payoffs in the up and down states; Sᵤ and S_d = stock prices in those states. Subscripts u and d mean up and down.",
       "checklist": [
         "A stock-and-cash portfolio can replicate its payoffs in both states.",
         "The hedge ratio is the change in option payoff divided by the change in stock price. The risk-free gross return must lie between the up and down multipliers for no arbitrage."
@@ -2026,6 +2050,7 @@
       "formula": "C = S₀N(d₁) − K e^(−rT)N(d₂); d₁ = [ln(S₀/K)+(r+σ²/2)T]/(σ√T); d₂ = d₁−σ√T",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "C = European call price today; S₀ = stock price today; K = strike price; r = continuously compounded risk-free annual rate; T = years to expiration; σ = annualized volatility; N(x) = standard normal cumulative distribution function; ln = natural logarithm; e = exponential constant. d₁ and d₂ are the intermediate quantities defined in the formula; √T is the square root of time.",
       "checklist": [
         "A single constant volatility does not fit option prices across strikes and maturities.",
         "The model assumes a particular continuous price process and frictionless dynamic hedging. Implied volatility is the model input matching a price, not a certain future realized volatility."
@@ -2372,7 +2397,7 @@
       "topic": "banking",
       "title": "Risk-weighted capital",
       "prompts": [
-        "How do RWA differ from total assets?",
+        "How do risk-weighted assets (RWA) differ from total assets?",
         "Explain risk-weighted capital in your own words, and give an example.",
         "A friend asks about risk-weighted capital. Explain the main idea and one limitation without using your notes."
       ],
@@ -2386,6 +2411,7 @@
       "formula": "Capital ratio = qualifying regulatory capital / RWA",
       "source": "basel",
       "kind": "Course core",
+      "symbols": "RWA = risk-weighted assets; regulatory capital = qualifying loss-absorbing capital under the applicable rules. The denominator is weighted exposures, not total assets or cash reserves.",
       "checklist": [
         "Exposures are adjusted by regulatory risk weights rather than simply added at face value.",
         "A leverage ratio adds a differently defined non-risk-weighted backstop. Buffers, capital quality and off-balance-sheet exposures matter; an 8% example is not every bank’s complete requirement."
@@ -2746,6 +2772,7 @@
       "formula": "Leverage = assets/equity; equity = assets − debt",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "Assets = value of the investments held; debt = borrowing owed; equity = the residual value belonging to owners. Assets divided by equity is leverage in this example.",
       "checklist": [
         "Losses are borne by an equity cushion equal to one-fifth of the assets.",
         "For fixed debt and ignoring financing costs, equity return equals asset return times assets/equity. A sufficiently large decline can wipe out the cushion."
@@ -2962,6 +2989,7 @@
       "formula": "Δd ≈ (r−g)d + p; exact simple form: dₜ = [(1+r)/(1+g)]dₜ₋₁ + pₜ",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "d = debt-to-GDP ratio; Δd = change in that ratio; r = effective nominal interest rate on government debt; g = nominal GDP growth rate; p = primary deficit as a share of GDP. Subscripts t and t−1 mean current and prior periods. Rates and ratios use decimals; the approximation omits other adjustments.",
       "checklist": [
         "Interest relative to GDP growth, the primary balance and valuation or other adjustments.",
         "Use both r and g in consistent nominal or real terms. With a primary deficit p, an approximate formula is Δd ≈ (r−g)d + p; the exact simple ratio uses (r−g)/(1+g) times prior debt."

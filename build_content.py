@@ -41,7 +41,7 @@ systematic|Systematic risk|Can owning many technology shares eliminate recession
 beta|Beta|Does beta measure all of a stock’s risk?|No: it measures covariance with market returns relative to market variance.|A low-beta stock can have large idiosyncratic or tail risk. Estimated beta depends on the benchmark and measurement period.|Yes, beta equals total volatility.|No, beta measures only the dividend yield.|βᵢ = Cov(Rᵢ,Rₘ) / Var(Rₘ)
 capm|CAPM|Which risk does the basic CAPM reward with higher expected returns?|Nondiversifiable market risk, measured by beta.|Its assumptions include mean–variance choice and a common market portfolio. Size, value and other empirical factors complicate the one-beta account.|All company-specific risk equally.|Only the chance of a positive return.|E[Rᵢ] = Rf + βᵢ(E[Rₘ] − Rf)
 frontier|Efficient frontier|What makes a portfolio efficient in mean–variance theory?|No available portfolio improves expected return without increasing risk, or reduces risk at that return.|Efficiency is conditional on inputs and constraints. Estimation error can make the theoretically optimal allocation unstable.|It always earns the most in every outcome.|It contains only safe assets.
-cml|Capital market line|How does the capital market line differ from the security market line?|The CML relates efficient portfolios to total volatility; the SML relates expected return to beta.|The CML mixes a risk-free asset with the tangency portfolio. Under CAPM, the risky tangency portfolio is the market portfolio.|Both use total volatility for every individual stock.|The CML prices only options.
+cml|Capital market line|How does the capital market line differ from the security market line?|The capital market line (CML) relates efficient portfolios to total volatility; the security market line (SML) relates expected return to beta.|The CML mixes a risk-free asset with the tangency portfolio. Under CAPM, the risky tangency portfolio is the market portfolio.|Both use total volatility for every individual stock.|The CML prices only options.
 lln|Law of large numbers|When is insurance pooling most effective?|When many sufficiently independent, measurable losses are pooled.|Common catastrophes remain even in a huge pool. Reinsurance and reserves help handle concentrated losses; they do not make losses disappear.|When every claim happens at once.|When risks are perfectly positively correlated.
 var|Value at Risk|Does a 99% one-day VaR of $1 million cap losses at $1 million?|No: it is a loss threshold exceeded about 1% of days under the model.|VaR says little about loss severity beyond the threshold. Expected shortfall examines average tail loss; stress tests examine selected scenarios.|Yes, it is the worst possible loss.|Yes, except for transaction fees.
 tails|Fat tails and stress tests|Why can a normal-distribution risk model underestimate danger?|Extreme outcomes can be more frequent and dependence can worsen in crises.|Historical samples may miss rare events. Stress tests complement statistical models but are scenarios, not forecasts with certain probabilities.|Markets never experience unusual events.|Normal models always overstate losses.
@@ -66,10 +66,10 @@ narratives|Narrative economics|Why does Shiller care about stories spreading soc
 topic('bonds','04 · Money, bonds & yields','Cash flows first; prices and rates second',
 '''A conventional bond promises coupons and principal. Draw the timeline before using a formula. C is the coupon per payment period; F is face value; t indexes a payment; T is the number of remaining periods; y is yield per period. In the final period, pay C + F, not F alone.\n\nYTM is the single discount rate that makes promised cash flows equal the observed price. It is an internal rate of return, not a guaranteed terminal compound return: that interpretation requires coupon reinvestment at the same rate. With a nonflat yield curve, value payments using their own spot discount factors. Credit risk means promised and expected payments differ. Annual, semiannual and continuous conventions must not be mixed.''',
 '''
-face|Face value and coupon|For a $1,000 bond with a 5% annual coupon, what are F and C?|F is $1,000 repaid at maturity; C is $50 each year.|Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal.|F is today’s market price and C is market yield.|F is the total of all coupons.
-time|Payment indices|In a three-year annual-coupon bond formula, how do t and T differ?|t runs through 1, 2 and 3; T stays fixed at 3.|For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods.|t is the coupon rate and T is price.|Both symbols always mean calendar years.|P = Σₜ₌₁ᵀ C/(1+y)ᵗ + F/(1+y)ᵀ
+face|Face value and coupon|A bond has a face value of $1,000 and a 5% annual coupon rate, paid once a year. What is its annual coupon payment, and how much principal is repaid at maturity?|The annual coupon payment (C) is $50; the face value (F), or principal repaid at maturity, is $1,000.|Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal.|The annual coupon payment is $1,000; the principal repaid is $50.|The annual coupon payment is $5; the principal repaid is $1,000.|C = F × c / m
+time|Payment periods and maturity|In the bond-pricing formula shown below, why does the payment-period index change while the total number of payment periods stays fixed? Use a three-year bond with annual coupons as an example.|The payment-period index (t) runs through 1, 2 and 3; the total number of payment periods until maturity (T) stays fixed at 3.|For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods.|The payment-period index is the coupon rate; total periods means market price.|Both symbols always mean calendar years.|P = Σₜ₌₁ᵀ C/(1+y)ᵗ + F/(1+y)ᵀ
 market|Who sets market yield?|Does an issuer centrally dictate the yield accepted by investors?|No: offered terms meet investor demand, and traded prices imply yields.|An issuer and underwriters can propose a coupon and issue price. Bookbuilding tests demand; secondary transactions occur between investors. Comparable bond yields are observations, not a universal imposed rate.|Yes, investors must accept the announced yield.|Yes, a fixed coupon prevents price changes.
-ytminverse|YTM as an implied rate|How do you find YTM for a traded bond?|Solve for the rate that discounts its promised cash flows to its current price.|Use the observed price as input; valuation exercises can reverse the calculation and use a required yield to find a price. A complex bond can require yield-to-call or other measures.|Divide its face value by its price.|Use the coupon rate regardless of price.
+ytminverse|YTM as an implied rate|How do you find the yield to maturity (YTM) for a traded bond?|Solve for the rate that discounts its promised cash flows to its current price.|Use the observed price as input; valuation exercises can reverse the calculation and use a required yield to find a price. A complex bond can require yield-to-call or other measures.|Divide its face value by its price.|Use the coupon rate regardless of price.
 current|Current yield versus YTM|How is current yield different from YTM?|Current yield is annual coupon divided by price; YTM also incorporates repayment timing and price-to-par change.|Neither is automatically an expected return after default losses. A discount bond can have current yield below YTM.|They are always equal.|Current yield includes every possible future capital gain.|Current yield = annual coupon / market price
 reinvest|Reinvestment risk|Does holding a coupon bond to maturity guarantee terminal wealth compounding at YTM?|No: that terminal-wealth interpretation requires reinvesting coupons at YTM.|The cash-flow IRR remains YTM if promised payments arrive. What coupons earn after receipt is a separate decision and risk. Zero-coupon bonds have no interim coupon reinvestment.|Yes, regardless of what you do with coupons.|No, because the face value changes daily.
 price|Bond prices and yields|What usually happens to a fixed-rate bond price when its required yield rises?|Its price falls.|The contract pays the same amounts but those amounts are discounted more heavily. This relationship assumes unchanged contractual cash flows.|Its coupon automatically rises.|Its price must remain at face value.
@@ -88,8 +88,8 @@ topic('equity','05 · Stocks & corporations','Valuation, ownership & capital str
 '''
 residual|Residual ownership|Who normally has priority over common shareholders in liquidation?|Creditors and other senior claims.|A stockholder owns a residual interest, not a guaranteed claim to return of the original purchase price. Limited liability does not prevent a total equity loss.|Common shareholders always get paid first.|Every stakeholder receives the same amount.
 preferred|Common and preferred shares|What usually distinguishes preferred shares from common shares?|Preferred shares usually have specified dividend and liquidation priority, with different voting rights.|Terms vary. Preferred dividends may be suspendable and sometimes cumulative; preferred equity is not automatically a safe bond.|Preferred shares guarantee unlimited voting power.|Common shares have priority over every preferred share.
-gordon|Gordon growth valuation|When is P = D₁/(r − g) meaningful?|When dividends grow perpetually at a constant rate below the required return.|D₁ is next period’s dividend, r is the required equity return, g is perpetual growth. A growth rate at or above r makes this infinite-horizon formula invalid.|When g is greater than r forever.|When D₁ means the stock’s market price.|P₀ = D₁/(r − g), with r > g
-wacc|Enterprise and equity value|If you discount free cash flow to the firm at WACC, which value do you estimate?|Enterprise value, before reconciling debt and other claims to get equity value.|Subtract debt and senior claims, add nonoperating cash where appropriate. Equity cash flows instead use the cost of equity. Consistent treatment avoids double counting.|Only the value of the ordinary shares.|Only the company’s bank deposits.|WACC = E/(D+E) × Re + D/(D+E) × Rd × (1−tax rate)
+gordon|Gordon growth valuation|Under what assumptions is the Gordon growth valuation formula shown below meaningful?|When dividends grow perpetually at a constant rate below the required return.|D₁ is next period’s dividend, r is the required equity return, g is perpetual growth. A growth rate at or above r makes this infinite-horizon formula invalid.|When g is greater than r forever.|When D₁ means the stock’s market price.|P₀ = D₁/(r − g), with r > g
+wacc|Enterprise and equity value|If you discount free cash flow to the firm at the weighted average cost of capital (WACC), which value do you estimate?|Enterprise value, before reconciling debt and other claims to get equity value.|Subtract debt and senior claims, add nonoperating cash where appropriate. Equity cash flows instead use the cost of equity. Consistent treatment avoids double counting.|Only the value of the ordinary shares.|Only the company’s bank deposits.|WACC = E/(D+E) × Re + D/(D+E) × Rd × (1−tax rate)
 terminal|Terminal value|Why do small terminal-growth changes have large DCF effects?|Much of estimated value may lie in the distant cash flows, and r − g can be small.|A perpetually growing terminal value must fit a sustainable long-run economy and a mature cash-flow base. Sensitivity analysis is more honest than a single precise number.|Terminal value is independent of discount rates.|Terminal value means current cash in the bank.
 pe|Price-to-earnings ratios|Does a low P/E automatically mean a bargain?|No: it can reflect weak growth, unusual earnings or high risk.|Use comparable accounting and earnings periods. Negative or temporarily inflated earnings make the ratio unhelpful. Valuation requires a story about future cash flows and uncertainty.|Yes, low P/E guarantees excess returns.|Yes, P/E is a contractual payout.
 cape|CAPE|What does CAPE smooth, and what is its main use?|Ten years of real earnings, to inform long-horizon valuation comparisons.|It can help frame expected returns, but cannot reliably time next month’s market. Accounting, sector composition, payout policy and discount rates affect comparisons.|It predicts the exact date of a crash.|It uses only next quarter’s nominal earnings.|CAPE = price index / average inflation-adjusted earnings over 10 years
@@ -118,7 +118,7 @@ topic('derivatives','07 · Derivatives & hedging','Replication, payoff diagrams 
 '''
 forward|Forward contracts|What is a long forward’s expiration payoff?|The underlying settlement price minus the agreed delivery price.|An at-market forward usually starts with approximately zero value; its delivery price differs from its later market value. The buyer is obligated, unlike an option holder.|The maximum of the price difference and zero.|Always the full underlying price.|Long forward payoff = S_T − K
 futures|Futures and forwards|What operational feature distinguishes standard futures from typical forwards?|Exchange standardization and daily marking to market through clearing.|OTC forwards can also have collateral agreements. Clearing concentrates and manages counterparty risk; it does not remove margin, liquidity or clearinghouse risk.|Futures never need collateral.|Forwards always give a right without obligation.
-carry|Cost-of-carry pricing|When is F₀ = S₀e^(rT) an appropriate benchmark?|For a non-income-producing asset with financing at r and no other carry benefits or costs.|Dividend yield changes equity forwards to S₀e^((r−q)T). Commodities may add storage costs and convenience yield; FX involves both currencies’ interest rates.|For every commodity regardless of storage.|Only when future prices are certain.|F₀ = S₀e^(rT); with dividend yield q: S₀e^((r−q)T)
+carry|Cost-of-carry pricing|When is the forward-pricing formula shown below an appropriate no-arbitrage benchmark?|For a non-income-producing asset with financing at r and no other carry benefits or costs.|Dividend yield changes equity forwards to S₀e^((r−q)T). Commodities may add storage costs and convenience yield; FX involves both currencies’ interest rates.|For every commodity regardless of storage.|Only when future prices are certain.|F₀ = S₀e^(rT); with dividend yield q: S₀e^((r−q)T)
 basis|Basis risk|Why might a hedge fail to offset the business exposure exactly?|The hedge instrument and actual exposure can move differently.|Different commodities, locations, timing or grades create basis risk. A hedge can reduce overall risk without being perfect.|Every hedge guarantees exact cancellation.|Because hedge prices never change.
 call|Call payoff and profit|A call finishes in the money. Is it necessarily profitable for its buyer?|No: the payoff may be smaller than the premium and costs.|At expiration payoff is max(S_T−K,0); simple profit subtracts premium. An unexercised worthless option costs the buyer its premium.|Yes, in the money means positive net profit.|No, a call can never have positive payoff.|Call payoff = max(S_T − K,0); simple profit = payoff − premium
 put|Buying a put|Must you own a stock to buy a put and profit from its decline?|No: the option can be bought independently.|You can normally sell the option to realize value. Exercise and physical settlement can create other positions or requirements; owning a put alone does not automatically make you short.|Yes, ownership is always required.|Buying a put immediately sells the stock short.|Put payoff = max(K − S_T,0)
@@ -145,7 +145,7 @@ policy|Monetary-policy transmission|How can a higher policy rate slow demand?|It
 qe|Quantitative easing|Does QE necessarily mean handing new cash directly to households?|No: it involves central-bank asset purchases and corresponding balance-sheet changes.|Reserve balances rise. Effects depend on who sells, portfolio responses and credit conditions; reserve creation alone does not imply a proportional spending increase.|Yes, it is always a household grant.|Yes, it eliminates all public debt.
 qt|Quantitative tightening|How can QT shrink a central bank’s securities portfolio?|By letting assets mature without full reinvestment or selling assets.|Its effects depend on implementation, liquidity conditions and other balance-sheet movements. QT is different from raising the policy rate, though both can tighten conditions.|By increasing every bond’s coupon.|By deleting borrowers’ contractual debts.
 lender|Lender of last resort|What problem is emergency central-bank lending designed to address?|Acute funding and liquidity stress, subject to the facility’s terms.|Collateral, eligibility and pricing matter. Lending cannot by itself restore an institution whose economic losses exceed its equity; fiscal and resolution choices may be needed.|It guarantees every institution is solvent.|It replaces all supervision permanently.
-rwa|Risk-weighted capital|How do RWA differ from total assets?|Exposures are adjusted by regulatory risk weights rather than simply added at face value.|A leverage ratio adds a differently defined non-risk-weighted backstop. Buffers, capital quality and off-balance-sheet exposures matter; an 8% example is not every bank’s complete requirement.|RWA are the total interest paid by borrowers.|RWA are cash held by depositors.|Capital ratio = qualifying regulatory capital / RWA
+rwa|Risk-weighted capital|How do risk-weighted assets (RWA) differ from total assets?|Exposures are adjusted by regulatory risk weights rather than simply added at face value.|A leverage ratio adds a differently defined non-risk-weighted backstop. Buffers, capital quality and off-balance-sheet exposures matter; an 8% example is not every bank’s complete requirement.|RWA are the total interest paid by borrowers.|RWA are cash held by depositors.|Capital ratio = qualifying regulatory capital / RWA
 liquidityrules|Liquidity regulation|What do the LCR and NSFR broadly address?|Short-term liquidity under stress and stability of funding over a longer horizon.|The liquidity coverage ratio uses high-quality liquid assets and stressed outflows; the net stable funding ratio addresses funding structure. They complement capital requirements.|The same thing as stock-market beta.|Only the tax rate on deposits.
 insurance|Deposit insurance|Why can deposit insurance reduce bank runs but create incentives to take risk?|It reassures covered depositors while potentially weakening their monitoring.|Coverage depends on jurisdiction, institution, ownership category and limits. Supervision and loss-absorbing capital help contain moral hazard; not every account or product is covered.|It insures every financial asset worldwide.|It eliminates the need for capital.
 ''')
@@ -207,6 +207,90 @@ concentration|Index concentration|Does owning a capitalization-weighted index gu
 climate|Climate and insurance|Why can physical climate risks complicate insurance pooling?|They can change loss distributions and produce geographically correlated damage.|Insurance pricing, exposure growth, reinsurance capacity and adaptation affect coverage. Historical averages may understate future risks when conditions shift.|Climate risks are perfectly independent across neighboring houses.|More policies always eliminate catastrophe exposure.
 cyber|Cyber and infrastructure concentration|Why can reliance on a shared critical service create systemic risk?|A common operational failure can disrupt many otherwise separate firms.|Payment systems, custody, cloud services and data feeds create dependencies. Redundancy, recovery plans and testing reduce but do not eliminate risk.|Each firm’s separate balance sheet prevents every shared outage.|Operational risk cannot affect financial markets.
 ''',kind='Current context')
+formula_symbols = {'risk-variance': 'Σ means sum over outcomes; pᵢ = probability of outcome i; Rᵢ = return in that outcome; μ '
+                  '= expected (mean) return. Volatility is the square root of variance.',
+ 'risk-beta': 'βᵢ = asset i’s beta; Rᵢ = asset return; Rₘ = market return; Cov = covariance (joint '
+              'movement); Var = variance (dispersion).',
+ 'risk-capm': 'E[Rᵢ] = expected return on asset i; Rf = risk-free rate; βᵢ = beta of asset i; E[Rₘ] = '
+              'expected market return; E[Rₘ] − Rf = market risk premium. E[ ] means expected value.',
+ 'bonds-face': 'C = coupon payment per payment period; F = face value (principal repaid at maturity); c = '
+               'annual coupon rate as a decimal; m = coupon payments per year. This is a coupon-payment '
+               'formula, not a bond-price formula.',
+ 'bonds-time': 'P = current bond price; C = coupon payment per period; F = face value (principal repaid at '
+               'maturity); y = yield to maturity per payment period; t = payment-period index; T = total '
+               'remaining payment periods. Σ means add the discounted coupon payments. The last payment '
+               'includes both C and F.',
+ 'bonds-current': 'Annual coupon = all coupon payments received in one year; market price = the price paid '
+                  'for the bond. Use the same currency units for both.',
+ 'bonds-spot': 'P = bond price; CFₜ = cash flow paid at time t; DF(t) = discount factor for that maturity; t '
+               '= payment time; Σ means sum over payments.',
+ 'bonds-forward': 's₁ = effective annual one-year spot rate; s₂ = effective annual two-year spot rate; f₁,₂ '
+                  '= implied one-year forward rate for the interval from year 1 to year 2.',
+ 'bonds-duration': 'P = current bond price; ΔP = change in price; Δy = change in yield as a decimal; Dmod = '
+                   'modified duration; DMac = Macaulay duration; y = yield per annual payment period. Δ '
+                   'means change and ≈ means approximately equal.',
+ 'bonds-convexity': 'P = current bond price; ΔP = change in price; Δy = yield change as a decimal; Dmod = '
+                    'modified duration; convexity = the second-order price sensitivity measure. Δ means '
+                    'change; ≈ means an approximation.',
+ 'bonds-real': 'Nominal return = money return before inflation; real return = purchasing-power return; '
+               'inflation = rate of increase in the price level. Enter all rates as decimals, using the same '
+               'time period.',
+ 'bonds-annuity': 'PV = present value; C = constant payment each period; r = discount rate per payment '
+                  'period; T = total number of payments. Annuity payments end after T periods; perpetuity '
+                  'payments continue indefinitely.',
+ 'equity-gordon': 'P₀ = stock value today; D₁ = next period’s dividend per share; r = required return on '
+                  'equity; g = constant perpetual dividend growth rate. Both rates use the same period and '
+                  'decimal units.',
+ 'equity-wacc': 'WACC = weighted average cost of capital; E = market value of equity; D = market value of '
+                'debt; Re = required return on equity; Rd = cost of debt; tax rate = relevant corporate tax '
+                'rate. E here means equity value, not an expected-value operator.',
+ 'equity-cape': 'CAPE = cyclically adjusted price-to-earnings ratio. The numerator is a stock-price index; '
+                'the denominator is average earnings for that index over ten years, adjusted to a common '
+                'purchasing-power basis.',
+ 'equity-npv': 'NPV = net present value; CFₜ = incremental project cash flow in period t; r = '
+               'risk-appropriate discount rate per period; t = payment-period index; Σ means sum over future '
+               'cash flows.',
+ 'housing-caprate': 'NOI = net operating income, before debt service; property value = the value of the '
+                    'property being assessed. Cap rate means capitalization rate.',
+ 'housing-amortization': 'L = starting loan principal; i = interest rate per payment period (monthly here); '
+                         'n = total number of payments; Payment = the level principal-and-interest payment. '
+                         'The rate and payment periods must match.',
+ 'derivatives-forward': 'S_T = underlying asset price at expiration time T; K = agreed delivery price in '
+                        'this forward contract; T = time of expiration. A long forward is the buyer’s side '
+                        'of the contract.',
+ 'derivatives-carry': 'F₀ = forward delivery price agreed today; S₀ = underlying asset’s spot price today; r '
+                      '= continuously compounded risk-free annual rate; T = time to delivery in years; q = '
+                      'continuous dividend yield; e = the exponential constant. F₀ here is a forward price, '
+                      'not a bond’s face value.',
+ 'derivatives-call': 'S_T = stock price at expiration; K = strike (exercise) price; max(a,0) means use a if '
+                     'positive, otherwise zero. Payoff and premium are per share here.',
+ 'derivatives-put': 'K = strike (exercise) price; S_T = stock price at expiration; max(a,0) means use a if '
+                    'positive, otherwise zero. Payoff is per share before subtracting the premium.',
+ 'derivatives-parity': 'C = call option price today; P = put option price today; S₀ = stock price today; K = '
+                       'strike price; r = continuously compounded risk-free annual rate; T = years to '
+                       'expiration; e = exponential constant. C here is a call price, not a coupon; P is a '
+                       'put price, not a bond price.',
+ 'derivatives-binomial': 'Δ = replicating hedge ratio (shares per option); Cᵤ and C_d = call payoffs in the '
+                         'up and down states; Sᵤ and S_d = stock prices in those states. Subscripts u and d '
+                         'mean up and down.',
+ 'derivatives-bs': 'C = European call price today; S₀ = stock price today; K = strike price; r = '
+                   'continuously compounded risk-free annual rate; T = years to expiration; σ = annualized '
+                   'volatility; N(x) = standard normal cumulative distribution function; ln = natural '
+                   'logarithm; e = exponential constant. d₁ and d₂ are the intermediate quantities defined '
+                   'in the formula; √T is the square root of time.',
+ 'banking-rwa': 'RWA = risk-weighted assets; regulatory capital = qualifying loss-absorbing capital under '
+                'the applicable rules. The denominator is weighted exposures, not total assets or cash '
+                'reserves.',
+ 'crises-leverage': 'Assets = value of the investments held; debt = borrowing owed; equity = the residual '
+                    'value belonging to owners. Assets divided by equity is leverage in this example.',
+ 'society-debtdynamics': 'd = debt-to-GDP ratio; Δd = change in that ratio; r = effective nominal interest '
+                         'rate on government debt; g = nominal GDP growth rate; p = primary deficit as a '
+                         'share of GDP. Subscripts t and t−1 mean current and prior periods. Rates and '
+                         'ratios use decimals; the approximation omits other adjustments.'}
+for c in cards:
+    if c['formula']:
+        c['symbols'] = formula_symbols[c['id']]
+
 # Explicit primary sources for dated and institution-specific content.
 for c in cards:
     c['source']={'modern-tplus':'settlement','modern-capital26':'capital26','modern-stress26':'stress26','crises-svb':'svb','banking-creation':'money','banking-reserves':'money','banking-qe':'money','banking-rwa':'basel','banking-liquidityrules':'basel'}.get(c['id'],c['source'])
