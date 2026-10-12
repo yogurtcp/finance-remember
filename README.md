@@ -4,6 +4,14 @@
 
 A daily learning app for Robert Shiller’s introductory **Financial Markets** course, with useful conceptual and mathematical gaps filled and dated updates checked on **October 11, 2026**. Coverage follows the [published Coursera syllabus](https://www.coursera.org/learn/financial-markets-global/) and the shared Financial Markets core. Recording dates do not organize the curriculum. The separate Narrative Economics course is outside scope.
 
+## Guided bond-lesson trial
+
+Choose **Trials** in the navigation or **Try the bond lessons** on Today. Three short lessons follow the same fictional three-year bond: its payment promise, the price–yield relationship, and a final-year worked calculation. Each starts with context; questions provide explanations immediately, and “Walk me through it” is available without answering. A yield slider makes the relationship visible. Lessons can be resumed and revisited, with a simple “lighter / similar / still heavy” reflection at the end.
+
+This is a small trial, not a replacement curriculum. Trial progress uses its own browser key (`finance-bond-trials-v1`) and does not change card grades, due dates or daily limits. Current finance progress exports do not include these trial records. You can preview the lessons in any order, though the suggested pace is one per day.
+
+For an immediate local preview, run `python3 build_standalone.py` and open `standalone/bond-trials.html`; this self-contained file opens directly to the trial overview without needing a server.
+
 ## Daily use
 
 1. Start the daily session: due reviews first, then up to four new concepts.
