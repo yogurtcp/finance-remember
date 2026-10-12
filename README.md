@@ -1,6 +1,6 @@
 # Remember Finance
 
-**[Open Remember Finance](https://finance-remember.sites.openai.com/)** — start a daily finance learning session.
+**[Open Remember Finance](https://finance-remember.yogurt-co.chatgpt.site/)** — start a daily finance learning session.
 
 A daily learning app for Robert Shiller’s introductory **Financial Markets** course, with useful conceptual and mathematical gaps filled and dated updates checked on **October 11, 2026**. Coverage follows the [published Coursera syllabus](https://www.coursera.org/learn/financial-markets-global/) and the shared Financial Markets core. Recording dates do not organize the curriculum. The separate Narrative Economics course is outside scope.
 
