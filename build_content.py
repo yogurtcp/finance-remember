@@ -291,6 +291,20 @@ for c in cards:
     if c['formula']:
         c['symbols'] = formula_symbols[c['id']]
 
+number_notes = {
+    'risk-var': 'The example chooses 99% confidence and a $1 million loss threshold as assumptions. Exceedance probability = 100% − 99% = 1%; the threshold itself is a model output, not derived from the confidence level alone.',
+    'bonds-face': 'Example inputs: $1,000 face value and 5% annual coupon rate with one payment per year. Coupon = $1,000 × (5/100) = $50; final payment = $1,000 + $50 = $1,050.',
+    'bonds-time': 'Example term is three years. Annual periods = 3 × 1 = 3; semiannual periods = 3 × 2 = 6. The index labels individual payments rather than a separate rate.',
+    'bonds-duration': 'Example inputs are modified duration 8 and a one-percentage-point yield increase. Decimal yield change = 1/100 = 0.01. Approximate price change = −8 × 0.01 = −0.08, or −8%.',
+    'banking-rwa': 'An 8% requirement is an illustrative input to an example rule, not a computed universal requirement. Convert it to 0.08 before multiplying by the applicable risk-weighted assets.'
+}
+for c in cards:
+    if c['id'] in number_notes:
+        c['numberNotes'] = number_notes[c['id']]
+    if c['id'] == 'derivatives-riskneutral':
+        c['formula'] = 'q = [(1+r) − d]/(u − d)'
+        c['symbols'] = 'q = risk-neutral up-state pricing weight; r = risk-free rate for the modeled period; u = up-state stock-price multiplier; d = down-state stock-price multiplier. The no-arbitrage condition is d < 1+r < u; actual forecast probabilities are separate.'
+
 # Explicit primary sources for dated and institution-specific content.
 for c in cards:
     c['source']={'modern-tplus':'settlement','modern-capital26':'capital26','modern-stress26':'stress26','crises-svb':'svb','banking-creation':'money','banking-reserves':'money','banking-qe':'money','banking-rwa':'basel','banking-liquidityrules':'basel'}.get(c['id'],c['source'])

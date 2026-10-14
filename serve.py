@@ -24,7 +24,7 @@ try:
     server = ThreadingHTTPServer(('127.0.0.1', args.port), handler)
 except OSError as error:
     parser.exit(1, f'Could not start on port {args.port}: {error}\nChoose another port with npm start -- --port 8767\n')
-print(f'Remember Finance: http://localhost:{args.port}/#trials', flush=True)
+print(f'Remember Finance: http://localhost:{args.port}/#today', flush=True)
 try:
     server.serve_forever()
 except KeyboardInterrupt:

@@ -2,68 +2,92 @@
 
 **[Open Remember Finance](https://finance-remember.yogurt-co.chatgpt.site/)** — start a daily finance learning session.
 
-A daily learning app for Robert Shiller’s introductory **Financial Markets** course, with useful conceptual and mathematical gaps filled and dated updates checked on **October 11, 2026**. Coverage follows the [published Coursera syllabus](https://www.coursera.org/learn/financial-markets-global/) and the shared Financial Markets core. Recording dates do not organize the curriculum. The separate Narrative Economics course is outside scope.
-
-## Guided bond-lesson trial
-
-Choose **Trials** in the navigation or **Try the bond lessons** on Today. Three short lessons follow the same fictional three-year bond: its payment promise, the price–yield relationship, and a final-year worked calculation. Each starts with context; questions provide explanations immediately, and “Walk me through it” is available without answering. A yield slider makes the relationship visible. Lessons can be resumed and revisited, with a simple “lighter / similar / still heavy” reflection at the end.
-
-This is a small trial, not a replacement curriculum. Trial progress uses its own browser key (`finance-bond-trials-v1`) and does not change card grades, due dates or daily limits. Current finance progress exports do not include these trial records. You can preview the lessons in any order, though the suggested pace is one per day.
-
-For an immediate local preview, run `python3 build_standalone.py` and open `standalone/bond-trials.html`; this self-contained file opens directly to the trial overview without needing a server.
+A guided study companion to Robert Shiller’s introductory [Financial Markets course](https://www.coursera.org/learn/financial-markets-global/). Forty-five short lessons cover all 140 existing concepts and 28 calculation families. Financial rules and historical notes retain their dated source snapshot, checked October 11, 2026. Recording dates do not organize the course.
 
 ## Daily use
 
-1. Start the daily session: due reviews first, then up to four new concepts.
-2. Use the displayed formula and symbol definitions when relevant. Explain the concept or work the calculation before revealing the answer; formula memorization is not the goal.
-3. Compare the key idea, explanation and limitation. Rate your **original** attempt.
-4. Again means a major error or no recall; Hard means partial recall, assistance or a guess; Good means a correct explanation; Easy means clear and confident recall.
-5. Work the numeric problems using a calculator if needed, but choose and understand the method yourself.
+1. Open **Today** and press **Start lesson** or **Continue lesson**.
+2. Read the situation and explanation once. Numerical examples label their assumptions and show the calculation behind each result.
+3. Try one application question, or choose **Walk me through it**.
+4. Choose **Clear** or **Needs another look**, then stop for the day or continue if you want.
 
-The first session tackles face value, coupon payments, payment periods and who determines market yields. New material then spans the introductory course. Focus on one topic when needed; Extra practice is available anytime.
+**Lessons** browses the course by chapter. **Reference** searches the full concept and formula library. **Explain key terms** and **Explain formula terms** provide short definitions on demand. Further detail and additional numerical variations are optional. There is no forced immediate repetition in the main lesson flow.
 
-The library contains **140 concept cards**, three recall prompts per concept and **28 parameterized calculation templates**. Twelve topics cover purpose and incentives; risk and portfolios; efficiency and psychology; bonds and rates; stocks and corporations; housing and mortgages; derivatives; banking; institutions and trading; leverage and crises; public finance and society; and a focused modern-context section. Topic lessons connect the cards into a reference review. Questions and explanations are independently authored, not copied course assessments.
+The first three lessons retain the familiar bond story in a shorter format. The price explorer now shows the discounting calculation for every slider value. Each later lesson introduces a concrete situation rather than starting with an isolated question. Later reviews retain that situation and offer the full explanation in a collapsed refresher.
 
-## Retention design
+## Connections and history
 
-Retrieval practice and distributed practice are supported by [Dunlosky et al.](https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html). This app uses a transparent spacing heuristic rather than claiming to estimate memory with a validated model. Correct recall advances through 1, 3, 7, 14, 30, 60 and 120 days; Easy skips a stage; Hard returns tomorrow; Again resets and adds up to two in-session retries after intervening questions when available. Same-session recovery remains due tomorrow. Interleaving due topics helps distinguish related ideas.
+Every chapter has a collapsed **Connections & history** section, also available in its most relevant lesson and searchable in Reference. Each adds a short extra concept, a historical episode, a connection to the lesson, brief term definitions, links to another chapter, and primary sources. Reading these sections does not add questions or change review scheduling. These additions were researched October 14, 2026; the lesson connections are our interpretations of the sourced history.
 
-Multiple choice is optional. Requesting choices while in recall mode caps the rating at Hard; a wrong selected or numeric answer requires Again. Deliberately choosing multiple-choice mode still relies on honest self-rating of guesses. Numeric answers are checked with explicit units and reasonable rounding tolerance. Numbers vary across attempts, with a fixed seed within an active question.
+| Chapter | Extra concept | Historical connection |
+| --- | --- | --- |
+| Finance’s purpose | Liquid ownership versus long-lived business capital | VOC shares, 1602 |
+| Risk | Diversifying job income and investments together | Markowitz’s portfolio selection, 1952 |
+| Behavior | Expectations about others’ expectations | South Sea Bubble, 1720 |
+| Bonds | Breakeven inflation and its interpretation | First U.S. TIPS auction, 1997 |
+| Equity | Economic rights versus voting control | Google’s IPO structure, 2004 |
+| Housing | Duration gaps from the lender’s perspective | Savings and loan crisis, 1980s |
+| Derivatives | Risk generated by simultaneous hedging | Portfolio insurance, 1987 |
+| Banking | Self-fulfilling runs and coordination | Panic of 1907 |
+| Institutions | First-mover incentives in fund redemptions | Reserve Primary Fund, 2008 |
+| Crises | Convergence trades and survival of funding stress | LTCM, 1998 |
+| Public finance | Funded versus pay-as-you-go pensions | Social Security’s creation, 1935 |
+| Modern finance | Credibility of a conversion mechanism | TerraUSD and Luna, 2022 |
 
-Extra practice does not postpone an existing spaced review. New concepts first encountered there are scheduled normally and count toward that day’s introductions. A saved session resumes after leaving or reloading. “Spaced” progress measures interval status, not demonstrated mastery.
+## Numbers and formulas
 
-## Current content
+Worked examples use hypothetical teaching inputs, clearly identified as assumptions rather than current market quotes. All 28 calculation templates expose input labels and intermediate working: decimal conversion, units, cash-flow timing, principal/coupon distinctions and rounding where applicable. Results are calculated at full precision before display rounding. Fixed bond examples separately show coupon and principal construction and each discounted payment.
 
-The app distinguishes economic mechanisms, simplified models, historical examples, dated proposals and final rules. Important corrections include YTM versus expected return and reinvestment assumptions; spot discount factors versus a single YTM; capital versus reserves; ETF wrapper versus passive strategy; option payoff versus profit; and units in debt-ratio dynamics.
+Dates, implementation timing and standard contractual conventions are identified as source or definition facts rather than calculated amounts. Links to primary sources remain in the related-concept reference. Simplified models and their limits are stated in the lessons and reference explanations.
 
-Primary-source links accompany dated updates, including [U.S. T+1 settlement](https://www.sec.gov/newsroom/press-releases/2024-62), the [March 2026 capital proposals](https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260319a.htm), and the [September 2026 stress-test final rules](https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm). No automatic news or regulatory refresh is implied. The app is a study companion, not personalized investment advice or an official Yale product.
+## Retention and progress
 
-## Data and installation
+A clear lesson initially schedules a review in three days; later intervals roughly double, up to sixty days. Needs another look schedules tomorrow. These are practical heuristics, not a validated personal memory model or a guarantee of mastery. Due reviews include a context reminder and one application, with the fuller lesson available on request. [Research on practice testing and distributed practice](https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html) informed the retention design.
 
-Progress and notes are stored in this browser’s local storage. There is **no cloud sync**. Export a JSON backup in Settings; importing requires a validated file and an explicit replace action. Finance and Remember Languages use separate storage keys and backup identities. Changing domain, browser or device creates separate progress; use export/import to transfer it. Clearing site data can delete progress.
+The home page chooses an active lesson first, then a due review, then an unexplored lesson. All chapters stay available for manual browsing. Completion records practice and the learner’s confidence, rather than certifying understanding.
 
-After a successful online load and service-worker installation, the app works offline. Use **Install app** in the header for the browser install prompt or device-specific instructions. On Android Chrome, choose ⋮ → Install app or Add to Home screen; on iPhone Safari, choose Share → Add to Home Screen. Installed copies keep progress local to that browser and device. No analytics or AI answer-scoring service is included.
+Earlier card practice remains under **Settings → Optional card-practice preferences**. Its card IDs, notes, review history and storage key are preserved. It retains its own daily limits and grading behavior; it is not the main learning path.
 
-## Standalone version
+## Your data
 
-Run `python3 build_standalone.py` to create `standalone/finance-remember.html`. Open that single file directly in a browser; its code, styles and course data are embedded, so it needs no server or network. Local-file storage behavior depends on your browser; keep backups. This standalone file does not install a service worker or provide the hosted PWA installation flow.
+Lesson progress uses `finance-guided-lessons-v1`; earlier card progress still uses `finance-remember-v1`. Completed original bond trials are recognized from `finance-bond-trials-v1`. A partly explored trial resumes as its new compact lesson. Original trial records remain untouched.
 
-## Develop
+Settings exports both card and lesson progress in a validated JSON backup. Import requires an explicit replacement action after validation. Older backups without lesson data leave current lesson progress intact. Raw recovery downloads include all three original storage values. There is no account synchronization. Different browsers, devices, domains and local ports have separate storage; use export/import to transfer progress.
 
-Buildless browser application, with no runtime dependencies:
+After an initial successful load and service-worker installation, the hosted app works offline. Installation is available from the header when the browser supports it, with platform-specific instructions otherwise. No analytics, account backend or automatic text-grading service is included.
+
+## Run locally
 
 ```sh
-npm ci
-npm test
 npm start
 ```
 
-`npm start` serves `dist/` locally at **http://localhost:8766/#trials**. To select another port, run `npm start -- --port 9000`. Stop the server with Ctrl+C. Rebuild authored course data with `python3 build_content.py`. Preserve card IDs when changing text so review history remains compatible. Bump `dist/sw.js` cache version for releases. The hosting manifest selects `dist/` as the static directory.
+Open **http://localhost:8766/#today**. To select another port:
 
-Tests cover spaced scheduling, daily limits, retries, backup validation, varied math, independent numerical checks and UI flows for grading, library search and session recovery. Browser and phone-layout checks remain unverified in this environment: no browser was available and starting a local server was blocked. The standalone artifact is also exercised with network requests disabled.
+```sh
+npm start -- --port 9000
+```
 
-Hosted source upload is currently blocked by network restrictions: the shell could not resolve the Sites Git server. The local repository and standalone app are usable; no successful production deployment is claimed.
+Stop the server with Ctrl+C. Changing ports changes the browser storage origin.
 
-## Related app
+For a server-free preview, run `python3 build_standalone.py` and open `standalone/guided-finance.html`. `finance-remember.html` is the same full app; `bond-trials.html` opens the bond chapter for compatibility. Browser behavior for local-file storage can differ, so keep backups.
 
-[Remember Languages](https://yogurtcp.github.io/mandarin-remember/) is already tracked in its own Git repository, `yogurtcp/mandarin-remember`. This project is separate and does not alter its curriculum, hosting or saved progress.
+## Maintain and verify
+
+```sh
+npm ci
+python3 build_content.py
+npm test
+```
+
+`build_content.py` writes the existing concept reference. `dist/lesson-content.js` contains the authored lesson groups and short glossary. `guided-progress.js` manages lesson persistence and trial migration; `guided-ui.js` renders the main flow. `connections.js` contains the optional researched enrichment and its source links. `calculations.js` supplies varying problems, explicit assumptions and worked steps. The static hosting directory remains `dist/`.
+
+Preserve concept and lesson IDs when correcting wording. Add newly covered concepts to a lesson group; coverage checks verify that every concept is included exactly once and every calculation family is available. Bump the service-worker cache for published changes. The standalone build embeds all modules and content without runtime dependencies.
+
+Automated checks cover numeric benchmarks, parameterized calculations, full curriculum coverage, migration, review scheduling, backup validation, storage failures, all 45 lesson flows, optional calculations and preservation of the earlier review mode. Browser visual QA is unavailable in this session; responsive layout is implemented but not visually verified here.
+
+## Scope and related app
+
+This is an independently written learning companion, not an official Yale product or a reproduction of its assessments. Its reference retains appropriate model limitations and dated source links for modern financial developments. The separate Narrative Economics course is outside scope.
+
+[Remember Languages](https://yogurtcp.github.io/mandarin-remember/) remains a separate app and Git repository. Changes here do not alter its curriculum or saved progress.

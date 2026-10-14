@@ -517,6 +517,7 @@
       "formula": "",
       "source": "coursera",
       "kind": "Course core",
+      "numberNotes": "The example chooses 99% confidence and a $1 million loss threshold as assumptions. Exceedance probability = 100% − 99% = 1%; the threshold itself is a model output, not derived from the confidence level alone.",
       "checklist": [
         "No: it is a loss threshold exceeded about 1% of days under the model.",
         "VaR says little about loss severity beyond the threshold. Expected shortfall examines average tail loss; stress tests examine selected scenarios."
@@ -878,6 +879,7 @@
       "source": "coursera",
       "kind": "Course core",
       "symbols": "C = coupon payment per payment period; F = face value (principal repaid at maturity); c = annual coupon rate as a decimal; m = coupon payments per year. This is a coupon-payment formula, not a bond-price formula.",
+      "numberNotes": "Example inputs: $1,000 face value and 5% annual coupon rate with one payment per year. Coupon = $1,000 × (5/100) = $50; final payment = $1,000 + $50 = $1,050.",
       "checklist": [
         "The annual coupon payment (C) is $50; the face value (F), or principal repaid at maturity, is $1,000.",
         "Face value is a contractual principal amount, not necessarily the purchase price. The final payment includes both the final coupon and principal."
@@ -903,6 +905,7 @@
       "source": "coursera",
       "kind": "Course core",
       "symbols": "P = current bond price; C = coupon payment per period; F = face value (principal repaid at maturity); y = yield to maturity per payment period; t = payment-period index; T = total remaining payment periods. Σ means add the discounted coupon payments. The last payment includes both C and F.",
+      "numberNotes": "Example term is three years. Annual periods = 3 × 1 = 3; semiannual periods = 3 × 2 = 6. The index labels individual payments rather than a separate rate.",
       "checklist": [
         "The payment-period index (t) runs through 1, 2 and 3; the total number of payment periods until maturity (T) stays fixed at 3.",
         "For semiannual coupons on the same maturity, T is 6 and t indexes half-years. Match the yield and coupon to those periods."
@@ -1099,6 +1102,7 @@
       "source": "coursera",
       "kind": "Course core",
       "symbols": "P = current bond price; ΔP = change in price; Δy = change in yield as a decimal; Dmod = modified duration; DMac = Macaulay duration; y = yield per annual payment period. Δ means change and ≈ means approximately equal.",
+      "numberNotes": "Example inputs are modified duration 8 and a one-percentage-point yield increase. Decimal yield change = 1/100 = 0.01. Approximate price change = −8 × 0.01 = −0.08, or −8%.",
       "checklist": [
         "Approximately an 8% price decline for a small parallel yield change.",
         "Use Δy = 0.01. Macaulay duration is a cash-flow-weighted time measure; modified duration converts that to sensitivity. Convexity improves the approximation."
@@ -2023,9 +2027,10 @@
         "Yes, they are measured survey probabilities.",
         "Yes, risk-neutral investors guarantee no losses."
       ],
-      "formula": "",
+      "formula": "q = [(1+r) − d]/(u − d)",
       "source": "coursera",
       "kind": "Course core",
+      "symbols": "q = risk-neutral up-state pricing weight; r = risk-free rate for the modeled period; u = up-state stock-price multiplier; d = down-state stock-price multiplier. The no-arbitrage condition is d < 1+r < u; actual forecast probabilities are separate.",
       "checklist": [
         "No: they are pricing weights consistent with no-arbitrage and discounting at the risk-free rate.",
         "In a binomial model, q = [(1+r)−d]/(u−d). Real-world expected returns include risk compensation; pricing weights serve a different purpose."
@@ -2412,6 +2417,7 @@
       "source": "basel",
       "kind": "Course core",
       "symbols": "RWA = risk-weighted assets; regulatory capital = qualifying loss-absorbing capital under the applicable rules. The denominator is weighted exposures, not total assets or cash reserves.",
+      "numberNotes": "An 8% requirement is an illustrative input to an example rule, not a computed universal requirement. Convert it to 0.08 before multiplying by the applicable risk-weighted assets.",
       "checklist": [
         "Exposures are adjusted by regulatory risk weights rather than simply added at face value.",
         "A leverage ratio adds a differently defined non-risk-weighted backstop. Buffers, capital quality and off-balance-sheet exposures matter; an 8% example is not every bank’s complete requirement."
