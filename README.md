@@ -58,7 +58,7 @@ npm test
 npm start
 ```
 
-`npm start` serves `dist/` at port 8765. Rebuild authored course data with `python3 build_content.py`. Preserve card IDs when changing text so review history remains compatible. Bump `dist/sw.js` cache version for releases. The hosting manifest selects `dist/` as the static directory.
+`npm start` serves `dist/` locally at **http://localhost:8766/#trials**. To select another port, run `npm start -- --port 9000`. Stop the server with Ctrl+C. Rebuild authored course data with `python3 build_content.py`. Preserve card IDs when changing text so review history remains compatible. Bump `dist/sw.js` cache version for releases. The hosting manifest selects `dist/` as the static directory.
 
 Tests cover spaced scheduling, daily limits, retries, backup validation, varied math, independent numerical checks and UI flows for grading, library search and session recovery. Browser and phone-layout checks remain unverified in this environment: no browser was available and starting a local server was blocked. The standalone artifact is also exercised with network requests disabled.
 

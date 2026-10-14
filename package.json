@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "python3 build_standalone.py && node --test tests/*.test.js",
-    "start": "python3 -m http.server 8765 --directory dist"
+    "start": "python3 serve.py"
   },
   "devDependencies": {
     "linkedom": "0.18.12"
