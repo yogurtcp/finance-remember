@@ -1,15 +1,13 @@
-# Push the guided finance app update
+# Publishing Remember Finance updates
 
-The user prefers asking the other Codex to push. Push the latest local `main` from `/home/yevgeny/Documents/Codex/finance-remember` to the existing `git@github.com:yogurtcp/finance-remember.git` remote, preserving any newer work; do not force-push.
+The user has now authorized this agent to push to GitHub and update the existing deployed Site. The earlier preference to ask another Codex to push has been superseded.
 
-This update makes the guided approach the main app: 45 lessons cover every existing concept and calculation family. Each teaches a case once and asks one application question. Extra practice is optional. Numerical examples identify assumptions and show intermediate calculations; term-definition buttons open on demand.
+Local checkout: `/home/yevgeny/Documents/Codex/finance-remember`. GitHub remote: `git@github.com:yogurtcp/finance-remember.git`. Preserve newer changes and never force-push.
 
-Existing card data is preserved. Completed bond trials migrate into the guided course, with original records untouched. Backups include both lesson and card progress, and older imports preserve current lesson data.
+The October 20 readability update expands all 45 lessons into short connected reading sections, rewrites all 140 Reference explanations and the topic glossary, and explains units and periods in all 28 calculation families. Reviews retain the first explanatory section with further reading available on request. There is still one application question; optional history and practice remain optional. Existing progress IDs and storage keys are unchanged.
 
-All 12 chapters also include optional **Connections & history** sections with extra concepts, historical episodes, short definitions, and primary-source links, researched October 14, 2026. They appear in the relevant lesson and Reference search as well. They add no mandatory questions.
+Run `python3 build_content.py` and `npm test`. Reference prose is authored in `reference-explanations.txt`; lessons and glossary are in `dist/lesson-content.js`. The service-worker cache is `remember-finance-v6`. Publish the full `dist/` directory.
 
-Run `npm test`. The service-worker cache has been bumped and new modules must be included in publication: `lesson-content.js`, `guided-progress.js`, `connections.js`, and `guided-ui.js`. The hosting output remains `dist/`.
+Use the current Sites skill and `.openai/hosting.json` to update the SAME public Site. Open and sync its source with the supported helper, package the verified pushed commit, save a version and deploy without changing access. Return https://finance-remember.yogurt-co.chatgpt.site.
 
-Update the SAME deployed Site recorded in `.openai/hosting.json`, using the applicable Sites skill and supported source-sync workflow. Do not create another project or change its audience. Verify Today starts a lesson, Lessons covers the full course, formula definitions open, worked numbers show their derivation, history panels start collapsed, Reference finds “TerraUSD,” and old trial URLs still open the corresponding compact lessons. Return the existing live URL.
-
-Local preview uses `npm start` at http://localhost:8766/#today. The generated standalone preview is `standalone/guided-finance.html`. These changes have been verified with automated checks; browser visual QA was unavailable in this session.
+Check units and section headings in the yield lesson, calculator output meanings, preserved progress, all course chapters, and Reference search. Browser visual verification was unavailable in this session. Local preview remains `npm start` at http://localhost:8766/#today.

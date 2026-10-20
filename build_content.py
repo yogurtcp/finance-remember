@@ -308,6 +308,70 @@ for c in cards:
 # Explicit primary sources for dated and institution-specific content.
 for c in cards:
     c['source']={'modern-tplus':'settlement','modern-capital26':'capital26','modern-stress26':'stress26','crises-svb':'svb','banking-creation':'money','banking-reserves':'money','banking-qe':'money','banking-rwa':'basel','banking-liquidityrules':'basel'}.get(c['id'],c['source'])
+# Explain units next to the symbols instead of requiring readers to infer them.
+formula_units = {
+ 'risk-variance': 'Returns and volatility use the stated return period. Variance uses squared return units. Take the square root to obtain volatility.',
+ 'risk-beta': 'Beta has no units. The market and investment returns must use matching periods and conventions.',
+ 'risk-capm': 'Rates are percentages for the same period, commonly per year. Beta is unitless. In a decimal calculation, divide percentages by 100 first.',
+ 'bonds-face': 'F and C are dollars. The coupon rate is a percentage per year entered as a decimal. Divide the annual coupon dollars by payments per year.',
+ 'bonds-time': 'Price, coupon and face value are dollars. The yield is a decimal per payment period. Count periods using the same payment schedule.',
+ 'bonds-current': 'Annual coupon is dollars per year and price is dollars. Multiply their ratio by 100 for an annual coupon-income percentage.',
+ 'bonds-spot': 'Payments and price are dollars. Each spot rate is a decimal for the matching compounding period; time counts those periods.',
+ 'bonds-forward': 'Spot and forward rates here are effective annual rates entered as decimals. The forward rate covers the second year, from year 1 to year 2.',
+ 'bonds-duration': 'Yield changes are decimal differences in rates. Multiply the resulting fractional price change by 100 for percent of starting price. Macaulay duration uses years.',
+ 'bonds-convexity': 'Yield changes are entered as decimal rate differences. The result is a fractional price change; multiply by 100 for percent.',
+ 'bonds-real': 'Use nominal return and inflation for the same period. Enter them as decimals. Multiply the final result by 100 for a real percentage return.',
+ 'bonds-annuity': 'Payments and present value are dollars. The rate is a decimal per payment period and T is the number of payments.',
+ 'equity-gordon': 'D₁ is dollars per share next year. Required return and growth are decimals per year. The result is dollars per share today.',
+ 'equity-wacc': 'Debt and equity weights are fractions of total financing value. The financing costs and tax rate are decimal rates. WACC is a rate per period, commonly per year.',
+ 'equity-cape': 'CAPE is a valuation ratio, often described as times earnings. It is not an annual percentage return. Prices and earnings must use consistent index and inflation treatment.',
+ 'equity-npv': 'Cash flows and NPV are dollars. The discount rate is a decimal per period and t counts matching periods.',
+ 'housing-caprate': 'NOI is dollars per year. Property value is dollars. Multiply their ratio by 100 for the annual operating-income percentage.',
+ 'housing-amortization': 'L and the payment are dollars. i is a decimal per month and n counts monthly payments. This excludes taxes, insurance and fees.',
+ 'derivatives-forward': 'Settlement price, delivery price and payoff use dollars per unit of underlying, such as dollars per share. Multiply by the number of units for the whole position.',
+ 'derivatives-carry': 'Spot and forward prices are dollars per asset unit. r and q are decimal continuously compounded annual rates, and T is years.',
+ 'derivatives-call': 'All stock, strike, premium and payoff amounts use dollars per share here. Net profit subtracts the premium from payoff.',
+ 'derivatives-put': 'All stock, strike, premium and payoff amounts use dollars per share here. Net profit subtracts the premium from payoff.',
+ 'derivatives-parity': 'Option and stock prices are dollars per share. r is a decimal continuously compounded annual rate and T is years.',
+ 'derivatives-binomial': 'Payoffs and stock prices use matching dollar units. Their differences give a hedge ratio in shares per option on one share.',
+ 'derivatives-riskneutral': 'q is a unitless pricing weight, not a forecast guarantee. r is the decimal rate for one modeled period. u and d are unitless price multipliers.',
+ 'derivatives-bs': 'Call, stock and strike prices use dollars per share. Time is years; r is a decimal continuously compounded annual rate. σ is annualized volatility entered as a decimal.',
+ 'banking-rwa': 'Capital and RWA are dollar amounts. Multiply the ratio by 100 for percent. This percentage is not a loan interest rate or a cash reserve percentage.',
+ 'crises-leverage': 'Assets, debt and equity are dollars. Assets divided by equity is stated in times, not percent per year.',
+ 'society-debtdynamics': 'Use decimal ratios and annual rates consistently. Multiply the ratio change by 100 for percentage points of GDP, not percent growth of dollar debt.'
+}
+for c in cards:
+    if c['formula']:
+        c['symbols'] += '; Units: ' + formula_units[c['id']]
+
+topic_introductions = {
+ 'purpose': 'A workshop needs equipment. A saver has money that is not needed immediately. Finance creates agreements that connect them: a loan promises repayments, while shares give the saver ownership. Insurance can separately protect a specified loss.\n\nStart by asking who pays whom, when they pay, and what happens if things go wrong. The point is to make useful activity possible and risks bearable. Hidden information and conflicting incentives explain why understandable contracts and oversight matter.',
+ 'risk': 'An average gain does not tell you how painful a loss might be. Begin with the possible outcomes, how likely they are, the period they cover and whether the person can afford the downside. A return can be stated in dollars or as a percentage of the starting investment.\n\nNext, look at investments together. Owning more names helps only to the extent that their problems differ. Volatility describes variation around an average; correlation describes joint movement. Neither is a promise that losses cannot occur.',
+ 'behavior': 'A share price reflects what people expect, not just what has already happened. A profitable company can disappoint investors if they expected even more. Stories and the behavior of other investors can influence those expectations.\n\nPeople also bring reference points and habits to decisions. Holding a loser to reach the purchase price again does not itself improve its prospects. These lessons connect market information with the way people interpret and act on it.',
+ 'bonds': 'A bond is a loan represented by a tradable contract. Face value is the principal promised at the end. A coupon is an interest payment in dollars. The coupon rate is an annual percentage of face value used to calculate those payments.\n\nThe price paid today can differ from face value. Yield relates the purchase price to promised payments and is usually quoted as a percentage per year under a stated convention. Follow the dollar payments and their dates before applying the formula. Then consider default, changing market rates and inflation.',
+ 'equity': 'Buying an ordinary share makes you an owner of a business. You receive a claim on what remains after obligations with higher priority. Its value can rise or fall; it does not promise the return of your purchase price.\n\nValuation asks what future money could reach investors and what that money is worth today. Earnings ratios help compare price with business results, but they are not promised annual returns. New shares, dividends and buybacks also move money and ownership in different ways.',
+ 'housing': 'A home is somewhere to live as well as an asset with an uncertain future sale price. A mortgage adds borrowing, interest payments and a repayment schedule. Compare the money that must leave the household with the value and flexibility it receives.\n\nAn investment property produces operating income after ordinary expenses. Cap rate compares that annual income with property value before borrowing costs. Mortgage-backed investments combine home-loan payments, but pooling cannot remove every default or timing risk.',
+ 'derivatives': 'A derivative is a contract whose payments depend on another price or event. A forward obligates an exchange later at an agreed price. An option gives its buyer a choice, and buying that choice costs a premium.\n\nSeparate the payoff at the end from profit after purchase costs. Keep dollars per share distinct from whole-contract dollars. Pricing models compare matching future payments, while practical hedging also needs cash, trading access and attention to assumptions.',
+ 'banking': 'A bank owes deposits to customers and holds assets such as loans and securities. Equity is assets minus liabilities: the owners’ remaining stake. Losses reduce that cushion when obligations stay fixed.\n\nLiquidity means finding cash for payments now. Solvency means assets are worth enough to cover obligations. These are different questions. Lending, central-bank operations, capital rules and deposit insurance all interact with them, but no single mechanism removes every risk.',
+ 'institutions': 'Different financial firms perform different jobs. A broker acts for a client, a dealer trades for itself, and an investment bank can help a company issue securities. Ask which role the firm is performing and how it is paid.\n\nFunds pool investments, but their trading and withdrawal rules differ. A fund price is dollars per share; annual fees are percentages per year when quoted as expense ratios. The assets inside and the investor’s need for cash matter as much as the product label.',
+ 'crises': 'Borrowing magnifies the gain or loss on the owner’s own money. A lender may require cash or extra collateral before an investment has time to recover. Forced selling can then lower prices for other holders.\n\nFinancial crises often combine losses, fragile funding and common reactions. Look at the path as well as the final value: who needs cash, who can withdraw, who owns similar assets and which services must keep working?',
+ 'society': 'Finance also organizes public borrowing, retirement income and protection against unemployment or living a long life. The useful question is which risk is shared and who finances the promise.\n\nGovernment debt compared with GDP is a ratio, while annual interest and growth are rates. Pension promises are payments under particular rules, not all the same kind of investment account. Institutions should be judged by how their arrangements serve people’s needs.',
+ 'modern': 'New market structures and technologies still raise familiar questions: what is promised, who must pay, what supports the claim and how quickly can money be returned? A new name or ledger does not remove those questions.\n\nRead regulations with their scope and effective dates. Check whether reported private-asset prices are updated frequently. Treat token rights and model predictions as arrangements to understand, rather than guarantees. The dated source snapshot is identified separately from the teaching examples.'
+}
+for t in topics:
+    t['lesson'] = topic_introductions[t['id']]
+
+# The authored readability pass is also used by Reference and earlier card practice.
+readable_rows = [line.split('|') for line in (root/'reference-explanations.txt').read_text().splitlines()
+                 if line.strip() and not line.startswith('#')]
+assert all(len(row) == 3 for row in readable_rows), 'Invalid readable reference row'
+readable = {slug: (answer, explanation) for slug, answer, explanation in readable_rows}
+assert len(readable_rows) == len(readable) == len(cards)
+assert set(readable) == {c['id'] for c in cards}, 'Every reference concept needs a readable explanation'
+for c in cards:
+    c['answer'], c['explanation'] = readable[c['id']]
+    c['choices'][0] = c['answer']
+
 # Keep one stable memory record per concept; alternate wording does not create duplicate progress.
 for c in cards:
     c['checklist']=[c['answer'],c['explanation']]

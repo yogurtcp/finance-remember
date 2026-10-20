@@ -22,6 +22,17 @@ test('guided course covers all existing concepts exactly once and all calculatio
  const keys=new Set(guidedLessons.flatMap(l=>l.calculations));assert.deepEqual(keys,new Set(calculationCards().map(c=>c.key)));for(const l of guidedLessons){assert.equal(l.options.length,3);assert.ok(l.correct>=0&&l.correct<3);assert.ok(l.context.length>50);assert.ok(l.teaching.length>120);}
 });
 test('all generated examples expose assumptions, terms and numeric working',()=>{for(const c of calculationCards())for(let seed=0;seed<10;seed++){const g=generate(c.key,seed*101);assert.ok(g.givens.length>=2,c.key);assert.ok(g.steps.length>=2,c.key);assert.ok(g.formula&&g.symbols,c.key);assert.ok(g.steps.every(s=>typeof s==='string'&&s.length>10));assert.ok(Number.isFinite(g.answer));}});
+test('calculation results distinguish amounts, rates, point changes and unitless exposures',()=>{
+ for(const c of calculationCards()){const g=generate(c.key,42);assert.ok(g.unitLabel&&g.readingGuide&&g.resultMeaning,c.key);}
+ assert.match(generate('duration',42).unitLabel,/percent of starting price/);
+ assert.match(generate('debt',42).unitLabel,/percentage points/);
+ assert.match(generate('ltv',42).unitLabel,/at the valuation date/);
+ assert.match(generate('mortgage',42).unitLabel,/dollars per month/);
+ assert.match(generate('binomial',42).unitLabel,/shares per option/);
+ assert.match(generate('expected',42).prompt,/one year/);
+ assert.match(generate('leverage',42).resultMeaning,/No annual period is implied/);
+ for(const id of ['promise','price','yield'])assert.ok(bondLessonExample(id).unitLabel&&bondLessonExample(id).resultMeaning);
+});
 test('familiar bond prices and the per-payment working stay consistent',()=>{const p=bondLessonExample('price');assert.equal(p.answerText,'$973.27');assert.ok(p.steps.some(s=>s.includes('$47.17')));assert.ok(p.steps.some(s=>s.includes('$44.50')));assert.ok(p.steps.some(s=>s.includes('$881.60')));const y=bondLessonExample('yield');assert.equal(y.answerText,'$990.57');assert.ok(y.steps.some(s=>s.includes('$59.43')));});
 test('one completed application schedules spaced review, without in-session repetition',()=>{const p=freshGuided();assert.deepEqual(nextGuided(p,now),{id:'promise',kind:'learn'});startGuided(p,'promise',now);assert.deepEqual(nextGuided(p,now),{id:'promise',kind:'continue'});finishGuided(p,'promise','clear',now);assert.equal(p.lessons.promise.due,now+3*day);assert.deepEqual(nextGuided(p,now),{id:'price',kind:'learn'});assert.deepEqual(nextGuided(p,now+4*day),{id:'promise',kind:'review'});startGuided(p,'promise',now+4*day);finishGuided(p,'promise','close',now+4*day);assert.equal(p.lessons.promise.interval,1);assert.equal(p.lessons.promise.due,now+5*day);});
 test('lesson backup validation rejects malformed records before replacing progress',()=>{const p=freshGuided();startGuided(p,'promise',now);finishGuided(p,'promise','clear',now);assert.deepEqual(validateGuided(p),p);const bad=structuredClone(p);bad.lessons.promise.choice=99;assert.throws(()=>validateGuided(bad));bad.lessons.promise.choice=null;bad.lessons.promise.due=NaN;assert.throws(()=>validateGuided(bad));});

@@ -41,7 +41,7 @@ test('slider shows the calculation for every changed bond price',async()=>{
 });
 test('every course lesson works in standalone mode and has a single main question',async()=>{
  const {guidedLessons}=await import('../dist/lesson-content.js');const u=await setup(new Map(),true);
- for(const l of guidedLessons){u.go('#lesson/'+l.id);assert.ok(u.doc.querySelector('.guided-context'),l.id);assert.equal(u.doc.querySelectorAll('.guided-application').length,1,l.id);assert.ok(u.text().includes(l.title));u.click('#guide-walkthrough');u.click('[data-guide-finish=clear]');assert.ok(u.text().includes('Lesson complete'),l.id);}
+ for(const l of guidedLessons){u.go('#lesson/'+l.id);assert.ok(u.doc.querySelector('.guided-context'),l.id);assert.equal(u.doc.querySelectorAll('.guided-application').length,1,l.id);assert.ok(u.text().includes(l.title));assert.ok(u.doc.querySelector('.lesson-units'),l.id);assert.equal(u.doc.querySelectorAll('.reading-section').length,l.sections.length,l.id);u.click('#guide-walkthrough');u.click('[data-guide-finish=clear]');assert.ok(u.text().includes('Lesson complete'),l.id);}
  const p=JSON.parse(u.storage.get('finance-guided-lessons-v1'));assert.equal(Object.keys(p.lessons).length,guidedLessons.length);assert.ok(Object.values(p.lessons).every(r=>r.completedAt));assert.ok(!u.storage.has('finance-remember-v1'));
 });
 test('optional calculation shows input origins and worked steps after checking',async()=>{
@@ -77,4 +77,20 @@ test('reference finds history and extra concepts and respects chapter filtering'
  const filter=u.doc.querySelector('#librarytopic');filter.querySelector('option[value="all"]').removeAttribute('selected');filter.querySelector('option[value="bonds"]').setAttribute('selected','');filter.dispatchEvent(new u.window.Event('change'));assert.equal(u.doc.querySelectorAll('.chapter-connections').length,0);
  input.value='breakeven';input.dispatchEvent(new u.window.Event('input'));assert.equal(u.doc.querySelectorAll('.chapter-connections').length,1);assert.ok(u.doc.querySelector('.chapter-connections .formula').textContent.includes('nominal Treasury yield'));assert.ok(u.doc.querySelector('.chapter-connections .term-help').textContent.includes('Real yield ='));
  u.go('#topic/bonds');assert.ok(u.doc.querySelector('.chapter-connections'));
+});
+
+test('yield explains dollar gain before percentage return and units remain visible in reviews',async()=>{
+ const u=await setup();u.go('#lesson/yield');const sections=u.doc.querySelectorAll('.reading-section');assert.ok(sections[0].textContent.includes('$60 ÷ $1,000 × 100'));assert.ok(sections[0].textContent.includes('one year'));
+ assert.ok(u.doc.querySelector('.lesson-units').textContent.includes('exactly one year'));assert.ok(u.doc.querySelector('.result-meaning').textContent.includes('$59.43'));
+ const definitions=[...u.doc.querySelectorAll('.terms-box dt')].map(x=>x.textContent);assert.ok(definitions.includes('Return'));
+ u.click('#guide-walkthrough');u.click('[data-guide-finish=clear]');u.go('#lesson/yield');
+ const refresher=u.doc.querySelector('.guided-refresher');assert.ok(refresher);assert.equal(refresher.hasAttribute('open'),false);
+ const first=u.doc.querySelector('.reading-section');assert.equal(first.closest('.guided-refresher'),null);assert.ok(first.textContent.includes('$60 ÷ $1,000 × 100'));assert.ok(u.doc.querySelector('.lesson-units'));
+ const firstHeading=first.querySelector('h2').textContent;assert.equal([...u.doc.querySelectorAll('.reading-section h2')].filter(x=>x.textContent===firstHeading).length,1);
+ assert.equal(u.doc.querySelectorAll('.guided-application').length,1);
+});
+test('worked results explain their units in lessons, Reference and the changed-yield explorer',async()=>{
+ const u=await setup();u.go('#lesson/mortgage');assert.match(u.doc.querySelector('.example-result span').textContent,/dollars per month/);assert.ok(u.doc.querySelector('.result-meaning').textContent.includes('excludes taxes'));
+ u.go('#library');const search=u.doc.querySelector('#search');search.value='Monthly loan payment';search.dispatchEvent(new u.window.Event('input'));assert.match(u.doc.querySelector('#matches .example-result span').textContent,/dollars per month/);
+ u.go('#lesson/price');const slider=u.doc.querySelector('#guided-yield');slider.value='4';slider.dispatchEvent(new u.window.Event('input'));assert.equal(u.doc.querySelector('#guided-rate').textContent,'4.0% per year');assert.equal(u.doc.querySelector('#guided-bond-price').textContent,'$1,027.75');assert.ok(!u.doc.querySelector('#guided-price-working .calculation-reading').textContent.includes('6%'));
 });

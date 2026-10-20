@@ -2,18 +2,18 @@
 
 **[Open Remember Finance](https://finance-remember.yogurt-co.chatgpt.site/)** — start a daily finance learning session.
 
-A guided study companion to Robert Shiller’s introductory [Financial Markets course](https://www.coursera.org/learn/financial-markets-global/). Forty-five short lessons cover all 140 existing concepts and 28 calculation families. Financial rules and historical notes retain their dated source snapshot, checked October 11, 2026. Recording dates do not organize the course.
+A guided study companion to Robert Shiller’s introductory [Financial Markets course](https://www.coursera.org/learn/financial-markets-global/). Forty-five guided lessons cover all 140 concepts and 28 calculation families. The October 20, 2026 readability pass expands the explanations into connected sections rather than compact definitions. Financial rules and historical notes retain their dated source snapshot, checked October 11, 2026. Recording dates do not organize the course.
 
 ## Daily use
 
 1. Open **Today** and press **Start lesson** or **Continue lesson**.
-2. Read the situation and explanation once. Numerical examples label their assumptions and show the calculation behind each result.
+2. Read the situation and the explanation in short sections. Each lesson identifies the units and period before the calculation. Numerical examples show their assumptions, steps, result units and what the result means.
 3. Try one application question, or choose **Walk me through it**.
 4. Choose **Clear** or **Needs another look**, then stop for the day or continue if you want.
 
 **Lessons** browses the course by chapter. **Reference** searches the full concept and formula library. **Explain key terms** and **Explain formula terms** provide short definitions on demand. Further detail and additional numerical variations are optional. There is no forced immediate repetition in the main lesson flow.
 
-The first three lessons retain the familiar bond story in a shorter format. The price explorer now shows the discounting calculation for every slider value. Each later lesson introduces a concrete situation rather than starting with an isolated question. Later reviews retain that situation and offer the full explanation in a collapsed refresher.
+The first three lessons retain the familiar bond story in a shorter format. The price explorer now shows the discounting calculation for every slider value. Each later lesson introduces a concrete situation and explains unfamiliar words as they appear. Reviews show the situation, units and first explanatory section; the remaining explanation and worked example are available in a collapsed refresher.
 
 ## Connections and history
 
@@ -34,9 +34,15 @@ Every chapter has a collapsed **Connections & history** section, also available 
 | Public finance | Funded versus pay-as-you-go pensions | Social Security’s creation, 1935 |
 | Modern finance | Credibility of a conversion mechanism | TerraUSD and Luna, 2022 |
 
+## Explanations and readability
+
+The teaching text uses short connected sections with meaningful headings. It distinguishes a dollar gain from a percentage return and states the time period. Annual rates, monthly payments, dollars per share, percentage-point changes and unitless ratios are identified separately. The 145 topic glossary definitions and 12 basic definitions explain vocabulary in everyday language. All 140 Reference explanations and the 12 chapter introductions use the same approach. The historical connections retain their sources while explaining unfamiliar ideas inline.
+
+`reference-explanations.txt` is the authored source for Reference answers and explanations; `build_content.py` validates complete coverage and keeps correct answer choices aligned when regenerating content. Lesson sections in `lesson-content.js` are the authored teaching source. Their combined `teaching` field is derived for term matching. Preserve IDs when editing prose so saved progress still matches.
+
 ## Numbers and formulas
 
-Worked examples use hypothetical teaching inputs, clearly identified as assumptions rather than current market quotes. All 28 calculation templates expose input labels and intermediate working: decimal conversion, units, cash-flow timing, principal/coupon distinctions and rounding where applicable. Results are calculated at full precision before display rounding. Fixed bond examples separately show coupon and principal construction and each discounted payment.
+Worked examples use hypothetical teaching inputs, clearly identified as assumptions rather than current market quotes. All 28 calculation templates also identify the output units, period, and meaning of the result. They expose input labels and intermediate working: decimal conversion, units, cash-flow timing, principal/coupon distinctions and rounding where applicable. Results are calculated at full precision before display rounding. Fixed bond examples separately show coupon and principal construction and each discounted payment.
 
 Dates, implementation timing and standard contractual conventions are identified as source or definition facts rather than calculated amounts. Links to primary sources remain in the related-concept reference. Simplified models and their limits are stated in the lessons and reference explanations.
 
