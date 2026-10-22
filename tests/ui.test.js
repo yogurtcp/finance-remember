@@ -94,3 +94,27 @@ test('worked results explain their units in lessons, Reference and the changed-y
  u.go('#library');const search=u.doc.querySelector('#search');search.value='Monthly loan payment';search.dispatchEvent(new u.window.Event('input'));assert.match(u.doc.querySelector('#matches .example-result span').textContent,/dollars per month/);
  u.go('#lesson/price');const slider=u.doc.querySelector('#guided-yield');slider.value='4';slider.dispatchEvent(new u.window.Event('input'));assert.equal(u.doc.querySelector('#guided-rate').textContent,'4.0% per year');assert.equal(u.doc.querySelector('#guided-bond-price').textContent,'$1,027.75');assert.ok(!u.doc.querySelector('#guided-price-working .calculation-reading').textContent.includes('6%'));
 });
+
+test('inline calculator transfers a result without grading and survives question rerenders',async()=>{
+ const u=await setup();u.go('#lesson/sensitivity');u.click('#guide-walkthrough');u.doc.querySelector('.guided-variation').open=true;
+ let panel=u.doc.querySelector('.guided-variation .mini-calculator');assert.ok(panel);assert.equal(panel.hasAttribute('open'),false);panel.open=true;
+ const before=u.storage.get('finance-guided-lessons-v1'),expression=panel.querySelector('.calculator-expression');expression.value='1000 × 5%';expression.dispatchEvent(new u.window.Event('input',{bubbles:true}));panel.querySelector('[data-calculator-keypress=equals]').click();
+ assert.equal(panel.querySelector('.calculator-result').textContent,'50');panel.querySelector('[data-calculator-use]').click();assert.equal(u.doc.querySelector('#guided-number').value,'50');assert.equal(u.doc.querySelector('.guided-variation .feedback'),null);assert.equal(u.storage.get('finance-guided-lessons-v1'),before);
+ assert.ok(panel.querySelector('.calculator-unit-note').textContent.includes('Multiply a decimal return by 100'));
+ u.click('#guided-check-number');panel=u.doc.querySelector('.guided-variation .mini-calculator');assert.equal(panel.querySelector('.calculator-expression').value,'1000 × 5%');assert.equal(panel.querySelector('.calculator-result').textContent,'50');assert.ok(panel.hasAttribute('open'));assert.equal(panel.querySelector('[data-calculator-use]'),null);
+});
+test('calculator keypad, chained results and error recovery work offline',async()=>{
+ const u=await setup(new Map(),true);u.go('#lesson/price');const panel=u.doc.querySelector('.mini-calculator');panel.open=true;
+ const key=value=>panel.querySelector(`[data-calculator-keypress="${value}"]`).click();
+ key('clear');for(const k of ['1','+','2','×','3','equals'])key(k);assert.equal(panel.querySelector('.calculator-result').textContent,'7');
+ key('+');key('4');key('equals');assert.equal(panel.querySelector('.calculator-result').textContent,'11');
+ key('clear');for(const k of ['1','÷','0','equals'])key(k);assert.ok(panel.querySelector('.calculator-error').textContent.includes('zero'));assert.equal(panel.querySelector('.calculator-result').textContent,'—');
+ key('backspace');key('2');key('equals');assert.equal(panel.querySelector('.calculator-result').textContent,'0.5');
+ const field=panel.querySelector('.calculator-expression');field.value='0.1+0.2';field.dispatchEvent(new u.window.Event('input',{bubbles:true}));const enter=new u.window.Event('keydown',{bubbles:true,cancelable:true});Object.defineProperty(enter,'key',{value:'Enter'});field.dispatchEvent(enter);assert.equal(panel.querySelector('.calculator-result').textContent,'0.3');
+});
+test('calculator supports earlier numeric practice and does not submit on Enter',async()=>{
+ const u=await setup();u.go('#cards');u.click('#start');for(let i=0;i<3;i++){u.click('#reveal');u.click('[data-rating=good]');}
+ const panel=u.doc.querySelector('.mini-calculator[data-calculator-target=attempt]');assert.ok(panel);panel.open=true;const field=panel.querySelector('.calculator-expression');field.value='100/4';field.dispatchEvent(new u.window.Event('input',{bubbles:true}));const enter=new u.window.Event('keydown',{bubbles:true,cancelable:true});Object.defineProperty(enter,'key',{value:'Enter'});field.dispatchEvent(enter);
+ assert.equal(u.doc.querySelector('#answerheading'),null);assert.ok(u.doc.querySelector('#check'));panel.querySelector('[data-calculator-use]').click();assert.equal(u.doc.querySelector('#attempt').value,'25');assert.equal(u.doc.querySelector('#answerheading'),null);u.click('#check');assert.ok(u.doc.querySelector('#answerheading'));
+ u.go('#library');const search=u.doc.querySelector('#search');search.value='Monthly loan payment';search.dispatchEvent(new u.window.Event('input'));const reference=u.doc.querySelector('#matches .mini-calculator');assert.ok(reference);assert.equal(reference.querySelector('[data-calculator-use]'),null);
+});

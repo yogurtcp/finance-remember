@@ -1,6 +1,6 @@
 import pathlib,re,json
 root=pathlib.Path(__file__).parent;dist=root/'dist'
-js='\n'.join(re.sub(r'^import .*?;\n','', (dist/f).read_text(),flags=re.M).replace('export ','') for f in ['engine.js','calculations.js','lesson-content.js','guided-progress.js','connections.js','guided-ui.js','trials.js','app.js'])
+js='\n'.join(re.sub(r'^import .*?;\n','', (dist/f).read_text(),flags=re.M).replace('export ','') for f in ['engine.js','calculator.js','calculations.js','lesson-content.js','guided-progress.js','connections.js','guided-ui.js','trials.js','app.js'])
 js=js.replace("const res=await fetch('content.json');if(!res.ok)throw Error('Content could not load.');data=await res.json();",'data='+json.dumps(json.load(open(dist/'content.json')),ensure_ascii=False)+';')
 js=js.replace("if('serviceWorker' in navigator)","if(location.protocol!=='file:'&&'serviceWorker' in navigator)")
 css=re.sub(r'^@import .*?;\n','',(dist/'styles.css').read_text(),flags=re.M)
