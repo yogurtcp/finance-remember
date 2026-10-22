@@ -48,7 +48,7 @@ Dates, implementation timing and standard contractual conventions are identified
 
 ## In-app calculator
 
-Open **Calculator** beside a worked example or numeric exercise. Type an expression or use the keypad; press **=** or Enter. Basic arithmetic, parentheses, powers, square roots and continuous-growth `exp(...)` calculations are supported. `%` consistently means divide by 100: `1000 × 5%` gives `50`. Parentheses and normal arithmetic precedence apply. `50 ÷ (1 + 6%)^2` discounts a payment without leaving the lesson.
+Open **Calculator** beside a formula reference, worked example or numeric exercise. Type an expression or use the keypad; press **=** or Enter. Basic arithmetic, parentheses, powers, square roots and continuous-growth `exp(...)` calculations are supported. `%` consistently means divide by 100: `1000 × 5%` gives `50`. Parentheses and normal arithmetic precedence apply. `50 ÷ (1 + 6%)^2` discounts a payment without leaving the lesson.
 
 Numeric exercises provide **Use result in my answer**, which fills the answer without submitting or grading it. A nearby reminder explains the required units: a decimal return must be multiplied by 100 when the answer expects a percentage number. Clear and backspace are available. Opening the calculator does not reveal a problem’s solution or change ratings. Its scratch expression stays in memory across panel rerenders for the same problem, but is not part of saved progress or backups and resets on page reload.
 
